@@ -21,5 +21,9 @@
   },
   "concepts": [],
   "key_features": [],
-  "tags": []
+  "tags": [
+    "variables/basic",
+    "variables/structures",
+    "variables/internal_tables"
+  ]
 }
