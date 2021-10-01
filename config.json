@@ -22,8 +22,8 @@
         "slug": "hello-world",
         "name": "Hello, World!",
         "uuid": "837b21ed-7f1c-45d0-ad9d-c0c8e081b707",
-        "practices": ["strings"],
-        "prerequisites": ["basics"],
+        "practices": [],
+        "prerequisites": [],
         "difficulty": 1
       }
     ]
