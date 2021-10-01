@@ -22,8 +22,13 @@
   "concepts": [],
   "key_features": [],
   "tags": [
-    "variables/basic",
-    "variables/structures",
-    "variables/internal_tables"
+    "paradigm/object_oriented",
+    "paradigm/procedural",
+    "typing/static",
+    "typing/strong",
+    "execution_mode/compiled",
+    "runtime/language_specific",
+    "used_for/backends",
+    "used_for/financial_systems"
   ]
 }
