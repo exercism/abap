@@ -365,16 +365,7 @@
       "test": "^LTCL_.+$"
     },
     "local_testclass_location": true,
-    "local_variable_names": {
-      "exclude": [],
-      "severity": "Error",
-      "patternKind": "required",
-      "ignoreNames": [],
-      "ignorePatterns": [],
-      "expectedData": "^L._.+$",
-      "expectedConstant": "^LC_.+$",
-      "expectedFS": "^<L._.+>$"
-    },
+    "local_variable_names": false,
     "main_file_contents": true,
     "many_parentheses": true,
     "max_one_method_parameter_per_line": true,
