@@ -1,4 +1,4 @@
-CLASS ltcl_hello_wrold DEFINITION FOR TESTING RISK LEVEL HARMLESS DURATION SHORT FINAL.
+CLASS ltcl_hello_world DEFINITION FOR TESTING RISK LEVEL HARMLESS DURATION SHORT FINAL.
 
   PUBLIC SECTION.
     INTERFACES if_oo_adt_classrun_out.
@@ -9,7 +9,7 @@ CLASS ltcl_hello_wrold DEFINITION FOR TESTING RISK LEVEL HARMLESS DURATION SHORT
 
 ENDCLASS.
 
-CLASS ltcl_hello_wrold IMPLEMENTATION.
+CLASS ltcl_hello_world IMPLEMENTATION.
 
   METHOD test.
     CAST if_oo_adt_classrun( NEW zcl_hello_world( ) )->main( me ).
