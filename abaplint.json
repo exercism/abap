@@ -142,15 +142,8 @@
     },
     "db_operation_in_loop": true,
     "definitions_top": true,
-    "description_empty": true,
-    "double_space": {
-      "exclude": [],
-      "severity": "Error",
-      "keywords": true,
-      "startParen": true,
-      "endParen": true,
-      "afterColon": true
-    },
+    "description_empty": false,
+    "double_space": true,
     "downport": true,
     "empty_line_in_statement": {
       "exclude": [],
@@ -158,24 +151,8 @@
       "allowChained": false
     },
     "empty_statement": true,
-    "empty_structure": {
-      "exclude": [],
-      "severity": "Error",
-      "loop": true,
-      "if": true,
-      "while": true,
-      "case": true,
-      "select": true,
-      "do": true,
-      "at": true,
-      "try": true
-    },
-    "exit_or_check": {
-      "exclude": [],
-      "severity": "Error",
-      "allowExit": false,
-      "allowCheck": false
-    },
+    "empty_structure": true,
+    "exit_or_check": true,
     "exporting": true,
     "forbidden_identifier": {
       "exclude": [],
