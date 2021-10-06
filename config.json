@@ -8,17 +8,36 @@
     "representer": false,
     "analyzer": false
   },
-  "blurb": "",
+  "blurb": "ABAP is a high level programming language created by SAP",
   "version": 3,
   "online_editor": {
     "indent_style": "space",
-    "indent_size": 4
+    "indent_size": 2,
+    "highlightjs_language": "abap"
   },
   "exercises": {
     "concept": [],
-    "practice": []
+    "practice": [
+      {
+        "slug": "hello-world",
+        "name": "Hello, World!",
+        "uuid": "837b21ed-7f1c-45d0-ad9d-c0c8e081b707",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      }
+    ]
   },
   "concepts": [],
   "key_features": [],
-  "tags": []
+  "tags": [
+    "paradigm/object_oriented",
+    "paradigm/procedural",
+    "typing/static",
+    "typing/strong",
+    "execution_mode/compiled",
+    "runtime/language_specific",
+    "used_for/backends",
+    "used_for/financial_systems"
+  ]
 }
