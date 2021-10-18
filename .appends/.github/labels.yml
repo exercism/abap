@@ -1,0 +1,32 @@
+# ----------------------------------------------------------------------------------------- #
+# These are the repository-specific labels that augment the Exercise-wide labels defined in #
+# https://github.com/exercism/org-wide-files/blob/main/global-files/.github/labels.yml.     #
+# ----------------------------------------------------------------------------------------- #
+
+- name: "duplicate"
+  description: ""
+  color: "cccccc"
+
+- name: "enhancement"
+  description: ""
+  color: "84b6eb"
+
+- name: "invalid"
+  description: ""
+  color: "e6e6e6"
+
+- name: "needs maintainer"
+  description: ""
+  color: "fc2929"
+
+- name: "new track"
+  description: ""
+  color: "159818"
+
+- name: "question"
+  description: ""
+  color: "cc317c"
+
+- name: "wontfix"
+  description: ""
+  color: "ffffff"
