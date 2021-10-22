@@ -1,1 +1,3 @@
-TODO: add snippet
+FORM hello.
+  WRITE 'hello world'.
+ENDFORM.
