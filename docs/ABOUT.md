@@ -1,14 +1,7 @@
 # About
 
-<!-- TODO: write document
+ABAP is a high level programming language created by SAP.
 
-  This document contains a short introduction to the language.
+The ABAP language goes back to the 1980s and new features are still being added in new releases.
 
-  The introduction should be relatively brief and touch upon what
-  makes the language interesting (and possibly unique). The goal
-  is to help students decide if they want to join this track.
-
-  The contents of this document are displayed on the track page,
-  provided the student has not joined the track.
-
-  See https://exercism.org/docs/building/tracks/docs for more information. -->
+It is used for controlling critical business processes in large scale ERP systems.
