@@ -16,7 +16,7 @@ CLASS ltcl_hello_world IMPLEMENTATION.
 
     cl_abap_unit_assert=>assert_equals(
       act = if_oo_adt_classrun_out~get( )
-      exp = 'Hello, World' ).
+      exp = 'Hello, World!' ).
   ENDMETHOD.
 
   METHOD if_oo_adt_classrun_out~write.
