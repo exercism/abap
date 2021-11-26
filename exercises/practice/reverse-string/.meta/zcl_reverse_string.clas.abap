@@ -10,8 +10,7 @@ ENDCLASS.
 CLASS zcl_reverse_string IMPLEMENTATION.
 
   METHOD reverse_string.
-    " Please complete the implementation of the reverse_string method
-    result = input.
+    result = reverse( input ).
   ENDMETHOD.
 
 ENDCLASS.
