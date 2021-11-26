@@ -20,7 +20,7 @@ CLASS zcl_clock DEFINITION
 
   PRIVATE SECTION.
 
-* Keep clock state in instance variable
+    DATA clock TYPE t.
 
 ENDCLASS.
 
@@ -30,21 +30,25 @@ CLASS zcl_clock IMPLEMENTATION.
 
 
   METHOD add.
-    " add minutes to the clock
+    clock = clock + minutes * 60.
   ENDMETHOD.
 
 
   METHOD constructor.
-    " implement the constructor
+    " Clock is number of seconds
+    clock = hours * 60 * 60 + minutes * 60.
   ENDMETHOD.
 
 
   METHOD get.
-    " return clock as hh:mm
+    " hh:mm:ss
+    result = |{ clock TIME = ISO }|.
+    " return only hh:mm
+    result = result(5).
   ENDMETHOD.
 
 
   METHOD sub.
-    " substract minutes from clock
+    clock = clock - minutes * 60.
   ENDMETHOD.
 ENDCLASS.
