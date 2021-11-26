@@ -10,8 +10,8 @@ ENDCLASS.
 CLASS zcl_reverse_string IMPLEMENTATION.
 
   METHOD reverse_string.
-     RAISE EXCEPTION TYPE cx_demo_exception EXPORTING exception_text =
-       'Please implement the reverse_string method'.
+    " Please complete the implementation of the reverse_string method
+    result = input.
   ENDMETHOD.
 
 ENDCLASS.
