@@ -13,7 +13,7 @@
 # Requires scripts:
 # - bin/test
 
-name: <track> / Test
+name: ABAP / Test
 
 on:
   push:
@@ -23,17 +23,16 @@ on:
 
 jobs:
   ci:
-    runs-on: <image-name>
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Use <setup tooling>
-        uses: <action to setup tooling>
-
-      - name: Install project dependencies
-        run: <install dependencies>
-
+      - name: Checkout code
+        uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579
+      - name: Use Node.js LTS (16.x)
+        uses: actions/setup-node@270253e841af726300e85d718a5f606959b2903c
+        with:
+          node-version: '16'
+      - run: npm install @abaplint/cli -g
+      - run: abaplint
       - name: Run tests for all exercises
         run: bin/test
