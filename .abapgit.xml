@@ -7,7 +7,7 @@
    <FOLDER_LOGIC>PREFIX</FOLDER_LOGIC>
    <IGNORE>
     <item>*.docs*</item>
-    <item>*.meta*</item>
+    <item>*.meta/*.json</item>
    </IGNORE>
    <REQUIREMENTS>
     <item>

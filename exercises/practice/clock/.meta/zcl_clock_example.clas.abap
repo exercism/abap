@@ -1,4 +1,4 @@
-CLASS zcl_clock DEFINITION
+CLASS zcl_clock_example DEFINITION
   PUBLIC
   CREATE PUBLIC.
 
@@ -17,7 +17,6 @@ CLASS zcl_clock DEFINITION
     METHODS sub
       IMPORTING
         !minutes TYPE i.
-
   PRIVATE SECTION.
 
     DATA clock TYPE t.
@@ -26,7 +25,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_clock IMPLEMENTATION.
+CLASS zcl_clock_example IMPLEMENTATION.
 
 
   METHOD add.
