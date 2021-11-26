@@ -3,10 +3,12 @@ CLASS zcl_hello_world DEFINITION PUBLIC.
     INTERFACES if_oo_adt_classrun.
 ENDCLASS.
 
+
+
 CLASS zcl_hello_world IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     out->write( 'Goodbye, Mars!' ).
   ENDMETHOD.
-
 ENDCLASS.

@@ -7,10 +7,12 @@ CLASS zcl_two_fer DEFINITION PUBLIC.
         VALUE(result) TYPE string.
 ENDCLASS.
 
+
+
 CLASS zcl_two_fer IMPLEMENTATION.
+
 
   METHOD two_fer.
 * add solution here
   ENDMETHOD.
-
 ENDCLASS.
