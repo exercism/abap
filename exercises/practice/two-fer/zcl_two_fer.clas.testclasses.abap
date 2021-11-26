@@ -29,7 +29,7 @@ CLASS ltcl_two_fer IMPLEMENTATION.
 
   METHOD test_bob.
     cl_abap_unit_assert=>assert_equals(
-      act = cut->two_fer( )
+      act = cut->two_fer( 'Bob' )
       exp = 'One for Bob, one for me.' ).
   ENDMETHOD.
 
