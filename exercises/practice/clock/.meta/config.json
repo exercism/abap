@@ -5,6 +5,6 @@
   "files": {
     "solution": ["zcl_clock.clas.abap"],
     "test": ["zcl_clock.clas.testclasses.abap"],
-    "example": [".meta/zcl_clock.clas.abap"]
+    "example": [".meta/zcl_clock_example.clas.abap"]
   }
 }
