@@ -5,6 +5,10 @@
    <MASTER_LANGUAGE>E</MASTER_LANGUAGE>
    <STARTING_FOLDER>/exercises/practice/</STARTING_FOLDER>
    <FOLDER_LOGIC>PREFIX</FOLDER_LOGIC>
+   <IGNORE>
+     <item>*.docs*</item>   
+     <item>*.meta*</item>   
+   </IGNORE>
    <REQUIREMENTS>
     <item>
      <COMPONENT>SAP_BASIS</COMPONENT>
