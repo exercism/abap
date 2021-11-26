@@ -3,8 +3,8 @@ CLASS zcl_reverse_string DEFINITION PUBLIC.
     METHODS reverse_string
       IMPORTING
         input         TYPE string
-      RETURNING 
-        VALUE(result) TYPE string.    
+      RETURNING
+        VALUE(result) TYPE string.
 ENDCLASS.
 
 CLASS zcl_reverse_string IMPLEMENTATION.
