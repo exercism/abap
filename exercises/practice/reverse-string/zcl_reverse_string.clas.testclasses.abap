@@ -2,7 +2,6 @@ CLASS ltcl_reverse_string DEFINITION FOR TESTING RISK LEVEL HARMLESS DURATION SH
 
   PRIVATE SECTION.
     DATA cut TYPE REF TO zcl_reverse_string.
-    DATA result TYPE string.
 
     METHODS:
       setup,
