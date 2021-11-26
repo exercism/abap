@@ -13,6 +13,8 @@
 # Requires scripts:
 # - bin/test
 
+name: test
+
 on:
   push:
     branches: [main]
