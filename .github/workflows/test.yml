@@ -13,8 +13,6 @@
 # Requires scripts:
 # - bin/test
 
-name: ABAP / Test
-
 on:
   push:
     branches: [main]
