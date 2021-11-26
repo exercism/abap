@@ -1,0 +1,12 @@
+{
+  "blurb": "Create a sentence of the form \"One for X, one for me.\".",
+  "authors": ["larshp"],
+  "contributors": [
+  ],
+  "files": {
+    "solution": ["zcl_two_fer.clas.abap"],
+    "test": ["zcl_two_fer.clas.testclasses.abap"],
+    "example": [".meta/zcl_two_fer.clas.abap"]
+  },
+  "source_url": "https://github.com/exercism/problem-specifications/issues/757"
+}
