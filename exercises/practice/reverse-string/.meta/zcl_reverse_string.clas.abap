@@ -1,6 +1,6 @@
 CLASS zcl_reverse_string DEFINITION PUBLIC.
   PUBLIC SECTION.
-    METHOD reverse_string
+    METHODS reverse_string
       IMPORTING
         input         TYPE string
       RETURNING 
