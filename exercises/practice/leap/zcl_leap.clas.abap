@@ -2,7 +2,7 @@ CLASS zcl_leap DEFINITION PUBLIC.
   PUBLIC SECTION.
     METHODS leap
       IMPORTING
-        input         TYPE i
+        year          TYPE i
       RETURNING
         VALUE(result) TYPE abap_bool.
 ENDCLASS.

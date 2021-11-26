@@ -1,20 +1,22 @@
-CLASS zcl_two_fer DEFINITION PUBLIC.
+CLASS zcl_leap DEFINITION PUBLIC.
   PUBLIC SECTION.
-    METHODS two_fer
+    METHODS leap
       IMPORTING
-        input         TYPE string OPTIONAL
+        year         TYPE i
       RETURNING
-        VALUE(result) TYPE string.
+        VALUE(result) TYPE abap_bool.
 ENDCLASS.
 
-CLASS zcl_two_fer IMPLEMENTATION.
+CLASS zcl_leap IMPLEMENTATION.
 
-  METHOD two_fer.
-    DATA(name) = input.
-    IF name IS INITIAL.
-      name = 'you'.
+  METHOD leap.
+    IF year MOD 4 = 0 AND year MOD 100 <> 0.
+      result = abap_true.
+    ELSEIF year MOD 400 = 0.
+      result = abap_true.
+    ELSE.
+      result = abap_false.
     ENDIF.
-    result = |One for { name }, one for me.|.
   ENDMETHOD.
 
 ENDCLASS.
