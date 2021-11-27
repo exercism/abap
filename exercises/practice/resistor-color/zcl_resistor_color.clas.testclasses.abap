@@ -15,7 +15,7 @@ ENDCLASS.
 CLASS ltcl_test IMPLEMENTATION.
 
   METHOD setup.
-    CREATE OBJECT cut.
+    cut = NEW #( ).
   ENDMETHOD.
 
   METHOD test_black.
