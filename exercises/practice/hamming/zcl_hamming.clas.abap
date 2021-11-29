@@ -7,7 +7,7 @@ CLASS zcl_hamming DEFINITION PUBLIC.
       RETURNING
         VALUE(result) TYPE i
       RAISING
-        cx_static_check.
+        zcx_hamming_error.
 ENDCLASS.
 
 CLASS zcl_hamming IMPLEMENTATION.
