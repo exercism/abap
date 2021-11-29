@@ -17,6 +17,7 @@ CLASS zcl_clock_example DEFINITION
     METHODS sub
       IMPORTING
         !minutes TYPE i.
+
   PRIVATE SECTION.
 
     DATA clock TYPE t.
