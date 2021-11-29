@@ -44,6 +44,22 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "resistor-color",
+        "name": "Resistor Color",
+        "uuid": "978db3d3-0a13-4ca1-b75b-051e389bf171",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "leap",
+        "name": "Leap",
+        "uuid": "ed451561-a84a-4b44-a3c9-9a0d9378667c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ]
   },
