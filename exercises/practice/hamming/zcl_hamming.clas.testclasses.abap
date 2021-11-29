@@ -1,0 +1,15 @@
+CLASS ltcl_hamming DEFINITION FOR TESTING RISK LEVEL HARMLESS DURATION SHORT FINAL.
+
+  PRIVATE SECTION.
+    DATA cut TYPE REF TO zcl_hamming.
+    METHODS setup.
+
+ENDCLASS.
+
+CLASS ltcl_hamming IMPLEMENTATION.
+
+  METHOD setup.
+    cut = NEW zcl_hamming( ).
+  ENDMETHOD.
+
+ENDCLASS.
