@@ -6,7 +6,7 @@
   "files": {
     "solution": ["zcl_leap.clas.abap"],
     "test": ["zcl_leap.clas.testclasses.abap"],
-    "example": [".meta/zcl_leap.clas.abap"]
+    "example": [".meta/zcl_leap_example.clas.abap"]
   },
   "source": "JavaRanch Cattle Drive, exercise 3",
   "source_url": "http://www.javaranch.com/leap.jsp"

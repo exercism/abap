@@ -5,6 +5,6 @@
   "files": {
     "solution": ["zcl_reverse_string.clas.abap"],
     "test": ["zcl_reverse_string.clas.testclasses.abap"],
-    "example": [".meta/zcl_reverse_string.clas.abap"]
+    "example": [".meta/zcl_reverse_string_example.clas.abap"]
   }
 }

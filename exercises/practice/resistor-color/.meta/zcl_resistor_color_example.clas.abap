@@ -1,4 +1,4 @@
-CLASS zcl_resistor_color DEFINITION PUBLIC CREATE PUBLIC.
+CLASS zcl_resistor_color_example DEFINITION PUBLIC CREATE PUBLIC.
   PUBLIC SECTION.
     METHODS resistor_color
       IMPORTING
@@ -7,7 +7,7 @@ CLASS zcl_resistor_color DEFINITION PUBLIC CREATE PUBLIC.
         VALUE(value) TYPE i.
 ENDCLASS.
 
-CLASS zcl_resistor_color IMPLEMENTATION.
+CLASS zcl_resistor_color_example IMPLEMENTATION.
 
   METHOD resistor_color.
 

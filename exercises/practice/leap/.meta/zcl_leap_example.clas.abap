@@ -1,4 +1,4 @@
-CLASS zcl_leap DEFINITION PUBLIC.
+CLASS zcl_leap_example DEFINITION PUBLIC.
   PUBLIC SECTION.
     METHODS leap
       IMPORTING
@@ -7,7 +7,7 @@ CLASS zcl_leap DEFINITION PUBLIC.
         VALUE(result) TYPE abap_bool.
 ENDCLASS.
 
-CLASS zcl_leap IMPLEMENTATION.
+CLASS zcl_leap_example IMPLEMENTATION.
 
   METHOD leap.
     IF year MOD 4 = 0 AND year MOD 100 <> 0.

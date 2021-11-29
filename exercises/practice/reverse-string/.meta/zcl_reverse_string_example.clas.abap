@@ -1,4 +1,4 @@
-CLASS zcl_reverse_string DEFINITION PUBLIC.
+CLASS zcl_reverse_string_example DEFINITION PUBLIC.
   PUBLIC SECTION.
     METHODS reverse_string
       IMPORTING
@@ -7,7 +7,7 @@ CLASS zcl_reverse_string DEFINITION PUBLIC.
         VALUE(result) TYPE string.
 ENDCLASS.
 
-CLASS zcl_reverse_string IMPLEMENTATION.
+CLASS zcl_reverse_string_example IMPLEMENTATION.
 
   METHOD reverse_string.
     result = reverse( input ).

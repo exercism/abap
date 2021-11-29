@@ -1,4 +1,4 @@
-CLASS zcl_two_fer DEFINITION PUBLIC.
+CLASS zcl_two_fer_example DEFINITION PUBLIC.
   PUBLIC SECTION.
     METHODS two_fer
       IMPORTING
@@ -7,7 +7,7 @@ CLASS zcl_two_fer DEFINITION PUBLIC.
         VALUE(result) TYPE string.
 ENDCLASS.
 
-CLASS zcl_two_fer IMPLEMENTATION.
+CLASS zcl_two_fer_example IMPLEMENTATION.
 
   METHOD two_fer.
     DATA(name) = input.
