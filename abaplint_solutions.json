@@ -365,11 +365,6 @@
       "severity": "Error",
       "allowReadOnly": false
     },
-    "no_yoda_conditions": {
-      "exclude": [],
-      "severity": "Error",
-      "onlyConstants": false
-    },
     "object_naming": {
       "exclude": [],
       "severity": "Error",
