@@ -7,13 +7,13 @@ CLASS zcl_hamming DEFINITION PUBLIC.
       RETURNING
         VALUE(result) TYPE i
       RAISING
-        zcx_hamming_error.
+        cx_static_check.
 ENDCLASS.
 
 CLASS zcl_hamming IMPLEMENTATION.
 
   METHOD hamming_distance.
-    "add solution here
+    " add solution here
   ENDMETHOD.
 
 ENDCLASS.

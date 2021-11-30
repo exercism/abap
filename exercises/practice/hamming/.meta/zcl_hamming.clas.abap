@@ -13,10 +13,8 @@ ENDCLASS.
 CLASS zcl_hamming IMPLEMENTATION.
 
   METHOD hamming_distance.
-    IF strlen( first_strand ) <> strlen( second_strand ).
-      RAISE EXCEPTION TYPE zcx_hamming_error.
-    ENDIF.
-
+    " TODO: Replace with exception when possible
+    ASSERT strlen( first_strand ) = strlen( second_strand ).
     DATA(offset) = 0.
     WHILE offset < strlen( first_strand ).
       IF first_strand+offset(1) <> second_strand+offset(1).
