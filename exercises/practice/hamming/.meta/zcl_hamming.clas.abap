@@ -7,14 +7,15 @@ CLASS zcl_hamming DEFINITION PUBLIC.
       RETURNING
         VALUE(result) TYPE i
       RAISING
-        cx_static_check.
+        cx_parameter_invalid.
 ENDCLASS.
 
 CLASS zcl_hamming IMPLEMENTATION.
 
   METHOD hamming_distance.
-    " TODO: Replace with exception when possible
-    ASSERT strlen( first_strand ) = strlen( second_strand ).
+    IF strlen( first_strand ) <> strlen( second_strand ).
+      RAISE EXCEPTION TYPE cx_parameter_invalid.
+    ENDIF.
     DATA(offset) = 0.
     WHILE offset < strlen( first_strand ).
       IF first_strand+offset(1) <> second_strand+offset(1).

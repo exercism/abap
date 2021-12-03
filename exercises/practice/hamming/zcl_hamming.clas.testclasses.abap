@@ -86,7 +86,7 @@ CLASS ltcl_hamming IMPLEMENTATION.
           first_strand  = ''
           second_strand = 'CGT' ).
         cl_abap_unit_assert=>fail( ).
-      CATCH cx_static_check.
+      CATCH cx_parameter_invalid.
     ENDTRY.
   ENDMETHOD.
 
