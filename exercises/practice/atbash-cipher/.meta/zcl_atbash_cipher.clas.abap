@@ -27,6 +27,7 @@ CLASS zcl_atbash_cipher IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD encode.
+    DATA output TYPE string.
     DATA(input) = to_lower( plain_text ).
     REPLACE ALL OCCURRENCES OF ` ` IN input WITH ''.
     REPLACE ALL OCCURRENCES OF '.' IN input WITH ''.
@@ -41,7 +42,6 @@ CLASS zcl_atbash_cipher IMPLEMENTATION.
       input = input+1.
     ENDWHILE.
 
-    DATA output TYPE string.
     WHILE strlen( cipher_text ) > 5.
       output = output && cipher_text(5) && ` `.
       cipher_text = cipher_text+5.
