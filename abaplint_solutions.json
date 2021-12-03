@@ -426,7 +426,7 @@
     "pragma_placement": true,
     "prefer_inline": true,
     "prefer_is_not": true,
-    "prefer_raise_exception_new": true,
+    "prefer_raise_exception_new": false,
     "prefer_returning_to_exporting": true,
     "prefer_xsdbool": true,
     "preferred_compare_operator": {
