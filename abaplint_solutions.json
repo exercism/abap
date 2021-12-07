@@ -303,11 +303,7 @@
       "ignoreGlobalClassBoundaries": false,
       "ignoreKeywords": []
     },
-    "line_break_multiple_parameters": {
-      "exclude": [],
-      "severity": "Error",
-      "count": 1
-    },
+    "line_break_multiple_parameters": false,
     "line_break_style": false,
     "line_length": {
       "exclude": [],
