@@ -22,7 +22,7 @@ CLASS zcl_atbash_cipher IMPLEMENTATION.
   METHOD decode.
 
     plain_text = encode( cipher_text ).
-    REPLACE ALL OCCURENCES OF ` ` IN plain_text WITH ''.
+    REPLACE ALL OCCURRENCES OF ` ` IN plain_text WITH ''.
 
   ENDMETHOD.
 
