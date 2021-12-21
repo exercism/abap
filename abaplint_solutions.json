@@ -129,7 +129,7 @@
       "importDynpro": true
     },
     "db_operation_in_loop": true,
-    "definitions_top": true,
+    "definitions_top": false,
     "description_empty": false,
     "double_space": true,
     "downport": true,
