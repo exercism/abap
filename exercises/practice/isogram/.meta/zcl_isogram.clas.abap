@@ -1,0 +1,42 @@
+CLASS zcl_isogram DEFINITION FINAL CREATE PUBLIC.
+
+  PUBLIC SECTION.
+    METHODS is_isogram
+      IMPORTING
+        VALUE(phrase)        TYPE string
+      RETURNING
+        VALUE(result) TYPE abap_bool.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcl_isogram IMPLEMENTATION.
+
+  METHOD is_isogram.
+    result = abap_true.
+
+    phrase = to_upper( phrase ).
+
+    DATA(offset) = 0.
+    DATA letters TYPE STANDARD TABLE OF string.
+
+    WHILE offset < strlen( phrase ).
+      DATA(letter) = phrase+offset(1).
+      IF letter NA sy-abcde.
+        offset = offset + 1.
+        CONTINUE.
+      ENDIF.
+
+      IF line_exists( letters[ table_line = letter ] ).
+        result = abap_false.
+        RETURN.
+      ENDIF.
+      INSERT phrase+offset(1) INTO TABLE letters.
+      offset = offset + 1.
+    ENDWHILE.
+
+  ENDMETHOD.
+
+ENDCLASS.

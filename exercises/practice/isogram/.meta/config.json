@@ -1,0 +1,20 @@
+{
+  "blurb": "Determine if a word or phrase is an isogram",
+  "authors": [
+    "g-back"
+  ],
+  "contributors": [],
+  "files": {
+    "solution": [
+      "zcl_isogram.clas.abap"
+    ],
+    "test": [
+      "zcl_isogram.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_isogram.clas.abap"
+    ]
+  },
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Isogram"
+}
