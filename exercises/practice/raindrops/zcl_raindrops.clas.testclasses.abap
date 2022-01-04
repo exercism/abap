@@ -20,32 +20,37 @@ CLASS ltcl_raindropds IMPLEMENTATION.
 
   METHOD test_number1.
     cl_abap_unit_assert=>assert_equals(
-      act = cut->fizz_buzz( 1 )
+      act = cut->raindrops( 1 )
       exp = 1 ).
   ENDMETHOD.
+
   METHOD test_number2.
     cl_abap_unit_assert=>assert_equals(
-      act = cut->fizz_buzz( 307 )
+      act = cut->raindrops( 307 )
       exp = 307 ).
   ENDMETHOD.
+
   METHOD test_pling.
     cl_abap_unit_assert=>assert_equals(
-      act = cut->fizz_buzz( 303 )
+      act = cut->raindrops( 303 )
       exp = 'Pling' ).
   ENDMETHOD.
+
   METHOD test_plang.
     cl_abap_unit_assert=>assert_equals(
-      act = cut->fizz_buzz( 230 )
+      act = cut->raindrops( 230 )
       exp = 'Plang' ).
   ENDMETHOD.
+
   METHOD test_plong.
     cl_abap_unit_assert=>assert_equals(
-      act = cut->fizz_buzz( 679 )
+      act = cut->raindrops( 679 )
       exp = 'Plong' ).
   ENDMETHOD.
+
   METHOD test_plingplang.
     cl_abap_unit_assert=>assert_equals(
-      act = cut->fizz_buzz( 30 )
+      act = cut->raindrops( 30 )
       exp = 'PlingPlang' ).
   ENDMETHOD.
 
