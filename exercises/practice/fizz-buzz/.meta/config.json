@@ -4,9 +4,9 @@
   "contributors": [
   ],
   "files": {
-    "solution": ["zcl_fizz_buzz.clas.clas.abap"],
-    "test": ["zcl_fizz_buzz.clas.clas.testclasses.abap"],
-    "example": [".meta/zcl_fizz_buzz.clas.clas.abap"]
+    "solution": ["zcl_fizz_buzz.clas.abap"],
+    "test": ["zcl_fizz_buzz.clas.testclasses.abap"],
+    "example": [".meta/zcl_fizz_buzz.clas.abap"]
   },
   "source_url": "https://github.com/joltdx/abap-puzzles/blob/main/FizzBuzz.md"
 }
