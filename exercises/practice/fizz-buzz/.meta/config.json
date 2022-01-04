@@ -1,0 +1,12 @@
+{
+  "blurb": "Return 'Fizz', 'Buzz' or 'FizzBuzz' for numbers divisible by 3 or 5 but not both.",
+  "authors": ["marianfoo"],
+  "contributors": [
+  ],
+  "files": {
+    "solution": ["zcl_fizz_buzz.clas.clas.abap"],
+    "test": ["zcl_fizz_buzz.clas.clas.testclasses.abap"],
+    "example": [".meta/zcl_fizz_buzz.clas.clas.abap"]
+  },
+  "source_url": "https://github.com/joltdx/abap-puzzles/blob/main/FizzBuzz.md"
+}
