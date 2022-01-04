@@ -1,0 +1,12 @@
+{
+  "blurb": "Your task is to convert a number into a string that contains raindrop sounds corresponding to certain potential factors.",
+  "authors": ["marianfoo"],
+  "contributors": [
+  ],
+  "files": {
+    "solution": ["zcl_raindrops.clas.abap"],
+    "test": ["zcl_raindrops.clas.testclasses.abap"],
+    "example": [".meta/zcl_raindrops.clas.abap"]
+  },
+  "source_url": "https://github.com/exercism/problem-specifications/blob/main/exercises/raindrops/description.md"
+}
