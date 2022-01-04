@@ -1,20 +1,20 @@
-class ZCL_FIZZ_BUZZ definition
-  public
-  final
-  create public .
+CLASS zcl_fizz_buzz DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
+  PUBLIC SECTION.
     METHODS fizz_buzz
       RETURNING
         VALUE(result) TYPE string.
-protected section.
-private section.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS ZCL_FIZZ_BUZZ IMPLEMENTATION.
-  METHOD FIZZ_BUZZ.
+CLASS zcl_fizz_buzz IMPLEMENTATION.
+  METHOD fizz_buzz.
 * add solution here
   ENDMETHOD.
 
