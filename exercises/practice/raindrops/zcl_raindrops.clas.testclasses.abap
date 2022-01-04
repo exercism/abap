@@ -1,4 +1,4 @@
-CLASS ltcl_raindropds DEFINITION FOR TESTING RISK LEVEL HARMLESS DURATION SHORT FINAL.
+CLASS ltcl_raindrops DEFINITION FOR TESTING RISK LEVEL HARMLESS DURATION SHORT FINAL.
 
   PRIVATE SECTION.
     DATA cut TYPE REF TO zcl_raindrops.
@@ -12,7 +12,7 @@ CLASS ltcl_raindropds DEFINITION FOR TESTING RISK LEVEL HARMLESS DURATION SHORT 
 
 ENDCLASS.
 
-CLASS ltcl_raindropds IMPLEMENTATION.
+CLASS ltcl_raindrops IMPLEMENTATION.
 
   METHOD setup.
     cut = NEW zcl_raindrops( ).
@@ -21,13 +21,13 @@ CLASS ltcl_raindropds IMPLEMENTATION.
   METHOD test_number1.
     cl_abap_unit_assert=>assert_equals(
       act = cut->raindrops( 1 )
-      exp = 1 ).
+      exp = '1' ).
   ENDMETHOD.
 
   METHOD test_number2.
     cl_abap_unit_assert=>assert_equals(
       act = cut->raindrops( 307 )
-      exp = 307 ).
+      exp = '307' ).
   ENDMETHOD.
 
   METHOD test_pling.
