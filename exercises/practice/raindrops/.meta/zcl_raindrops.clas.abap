@@ -2,7 +2,7 @@ CLASS zcl_raindrops DEFINITION PUBLIC.
   PUBLIC SECTION.
     METHODS raindrops
       IMPORTING
-        input         TYPE string OPTIONAL
+        input         TYPE i
       RETURNING
         VALUE(result) TYPE string.
 ENDCLASS.
