@@ -21,13 +21,13 @@ CLASS ltcl_raindrops IMPLEMENTATION.
   METHOD test_number1.
     cl_abap_unit_assert=>assert_equals(
       act = cut->raindrops( 1 )
-      exp = 1 ).
+      exp = '1' ).
   ENDMETHOD.
 
   METHOD test_number2.
     cl_abap_unit_assert=>assert_equals(
       act = cut->raindrops( 307 )
-      exp = 307 ).
+      exp = '307' ).
   ENDMETHOD.
 
   METHOD test_pling.
