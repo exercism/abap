@@ -9,7 +9,7 @@
     "analyzer": false
   },
   "test_runner": {
-    "average_run_time": 5.0
+    "average_run_time": 30.0
   },
   "blurb": "ABAP is a high level programming language created by SAP",
   "version": 3,
