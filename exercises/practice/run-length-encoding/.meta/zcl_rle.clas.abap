@@ -18,15 +18,14 @@ CLASS zcl_rle IMPLEMENTATION.
 
   METHOD encode.
 
-    DATA: str        TYPE string,
-          char       TYPE string,
+    DATA: char       TYPE string,
           duplicates TYPE string.
 
-    str = input.
+    DATA(str) = input.
 
     WHILE str IS NOT INITIAL.
 
-      FIND REGEX '([\w|\s])(\1*)(.*)' IN str SUBMATCHES char duplicates str.
+      FIND REGEX '([\w|\s])(\1*)(.*)' IN str SUBMATCHES char duplicates str  ##SUBRC_OK.
 
       IF duplicates IS NOT INITIAL.
         result = |{ result }{ strlen( duplicates ) + 1 }{ char }|.
@@ -41,15 +40,14 @@ CLASS zcl_rle IMPLEMENTATION.
 
   METHOD decode.
 
-    DATA: str  TYPE string,
-          char TYPE string,
+    DATA: char TYPE string,
           reps TYPE string.
 
-    str = input.
+    DATA(str) = input.
 
     WHILE str IS NOT INITIAL.
 
-      FIND REGEX '(\d*)([\w|\s])(.*)' IN str SUBMATCHES reps char str.
+      FIND REGEX '(\d*)([\w|\s])(.*)' IN str SUBMATCHES reps char str  ##SUBRC_OK.
 
       IF reps IS NOT INITIAL.
         result = |{ result }{ repeat( val = char occ = reps ) }|.
