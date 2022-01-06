@@ -3,7 +3,7 @@ CLASS ltc_encode DEFINITION FINAL FOR TESTING
   RISK LEVEL HARMLESS.
 
   PRIVATE SECTION.
-    DATA cut TYPE REF TO zcl_rle_solution.
+    DATA cut TYPE REF TO zcl_rle.
 
     METHODS setup.
 
@@ -19,7 +19,7 @@ ENDCLASS.
 CLASS ltc_encode IMPLEMENTATION.
 
   METHOD setup.
-    cut = NEW zcl_rle_solution( ).
+    cut = NEW zcl_rle( ).
   ENDMETHOD.
 
   METHOD empty_string.
@@ -60,7 +60,7 @@ CLASS ltc_decode DEFINITION FINAL FOR TESTING
   RISK LEVEL HARMLESS.
 
   PRIVATE SECTION.
-    DATA cut TYPE REF TO zcl_rle_solution.
+    DATA cut TYPE REF TO zcl_rle.
 
     METHODS setup.
 
@@ -77,7 +77,7 @@ ENDCLASS.
 CLASS ltc_decode IMPLEMENTATION.
 
   METHOD setup.
-    cut = NEW zcl_rle_solution( ).
+    cut = NEW zcl_rle( ).
   ENDMETHOD.
 
   METHOD empty_string.

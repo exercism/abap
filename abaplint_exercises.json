@@ -327,7 +327,7 @@
       "ignorePatterns": [],
       "local": "^LCL_.+$",
       "exception": "^LCX_.+$",
-      "test": "^LTCL_.+$"
+      "test": "^LT.+$"
     },
     "local_testclass_location": true,
     "local_variable_names": false,
