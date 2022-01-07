@@ -36,4 +36,4 @@ jobs:
       - run: abaplint abaplint_exercises.json
       - run: abaplint abaplint_solutions.json
       - name: Run tests for all exercises
-        run: bin/test
+        run: sh ./bin/test
