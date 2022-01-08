@@ -4,18 +4,18 @@ CLASS zcl_matrix DEFINITION
   CREATE PUBLIC .
 
   PUBLIC SECTION.
-    TYPES integertab TYPE TABLE OF i.
+    TYPES integertab TYPE STANDARD TABLE OF i WITH EMPTY KEY.
     METHODS matrix_row
       IMPORTING
         string        TYPE string
         index         TYPE i
-      EXPORTING
+      RETURNING
         VALUE(result) TYPE integertab.
     METHODS matrix_column
       IMPORTING
         string        TYPE string
         index         TYPE i
-      EXPORTING
+      RETURNING
         VALUE(result) TYPE integertab.
   PROTECTED SECTION.
   PRIVATE SECTION.
