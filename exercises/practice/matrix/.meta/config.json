@@ -1,0 +1,12 @@
+{
+  "blurb": "Given a string representing a matrix of numbers, return the rows and columns of that matrix.",
+  "authors": ["marianfoo"],
+  "contributors": [
+  ],
+  "files": {
+    "solution": ["zcl_matrix.clas.abap"],
+    "test": ["zcl_matrix.clas.testclasses.abap"],
+    "example": [".meta/zcl_matrix.clas.abap"]
+  },
+  "source_url": "http://jumpstartlab.com"
+}

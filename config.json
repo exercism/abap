@@ -1,3 +1,35 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@marianfoo 
+exercism
+/
+abap
+Public
+Code
+Issues
+3
+Pull requests
+3
+Actions
+Projects
+Wiki
+Security
+Insights
+abap/config.json
+@marianfoo
+marianfoo New exercise: Matrix (#42)
+…
+Latest commit 166daed 1 minute ago
+ History
+ 6 contributors
+@larshp@marianfoo@g-back@mbtools@pokrakam@kytrinyx
+143 lines (143 sloc)  3.44 KB
+   
 {
   "language": "ABAP",
   "slug": "abap",
@@ -110,6 +142,14 @@
         "difficulty": 2
       },
       {
+        "slug": "run-length-encoding",
+        "name": "Run Length Encoding",
+        "uuid": "18479071-0e8a-4ba6-8a32-fb2ee40cc94c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "matrix",
         "name": "Matrix",
         "uuid": "55885cea-3c6a-4b76-b765-5e44210d7a3e",
@@ -140,3 +180,15 @@
     "used_for/financial_systems"
   ]
 }
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
