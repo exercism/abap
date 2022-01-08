@@ -1,35 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@marianfoo 
-exercism
-/
-abap
-Public
-Code
-Issues
-3
-Pull requests
-3
-Actions
-Projects
-Wiki
-Security
-Insights
-abap/config.json
-@marianfoo
-marianfoo New exercise: Matrix (#42)
-…
-Latest commit 166daed 1 minute ago
- History
- 6 contributors
-@larshp@marianfoo@g-back@mbtools@pokrakam@kytrinyx
-143 lines (143 sloc)  3.44 KB
-   
 {
   "language": "ABAP",
   "slug": "abap",
@@ -180,15 +148,3 @@ Latest commit 166daed 1 minute ago
     "used_for/financial_systems"
   ]
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
