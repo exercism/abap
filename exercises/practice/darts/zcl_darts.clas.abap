@@ -18,13 +18,7 @@ ENDCLASS.
 
 CLASS zcl_darts IMPLEMENTATION.
   METHOD score.
-    IF ( ( x * x ) + ( y * y ) ) <= 1.
-      result = 10.
-    ELSEIF ( ( x * x ) + ( y * y ) ) <= ( 5 * 5 ).
-      result = 5.
-    ELSEIF ( ( x * x ) + ( y * y ) ) <= ( 10 * 10 ).
-      result = 1.
-    ENDIF.
+    " add solution here
   ENDMETHOD.
 
 
