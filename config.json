@@ -117,6 +117,15 @@
         "prerequisites": [],
         "difficulty": 3
       }
+      ,
+      {
+        "slug": "matrix",
+        "name": "Matrix",
+        "uuid": "55885cea-3c6a-4b76-b765-5e44210d7a3e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      }
     ]
   },
   "concepts": [],
