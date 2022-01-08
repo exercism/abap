@@ -4,11 +4,10 @@ CLASS zcl_darts DEFINITION
   CREATE PUBLIC .
 
   PUBLIC SECTION.
-    TYPES packed TYPE p DECIMALS 2 LENGTH 10.
     METHODS score
       IMPORTING
-        x             TYPE packed
-        y             TYPE packed
+        x             TYPE f
+        y             TYPE f
       RETURNING
         VALUE(result) TYPE i.
   PROTECTED SECTION.
