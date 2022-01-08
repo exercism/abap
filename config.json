@@ -108,6 +108,22 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
+      },
+      {
+        "slug": "matrix",
+        "name": "Matrix",
+        "uuid": "55885cea-3c6a-4b76-b765-5e44210d7a3e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "scrabble-score",
+        "name": "Scrabble-score",
+        "uuid": "86e73de5-3f6a-4c65-b0d6-2070d1601bdf",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       }
     ]
   },
