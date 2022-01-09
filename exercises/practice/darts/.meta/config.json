@@ -1,0 +1,12 @@
+{
+  "blurb": "Write a function that returns the earned points in a single toss of a Darts game.",
+  "authors": ["marianfoo"],
+  "contributors": [
+  ],
+  "files": {
+    "solution": ["zcl_darts.clas.abap"],
+    "test": ["zcl_darts.clas.testclasses.abap"],
+    "example": [".meta/zcl_darts.clas.abap"]
+  },
+  "source": "Inspired by an exercise created by a professor Della Paolera in Argentina"
+}

@@ -46,6 +46,14 @@
         "difficulty": 1
       },
       {
+        "slug": "high-scores",
+        "name": "High-scores",
+        "uuid": "b6df2ca1-c5b4-4552-95e3-0a9c489a0a61",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "resistor-color",
         "name": "Resistor Color",
         "uuid": "978db3d3-0a13-4ca1-b75b-051e389bf171",
@@ -68,6 +76,13 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+        "slug": "kindergarten-garden",
+        "name": "Kindergarten Garden",
+        "uuid": "571dd0ad-8903-42d4-a57e-96e2d669dced",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
       },
       {
         "slug": "clock",
@@ -130,6 +145,22 @@
         "slug": "matrix",
         "name": "Matrix",
         "uuid": "55885cea-3c6a-4b76-b765-5e44210d7a3e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "prime-factors",
+        "name": "Prime-factors",
+        "uuid": "174e3905-92ad-49c9-ae58-118388db6778",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2        
+      },
+      {
+        "slug": "darts",
+        "name": "Darts",
+        "uuid": "770c3fea-f417-45e0-b285-c76e67698f08",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2

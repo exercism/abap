@@ -1,0 +1,12 @@
+{
+  "blurb": "Manage a player's High Score list.",
+  "authors": ["marianfoo"],
+  "contributors": [
+  ],
+  "files": {
+    "solution": ["zcl_high_scores.clas.abap"],
+    "test": ["zcl_high_scores.clas.testclasses.abap"],
+    "example": [".meta/zcl_high_scores.clas.abap"]
+  },
+  "source": "Tribute to the eighties' arcade game Frogger"
+}

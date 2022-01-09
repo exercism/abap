@@ -17,19 +17,41 @@
 
 # Example:
 # ./bin/test
+echo "Checking"
 
 # Verify the Concept Exercises
-for concept_exercise_dir in ./exercises/concept/*/; do
-    if [ -d $concept_exercise_dir ]; then
-        echo "Checking $(basename "${concept_exercise_dir}") exercise..."
-        # TODO: run command to verify that the exemplar solution passes the tests
-    fi
-done
+ for concept_exercise_dir in ./exercises/concept/*/; do
+     if [ -d $concept_exercise_dir ]; then
+         echo "Checking $(basename "${concept_exercise_dir}") exercise..."
+         # TODO: run command to verify that the exemplar solution passes the tests
+     fi
+ done
 
 # Verify the Practice Exercises
+exit_code=0
+
 for practice_exercise_dir in ./exercises/practice/*/; do
     if [ -d $practice_exercise_dir ]; then
         echo "Checking $(basename "${practice_exercise_dir}") exercise..."
-        # TODO: run command to verify that the example solution passes the tests
+        printf '{"version":1,"status":"pass"}' > $(realpath "${practice_exercise_dir}")/expected_results.json
+        results_file_path="$(realpath "${practice_exercise_dir}")/results.json"
+        expected_results_file_path="$(realpath "${practice_exercise_dir}")/expected_results.json"
+        cp $(realpath "${practice_exercise_dir}")/.meta/*.clas.abap $(realpath "${practice_exercise_dir}")
+        docker run \
+            --rm \
+            --network none \
+            --mount type=bind,src="$(realpath "${practice_exercise_dir}")",dst=/solution \
+            --mount type=bind,src="$(realpath "${practice_exercise_dir}")",dst=/output \
+            --tmpfs /tmp:rw \
+            exercism/abap-test-runner $(basename "${practice_exercise_dir}") "/solution" "/output"
+        errors="$(diff "${results_file_path}" "${expected_results_file_path}")"
+        printf "$errors"
+
+        if [ -z ${errors+x} ]; 
+            then echo "No Erros"; 
+            else exit_code=1; 
+        fi
     fi
 done
+
+exit ${exit_code}
