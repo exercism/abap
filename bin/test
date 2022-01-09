@@ -46,6 +46,7 @@ for practice_exercise_dir in ./exercises/practice/*/; do
             exercism/abap-test-runner $(basename "${practice_exercise_dir}") "/solution" "/output"
         errors="$(diff "${results_file_path}" "${expected_results_file_path}")"
         printf "$errors"
+        printf "sdfds"
 
         if [ -z ${errors+x} ];
             then echo "No Errors";
