@@ -29,7 +29,8 @@ CLASS zcl_isogram IMPLEMENTATION.
         CONTINUE.
       ENDIF.
 
-      IF line_exists( letters[ table_line = letter ] ).
+      READ TABLE letters TRANSPORTING NO FIELDS WITH KEY table_line = letter.
+      IF sy-subrc = 0.
         result = abap_false.
         RETURN.
       ENDIF.
