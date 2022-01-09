@@ -127,6 +127,14 @@
         "difficulty": 2
       },
       {
+        "slug": "prime-factors",
+        "name": "Prime-factors",
+        "uuid": "174e3905-92ad-49c9-ae58-118388db6778",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2        
+      },
+      {
         "slug": "darts",
         "name": "Darts",
         "uuid": "770c3fea-f417-45e0-b285-c76e67698f08",
