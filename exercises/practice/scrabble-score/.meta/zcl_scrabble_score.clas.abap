@@ -52,7 +52,9 @@ CLASS zcl_scrabble_score IMPLEMENTATION.
     DATA(offset) = 0.
     WHILE offset < strlen( input ).
       DATA(letter) = input+offset(1).
-      result = result + scoring_table[ letter = to_upper( letter ) ]-value.
+      DATA(letter_upper) = to_upper( letter ).
+      READ TABLE scoring_table WITH KEY letter = letter_upper INTO DATA(scoring_line).
+      result = result + scoring_line-value.
       offset = offset + 1.
     ENDWHILE.
 
