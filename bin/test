@@ -27,8 +27,6 @@ echo "Checking"
      fi
  done
 
-docker pull exercism/abap-test-runner
-
 # Verify the Practice Exercises
 exit_code=0
 
