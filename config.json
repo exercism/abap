@@ -30,6 +30,14 @@
         "difficulty": 1
       },
       {
+        "slug": "scrabble-score",
+        "name": "Scrabble-score",
+        "uuid": "86e73de5-3f6a-4c65-b0d6-2070d1601bdf",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "two-fer",
         "name": "Two Fer",
         "uuid": "4606da73-f376-409e-8526-f95bec03643b",
@@ -132,8 +140,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 3
-      }
-      ,
+      },
       {
         "slug": "matrix",
         "name": "Matrix",
