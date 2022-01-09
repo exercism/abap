@@ -2,8 +2,8 @@
 
 # Synopsis:
 # Test the track's exercises.
-# 
-# At a minimum, this file must check if the example/exemplar solution of each 
+#
+# At a minimum, this file must check if the example/exemplar solution of each
 # Practice/Concept Exercise passes the exercise's tests.
 #
 # To check this, you usually have to (temporarily) replace the exercise's solution files
@@ -37,7 +37,7 @@ for practice_exercise_dir in ./exercises/practice/*/; do
         results_file_path="$(realpath "${practice_exercise_dir}")/results.json"
         expected_results_file_path="$(realpath "${practice_exercise_dir}")/expected_results.json"
         cp $(realpath "${practice_exercise_dir}")/.meta/*.clas.abap $(realpath "${practice_exercise_dir}")
-        docker run \
+        /usr/bin/time -f 'Runtime: %e seconds' docker run \
             --rm \
             --network none \
             --mount type=bind,src="$(realpath "${practice_exercise_dir}")",dst=/solution \
@@ -47,9 +47,9 @@ for practice_exercise_dir in ./exercises/practice/*/; do
         errors="$(diff "${results_file_path}" "${expected_results_file_path}")"
         printf "$errors"
 
-        if [ -z ${errors+x} ]; 
-            then echo "No Erros"; 
-            else exit_code=1; 
+        if [ -z ${errors} ];
+            then printf "No Errors\n\n";
+            else exit_code=1;
         fi
     fi
 done
