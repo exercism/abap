@@ -62,6 +62,14 @@
         "difficulty": 1
       },
       {
+        "slug": "grains",
+        "name": "Grains",
+        "uuid": "ec0e08bc-c3c1-4e3e-9f62-29a4740e22dc",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "clock",
         "name": "Clock",
         "uuid": "ac4e5fb1-1e7c-461d-b2df-1abfd88d8c8a",
@@ -125,14 +133,6 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
-      },
-      {
-        "slug": "grains",
-        "name": "Grains",
-        "uuid": "ec0e08bc-c3c1-4e3e-9f62-29a4740e22dc",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 1
       }
     ]
   },
