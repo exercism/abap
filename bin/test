@@ -48,7 +48,7 @@ for practice_exercise_dir in ./exercises/practice/*/; do
         printf "$errors"
 
         if [ -z ${errors} ];
-            then printf "No Errors\n";
+            then printf "No Errors\n\n";
             else exit_code=1;
         fi
     fi
