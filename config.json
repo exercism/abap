@@ -70,6 +70,14 @@
         "difficulty": 1
       },
       {
+        "slug": "kindergarten-garden",
+        "name": "Kindergarten Garden",
+        "uuid": "571dd0ad-8903-42d4-a57e-96e2d669dced",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "clock",
         "name": "Clock",
         "uuid": "ac4e5fb1-1e7c-461d-b2df-1abfd88d8c8a",

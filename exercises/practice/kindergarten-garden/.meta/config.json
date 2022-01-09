@@ -1,0 +1,13 @@
+{
+  "blurb": "Given a diagram, determine which plants each child in the kindergarten class is responsible for.",
+  "authors": ["marianfoo"],
+  "contributors": [
+  ],
+  "files": {
+    "solution": ["zcl_kindergarten_garden.clas.abap"],
+    "test": ["zcl_kindergarten_garden.clas.testclasses.abap"],
+    "example": [".meta/zcl_kindergarten_garden.clas.abap"]
+  },
+  "source": "Random musings during airplane trip.",
+  "source_url": "http://jumpstartlab.com"
+}
