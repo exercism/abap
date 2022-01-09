@@ -39,7 +39,6 @@ for practice_exercise_dir in ./exercises/practice/*/; do
         cp $(realpath "${practice_exercise_dir}")/.meta/*.clas.abap $(realpath "${practice_exercise_dir}")
         /usr/bin/time -f 'Runtime: %e seconds' docker run \
             --rm \
-            --network none \
             --mount type=bind,src="$(realpath "${practice_exercise_dir}")",dst=/solution \
             --mount type=bind,src="$(realpath "${practice_exercise_dir}")",dst=/output \
             --tmpfs /tmp:rw \
