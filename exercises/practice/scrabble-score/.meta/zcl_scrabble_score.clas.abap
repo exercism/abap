@@ -54,7 +54,9 @@ CLASS zcl_scrabble_score IMPLEMENTATION.
       DATA(letter) = input+offset(1).
       DATA(letter_upper) = to_upper( letter ).
       READ TABLE scoring_table WITH KEY letter = letter_upper INTO DATA(scoring_line).
-      result = result + scoring_line-value.
+      IF sy-subrc = 0.
+        result = result + scoring_line-value.
+      ENDIF.
       offset = offset + 1.
     ENDWHILE.
 
