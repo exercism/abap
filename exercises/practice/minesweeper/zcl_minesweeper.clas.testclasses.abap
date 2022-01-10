@@ -26,7 +26,7 @@ CLASS ltcl_minesweeper IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD no_rows.
-    DATA(act_input)  = VALUE string_table( ).
+    DATA(act_input) = VALUE string_table( ).
     DATA(exp_result) = VALUE string_table( ).
     cl_abap_unit_assert=>assert_equals(
         act = cut->annotate( input = act_input )
@@ -34,7 +34,7 @@ CLASS ltcl_minesweeper IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD no_columns.
-    DATA(act_input)  = VALUE string_table( ( || ) ).
+    DATA(act_input) = VALUE string_table( ( || ) ).
     DATA(exp_result) = VALUE string_table( ( || ) ).
     cl_abap_unit_assert=>assert_equals(
         act = cut->annotate( input = act_input )
@@ -42,7 +42,7 @@ CLASS ltcl_minesweeper IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD no_mines.
-    DATA(act_input)  = VALUE string_table( ( |   | ) ( |   | ) ( |   | ) ).
+    DATA(act_input) = VALUE string_table( ( |   | ) ( |   | ) ( |   | ) ).
     DATA(exp_result) = VALUE string_table( ( |   | ) ( |   | ) ( |   | ) ).
     cl_abap_unit_assert=>assert_equals(
         act = cut->annotate( input = act_input )
@@ -50,7 +50,7 @@ CLASS ltcl_minesweeper IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD minefield_with_only_mines.
-    DATA(act_input)  = VALUE string_table( ( |***| ) ( |***| ) ( |***| ) ).
+    DATA(act_input) = VALUE string_table( ( |***| ) ( |***| ) ( |***| ) ).
     DATA(exp_result) = VALUE string_table( ( |***| ) ( |***| ) ( |***| ) ).
     cl_abap_unit_assert=>assert_equals(
         act = cut->annotate( input = act_input )
@@ -58,7 +58,7 @@ CLASS ltcl_minesweeper IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD mine_surrounded_by_spaces.
-    DATA(act_input)  = VALUE string_table( ( |   | ) ( | * | ) ( |   | ) ).
+    DATA(act_input) = VALUE string_table( ( |   | ) ( | * | ) ( |   | ) ).
     DATA(exp_result) = VALUE string_table( ( |111| ) ( |1*1| ) ( |111| ) ).
     cl_abap_unit_assert=>assert_equals(
         act = cut->annotate( input = act_input )
@@ -66,7 +66,7 @@ CLASS ltcl_minesweeper IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD space_surrounded_by_mines.
-    DATA(act_input)  = VALUE string_table( ( |***| ) ( |* *| ) ( |***| ) ).
+    DATA(act_input) = VALUE string_table( ( |***| ) ( |* *| ) ( |***| ) ).
     DATA(exp_result) = VALUE string_table( ( |***| ) ( |*8*| ) ( |***| ) ).
     cl_abap_unit_assert=>assert_equals(
         act = cut->annotate( input = act_input )
@@ -74,7 +74,7 @@ CLASS ltcl_minesweeper IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD horizontal_line.
-    DATA(act_input)  = VALUE string_table( ( | * * | ) ).
+    DATA(act_input) = VALUE string_table( ( | * * | ) ).
     DATA(exp_result) = VALUE string_table( ( |1*2*1| ) ).
     cl_abap_unit_assert=>assert_equals(
         act = cut->annotate( input = act_input )
@@ -82,7 +82,7 @@ CLASS ltcl_minesweeper IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD horizontal_line_mines_at_edges.
-    DATA(act_input)  = VALUE string_table( ( |*   *| ) ).
+    DATA(act_input) = VALUE string_table( ( |*   *| ) ).
     DATA(exp_result) = VALUE string_table( ( |*1 1*| ) ).
     cl_abap_unit_assert=>assert_equals(
         act = cut->annotate( input = act_input )
@@ -90,7 +90,7 @@ CLASS ltcl_minesweeper IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD vertical_line.
-    DATA(act_input)  = VALUE string_table( ( | | ) ( |*| ) ( | | ) ( |*| ) ( | | ) ).
+    DATA(act_input) = VALUE string_table( ( | | ) ( |*| ) ( | | ) ( |*| ) ( | | ) ).
     DATA(exp_result) = VALUE string_table( ( |1| ) ( |*| ) ( |2| ) ( |*| ) ( |1| ) ).
     cl_abap_unit_assert=>assert_equals(
         act = cut->annotate( input = act_input )
@@ -98,7 +98,7 @@ CLASS ltcl_minesweeper IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD vertical_line_mines_at_edges.
-    DATA(act_input)  = VALUE string_table( ( |*| ) ( | | ) ( | | ) ( | | ) ( |*| ) ).
+    DATA(act_input) = VALUE string_table( ( |*| ) ( | | ) ( | | ) ( | | ) ( |*| ) ).
     DATA(exp_result) = VALUE string_table( ( |*| ) ( |1| ) ( | | ) ( |1| ) ( |*| ) ).
     cl_abap_unit_assert=>assert_equals(
         act = cut->annotate( input = act_input )
@@ -106,7 +106,7 @@ CLASS ltcl_minesweeper IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD cross.
-    DATA(act_input)  = VALUE string_table( ( |  *  | ) ( |  *  | ) ( |*****| ) ( |  *  | ) ( |  *  | ) ).
+    DATA(act_input) = VALUE string_table( ( |  *  | ) ( |  *  | ) ( |*****| ) ( |  *  | ) ( |  *  | ) ).
     DATA(exp_result) = VALUE string_table( ( | 2*2 | ) ( |25*52| ) ( |*****| ) ( |25*52| ) ( | 2*2 | ) ).
     cl_abap_unit_assert=>assert_equals(
         act = cut->annotate( input = act_input )
@@ -114,7 +114,7 @@ CLASS ltcl_minesweeper IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD large_minefield.
-    DATA(act_input)  =
+    DATA(act_input) =
       VALUE string_table( ( | *  * | ) ( |  *   | ) ( |    * | ) ( |   * *| ) ( | *  * | ) ( |      | ) ).
     DATA(exp_result) =
       VALUE string_table( ( |1*22*1| ) ( |12*322| ) ( | 123*2| ) ( |112*4*| ) ( |1*22*2| ) ( |111111| ) ).
