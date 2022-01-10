@@ -262,7 +262,7 @@
     "identical_contents": true,
     "identical_descriptions": true,
     "identical_form_names": true,
-    "if_in_if": true,
+    "if_in_if": false,
     "implement_methods": true,
     "in_statement_indentation": {
       "exclude": [],
@@ -345,11 +345,7 @@
     },
     "msag_consistency": true,
     "names_no_dash": true,
-    "nesting": {
-      "exclude": [],
-      "severity": "Error",
-      "depth": 5
-    },
+    "nesting": false,
     "newline_between_methods": {
       "exclude": [],
       "severity": "Error",
