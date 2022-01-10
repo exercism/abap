@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+ <asx:values>
+  <DATA>
+   <MASTER_LANGUAGE>E</MASTER_LANGUAGE>
+   <STARTING_FOLDER>/exercises/practice/</STARTING_FOLDER>
+   <FOLDER_LOGIC>PREFIX</FOLDER_LOGIC>
+   <IGNORE>
+    <item>/.docs/*</item>
+    <item>/.meta/*</item>
+   </IGNORE>
+  </DATA>
+ </asx:values>
+</asx:abap>
