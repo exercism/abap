@@ -166,6 +166,15 @@
         "difficulty": 2        
       },
       {
+        "slug": "beer-song",
+        "name": "Beer Song",
+        "uuid": "6573f168-d8fc-4ccf-a864-1a61f432fae1",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5,
+        "topics": ["conditionals", "loops", "strings"]
+      },
+      {
         "slug": "darts",
         "name": "Darts",
         "uuid": "770c3fea-f417-45e0-b285-c76e67698f08",
