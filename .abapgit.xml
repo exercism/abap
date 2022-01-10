@@ -6,8 +6,8 @@
    <STARTING_FOLDER>/exercises/practice/</STARTING_FOLDER>
    <FOLDER_LOGIC>PREFIX</FOLDER_LOGIC>
    <IGNORE>
-    <item>/.docs/*</item>
-    <item>/.meta/*</item>
+    <item>*/.docs/*</item>
+    <item>*/.meta/*</item>
    </IGNORE>
   </DATA>
  </asx:values>
