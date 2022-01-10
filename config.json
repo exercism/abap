@@ -158,6 +158,14 @@
         "difficulty": 2        
       },
       {
+        "slug": "minesweeper",
+        "name": "Minesweeper",
+        "uuid": "c8f6abc0-41a4-4104-8050-2df35f0d469a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2        
+      },
+      {
         "slug": "darts",
         "name": "Darts",
         "uuid": "770c3fea-f417-45e0-b285-c76e67698f08",
