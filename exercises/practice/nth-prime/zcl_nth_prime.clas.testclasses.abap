@@ -43,8 +43,8 @@ CLASS ltcl_nth_prime IMPLEMENTATION.
   "big prime
   METHOD test_big_prime.
     cl_abap_unit_assert=>assert_equals(
-      act = cut->prime( 10001 )
-      exp = 104743 ).
+      act = cut->prime( 36 )
+      exp = 151 ).
   ENDMETHOD.
 
   "there is no zeroth prime
