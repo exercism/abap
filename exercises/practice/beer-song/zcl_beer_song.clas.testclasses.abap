@@ -100,6 +100,6 @@ CLASS ltcl_beer_song IMPLEMENTATION.
   METHOD all_verses.
     cl_abap_unit_assert=>assert_equals(
       act = lines( cut->recite( initial_bottles_count = 99 take_down_count = 100 ) )
-      exp = 2991 ).
+      exp = 299 ).
   ENDMETHOD.
 ENDCLASS.
