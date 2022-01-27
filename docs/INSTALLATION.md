@@ -1,6 +1,6 @@
 # Installation
 
-Exercism let's you program and test your code ABAP directly in your browser. No additional installation is required. However, if you prefer to code and test on your own system, you can get an ABAP trial system.
+Exercism let's you program and test your ABAP code directly in your browser. No additional installation is required. However, if you prefer to code and test on your own system, you can get an ABAP trial system.
 
 Of course, your employer might be running SAP. Please check with your IT department if and how you can get access to an ABAP development sandbox.
 
