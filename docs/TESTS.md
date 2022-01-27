@@ -8,7 +8,7 @@ Once you have code you want to test, select "Run Tests". This will trigger the e
 
 ### Troubleshooting
 
-Behind the scenes, the your ABAP code is compiled and executed using the so-called [abaplint transpiler](https://github.com/abaplint/transpiler). This is still a relatively new solution. If you have any problems you can't resolve, please create an issue on [GitHub](https://github.com/abaplint/transpiler/issues).
+Behind the scenes, your ABAP code is compiled and executed using the so-called [abaplint transpiler](https://github.com/abaplint/transpiler). This is still a relatively new solution. If you have any problems you can't resolve, please create an issue on [GitHub](https://github.com/abaplint/transpiler/issues).
 
 ## On Your Own System
 
