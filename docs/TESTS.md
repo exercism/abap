@@ -16,6 +16,6 @@ Start your ABAP Development Tools (or transaction SE24 if you have an older syst
 
 ### Troubleshooting
 
-When codeing and testing in your own system, the standard SAP ABAP compiler and execution is used. If your tests fail, it's likely related to your own code. Take another look. 
+When coding and testing in your own system, the standard SAP ABAP compiler and execution is used. If your tests fail, it's likely related to your own code. Take another look. 
 
 If your code passes the unit tests successfully, cut & paste your class implementation into the exercise on Exercism and select "Run Tests". The tests should pass there as well, of course. If it does not, see the troubleshooting section above. 
