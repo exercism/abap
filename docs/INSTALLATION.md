@@ -4,7 +4,7 @@ Exercism let's you program and test your ABAP code directly in your browser. No 
 
 Of course, your employer might be running SAP. Please check with your IT department if and how you can get access to an ABAP development sandbox.
 
-## Which version to chose?
+## Which version to choose?
 
 We encourage to use a current release of the ABAP platform with active support. Currently this is **ABAP 7.5 and higher**. Details on current releases and their timelines can be found at [ABAP Development Center](https://developers.sap.com/topics/abap-platform.html).
 
