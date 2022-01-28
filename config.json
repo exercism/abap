@@ -110,6 +110,14 @@
         "difficulty": 4
       },
       {
+        "slug": "nth-prime",
+        "name": "Nth-prime",
+        "uuid": "f43a798e-7f77-41ca-a5d0-c63c24209c18",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "isogram",
         "name": "Isogram",
         "uuid": "fc284dd9-db92-4280-ba4c-74d91cdf8f84",
