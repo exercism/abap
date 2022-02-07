@@ -44,7 +44,7 @@ for practice_exercise_dir in ./exercises/practice/*/; do
             --mount type=bind,src="$(realpath "${practice_exercise_dir}")",dst=/output \
             --tmpfs /tmp:rw \
             exercism/abap-test-runner $(basename "${practice_exercise_dir}") "/solution" "/output"
-        errors="$(diff "${results_file_path}" "${expected_results_file_path}")"
+        errors="$(cat "${results_file_path}" | grep "{\"version\":2,\"status\":\"pass\"" )"
         printf "$errors"
 
         if [ -z ${errors} ];
