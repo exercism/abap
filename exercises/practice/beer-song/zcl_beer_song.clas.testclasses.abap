@@ -45,7 +45,7 @@ CLASS ltcl_beer_song IMPLEMENTATION.
 
   METHOD verse_with_2_bottles.
     DATA(exp_result) = VALUE string_table(
-        ( |2 bottles of beer on the wall, 2 bottles of beer.abc| )
+        ( |2 bottles of beer on the wall, 2 bottles of beer.| )
         ( |Take one down and pass it around, 1 bottle of beer on the wall.| ) ).
     cl_abap_unit_assert=>assert_equals(
       act = cut->recite( initial_bottles_count = 2 take_down_count = 1 )
