@@ -49,10 +49,10 @@ for practice_exercise_dir in ./exercises/practice/*/; do
 
         if [ -z ${errors} ];
             then
-                printf "Error\n\n";
+                printf "\nError\n\n";
                 exit_code=1;
             else
-                printf "No Errors\n\n";
+                printf "\nNo Errors\n\n";
         fi
     fi
 done
