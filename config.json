@@ -200,6 +200,16 @@
       "content": "ABAP is a modern and constantly evolving language supported by SAP."
     },
     {
+      "icon": "fun",
+      "title": "Fun",
+      "content": "Always a new or old feature to discover."
+    },
+    {
+      "icon": "easy",
+      "title": "Easy",
+      "content": "Statements are easily readable and understandable."
+    },    
+    {
       "icon": "productive",
       "title": "Productive",
       "content": "Easily create data structures and interact with database contents."
