@@ -9,3 +9,5 @@ You can implement an exercise in your own SAP system. Follow these steps:
 5. Maintain the test classes and copy the code from Exercism to the test class
 
 Now you can complete the implementation of the class and run the unit test to see if your solution works properly.
+
+Note: This package setup will allow you to backup all your work using [abapGit](https://abapgit.org) by creating a repo for package `$EXERCISM`.
