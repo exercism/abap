@@ -193,7 +193,38 @@
     ]
   },
   "concepts": [],
-  "key_features": [],
+  "key_features": [
+    {
+      "icon": "evolving",
+      "title": "Evolving",
+      "content": "ABAP is a modern and constantly evolving language supported by SAP."
+    },
+    {
+      "icon": "fun",
+      "title": "Fun",
+      "content": "Always a new or old feature to discover."
+    },
+    {
+      "icon": "easy",
+      "title": "Easy",
+      "content": "Statements are easily readable and understandable."
+    },    
+    {
+      "icon": "productive",
+      "title": "Productive",
+      "content": "Easily create data structures and interact with database contents."
+    },
+    {
+      "icon": "statically-typed",
+      "title": "Typed",
+      "content": "Static types linked to database schemas."
+    },
+    {
+      "icon": "stable",
+      "title": "Reliability",
+      "content": "Stable functionality to run the core of the worlds largest businesses."
+    }
+  ],
   "tags": [
     "paradigm/object_oriented",
     "paradigm/procedural",
