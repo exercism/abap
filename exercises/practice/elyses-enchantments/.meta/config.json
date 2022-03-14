@@ -1,0 +1,12 @@
+{
+  "blurb": "Implement a clock that handles times without dates.",
+  "authors": ["mbtools"],
+  "contributors": [],
+  "files": {
+    "solution": ["zcl_clock.clas.abap"],
+    "test": ["zcl_clock.clas.testclasses.abap"],
+    "example": [".meta/zcl_clock.clas.abap"]
+  },
+  "source": "Pairing session with Erin Drummond",
+  "source_url": "https://twitter.com/ebdrummond"  
+}

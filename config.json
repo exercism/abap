@@ -189,6 +189,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
+      },
+      {
+        "slug": "elyses-enchantments",
+        "name": "Elyses Enchantments",
+        "uuid": "dfddaddc-4749-4f93-b539-8643d48523fe",
+        "practices": [],
+        "prerequisites": [],
+        "status": "beta"
       }
     ]
   },
