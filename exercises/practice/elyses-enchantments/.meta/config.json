@@ -1,12 +1,10 @@
 {
-  "blurb": "Implement a clock that handles times without dates.",
-  "authors": ["mbtools"],
+  "blurb": "Help Elyse with her Enchantments and learn about internal tables in the process.",
+  "authors": ["pokrakam"],
   "contributors": [],
   "files": {
-    "solution": ["zcl_clock.clas.abap"],
-    "test": ["zcl_clock.clas.testclasses.abap"],
-    "example": [".meta/zcl_clock.clas.abap"]
-  },
-  "source": "Pairing session with Erin Drummond",
-  "source_url": "https://twitter.com/ebdrummond"  
+    "solution": ["zcl_elyses_enchantments.clas.abap"],
+    "test": ["zcl_elyses_enchantments.clas.testclasses.abap"],
+    "example": [".meta/zcl_elyses_enchantments.clas.abap"]
+  }
 }
