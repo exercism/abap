@@ -31,9 +31,7 @@ CLASS ltc_pick_card DEFINITION FINAL FOR TESTING
     METHODS setup.
 
     METHODS pick_first_card FOR TESTING RAISING cx_static_check.
-
     METHODS pick_middle_card FOR TESTING RAISING cx_static_check.
-
     METHODS pick_last_card FOR TESTING RAISING cx_static_check.
 
 ENDCLASS.
@@ -53,12 +51,14 @@ CLASS ltc_pick_card IMPLEMENTATION.
       exp = 1 ).
   ENDMETHOD.
 
+
   METHOD pick_middle_card.
     cl_abap_unit_assert=>assert_equals(
       act = cut->get_item( stack    = stack( `4 5 6` )
                            position = 2 )
       exp = 5 ).
   ENDMETHOD.
+
 
   METHOD pick_last_card.
     cl_abap_unit_assert=>assert_equals(
@@ -111,6 +111,7 @@ CLASS ltc_sleight_of_hand IMPLEMENTATION.
       exp = stack( `2 5 2` ) ).
   ENDMETHOD.
 
+
   METHOD replace_last_card.
     cl_abap_unit_assert=>assert_equals(
       act = cut->set_item( stack       = stack( `7 7 6` )
@@ -144,12 +145,14 @@ CLASS ltc_add_cards_on_top IMPLEMENTATION.
     cut = NEW #( ).
   ENDMETHOD.
 
+
   METHOD add_second_card.
     cl_abap_unit_assert=>assert_equals(
       act = cut->insert_item_at_top( stack    = stack( `1` )
                                      new_card = 5 )
       exp = stack( `1 5` ) ).
   ENDMETHOD.
+
 
   METHOD add_third_card.
     cl_abap_unit_assert=>assert_equals(
@@ -158,12 +161,14 @@ CLASS ltc_add_cards_on_top IMPLEMENTATION.
       exp = stack( `1 5 9` ) ).
   ENDMETHOD.
 
+
   METHOD add_fourth_card.
     cl_abap_unit_assert=>assert_equals(
       act = cut->insert_item_at_top( stack    = stack( `1 5 9` )
                                      new_card = 2 )
       exp = stack( `1 5 9 2` ) ).
   ENDMETHOD.
+
 
   METHOD add_different_fourth_card.
     cl_abap_unit_assert=>assert_equals(
@@ -205,12 +210,14 @@ CLASS ltc_make_cards_disappear IMPLEMENTATION.
       exp = stack( `2 3 4` ) ).
   ENDMETHOD.
 
+
   METHOD remove_top_card.
     cl_abap_unit_assert=>assert_equals(
       act = cut->remove_item( stack    = stack( `1 2 3 4` )
                               position = 4 )
       exp = stack( `1 2 3` ) ).
   ENDMETHOD.
+
 
   METHOD remove_second_card.
     cl_abap_unit_assert=>assert_equals(
@@ -219,11 +226,14 @@ CLASS ltc_make_cards_disappear IMPLEMENTATION.
       exp = stack( `1 3 4` ) ).
   ENDMETHOD.
 
+
   METHOD remove_the_middle_two_cards.
     DATA(stack) = stack( `1 2 3 4` ).
 
-    stack = cut->remove_item( stack = stack position = 2 ).
-    stack = cut->remove_item( stack = stack position = 2 ).
+    stack = cut->remove_item( stack    = stack
+                              position = 2 ).
+    stack = cut->remove_item( stack    = stack
+                              position = 2 ).
 
     cl_abap_unit_assert=>assert_equals(
       act = stack
@@ -255,17 +265,20 @@ CLASS ltc_make_top_card_disappear IMPLEMENTATION.
     cut = NEW #( ).
   ENDMETHOD.
 
+
   METHOD remove_only_card.
     cl_abap_unit_assert=>assert_equals(
       act = cut->remove_item_from_top( stack( `1` ) )
       exp = stack( `` ) ).
   ENDMETHOD.
 
+
   METHOD remove_a_card.
     cl_abap_unit_assert=>assert_equals(
       act = cut->remove_item_from_top( stack( `1 2 3` ) )
       exp = stack( `1 2` ) ).
   ENDMETHOD.
+
 
   METHOD remove_two_cards.
     DATA(stack) = stack( `1 2 3` ).
@@ -302,6 +315,7 @@ CLASS ltc_make_bottom_card_disappear IMPLEMENTATION.
   METHOD setup.
     cut = NEW #( ).
   ENDMETHOD.
+
 
   METHOD remove_only_card.
     cl_abap_unit_assert=>assert_equals(
@@ -402,6 +416,7 @@ CLASS ltc_insert_card_at_bottom IMPLEMENTATION.
   ENDMETHOD.
 
 ENDCLASS.
+
 
 CLASS ltc_check_length DEFINITION FINAL FOR TESTING
   DURATION SHORT
