@@ -31,7 +31,7 @@
       },
       {
         "slug": "scrabble-score",
-        "name": "Scrabble-score",
+        "name": "Scrabble Score",
         "uuid": "86e73de5-3f6a-4c65-b0d6-2070d1601bdf",
         "practices": [],
         "prerequisites": [],
@@ -55,7 +55,7 @@
       },
       {
         "slug": "high-scores",
-        "name": "High-scores",
+        "name": "High Scores",
         "uuid": "b6df2ca1-c5b4-4552-95e3-0a9c489a0a61",
         "practices": [],
         "prerequisites": [],
@@ -111,7 +111,7 @@
       },
       {
         "slug": "nth-prime",
-        "name": "Nth-prime",
+        "name": "Nth Prime",
         "uuid": "f43a798e-7f77-41ca-a5d0-c63c24209c18",
         "practices": [],
         "prerequisites": [],
@@ -159,7 +159,7 @@
       },
       {
         "slug": "prime-factors",
-        "name": "Prime-factors",
+        "name": "Prime Factors",
         "uuid": "174e3905-92ad-49c9-ae58-118388db6778",
         "practices": [],
         "prerequisites": [],
