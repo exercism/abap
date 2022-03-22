@@ -9,7 +9,7 @@
     "analyzer": false
   },
   "test_runner": {
-    "average_run_time": 19.0
+    "average_run_time": 9.0
   },
   "blurb": "ABAP is a high level programming language created by SAP",
   "version": 3,
@@ -110,6 +110,14 @@
         "difficulty": 4
       },
       {
+        "slug": "nth-prime",
+        "name": "Nth-prime",
+        "uuid": "f43a798e-7f77-41ca-a5d0-c63c24209c18",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "isogram",
         "name": "Isogram",
         "uuid": "fc284dd9-db92-4280-ba4c-74d91cdf8f84",
@@ -166,6 +174,15 @@
         "difficulty": 2        
       },
       {
+        "slug": "beer-song",
+        "name": "Beer Song",
+        "uuid": "6573f168-d8fc-4ccf-a864-1a61f432fae1",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5,
+        "topics": ["conditionals", "loops", "strings"]
+      },
+      {
         "slug": "darts",
         "name": "Darts",
         "uuid": "770c3fea-f417-45e0-b285-c76e67698f08",
@@ -176,7 +193,38 @@
     ]
   },
   "concepts": [],
-  "key_features": [],
+  "key_features": [
+    {
+      "icon": "evolving",
+      "title": "Evolving",
+      "content": "ABAP is a modern and constantly evolving language supported by SAP."
+    },
+    {
+      "icon": "fun",
+      "title": "Fun",
+      "content": "Always a new or old feature to discover."
+    },
+    {
+      "icon": "easy",
+      "title": "Easy",
+      "content": "Statements are easily readable and understandable."
+    },    
+    {
+      "icon": "productive",
+      "title": "Productive",
+      "content": "Easily create data structures and interact with database contents."
+    },
+    {
+      "icon": "statically-typed",
+      "title": "Typed",
+      "content": "Static types linked to database schemas."
+    },
+    {
+      "icon": "stable",
+      "title": "Reliability",
+      "content": "Stable functionality to run the core of the worlds largest businesses."
+    }
+  ],
   "tags": [
     "paradigm/object_oriented",
     "paradigm/procedural",

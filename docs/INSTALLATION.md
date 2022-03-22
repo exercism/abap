@@ -1,15 +1,15 @@
 # Installation
 
-<!-- TODO: write document
+Exercism let's you program and test your ABAP code directly in your browser. No additional installation is required. However, if you prefer to code and test on your own system, you can get an ABAP trial system.
 
-  This document should describe what the student needs to install
-  to allow working on the track on their local system using the CLI.
+Of course, your employer might be running SAP. Please check with your IT department if and how you can get access to an ABAP development sandbox.
 
-  You can include the installation instructions in this document, but
-  usually it is better to link to a resource with the official installation
-  instructions, to prevent the instructions from becoming outdated.
+## Which version to choose?
 
-  The contents of this document are displayed on the track's documentation
-  page at `https://exercism.org/docs/tracks/<track>/installation`.
+We encourage to use a current release of the ABAP platform with active support. Currently this is **ABAP 7.5 and higher**. Details on current releases and their timelines can be found at [ABAP Development Center](https://developers.sap.com/topics/abap-platform.html).
 
-  See https://exercism.org/docs/building/tracks/docs for more information. -->
+## What to install?
+
+We recommend using the most recent [ABAP Platform Developer Edition on SAP HANA](https://developers.sap.com/trials-downloads.html?search=abap+platform). It's based on ABAP 7.54. You will need to install the SAP ABAP system (provided as a [docker image](https://hub.docker.com/_/sap-abap-trial)) and SAP GUI either for Windows or for Java depending on your local operating system.
+
+For more details, see this [SAP Community](https://blogs.sap.com/2021/02/15/sap-abap-platform-1909-developer-edition-available-soon/) blog.
