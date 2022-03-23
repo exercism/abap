@@ -67,16 +67,14 @@ CLASS zcl_elyses_enchantments IMPLEMENTATION.
 
   METHOD set_item.
 
-    " abaplint issue #2452, gotta go the old-old-fashioned way:
+    result = stack.
 
-    CLEAR result.
-    LOOP AT stack INTO DATA(card).
-      IF sy-tabix = position.
-        APPEND replacement TO result.
-      ELSE.
-        APPEND card TO result.
-      ENDIF.
-    ENDLOOP.
+    " abaplint issue #2452, can't do: result[ position ] = replacement.
+
+    READ TABLE result INDEX position ASSIGNING FIELD-SYMBOL(<card>).
+    IF <card> IS ASSIGNED.
+      <card> = replacement.
+    ENDIF.
 
   ENDMETHOD.
 
@@ -114,6 +112,5 @@ CLASS zcl_elyses_enchantments IMPLEMENTATION.
     result = stack.
     DELETE result INDEX lines( stack ).
   ENDMETHOD.
-
 
 ENDCLASS.
