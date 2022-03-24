@@ -1,7 +1,7 @@
 {
   "language": "ABAP",
   "slug": "abap",
-  "active": false,
+  "active": true,
   "status": {
     "concept_exercises": false,
     "test_runner": true,
@@ -163,7 +163,7 @@
         "uuid": "174e3905-92ad-49c9-ae58-118388db6778",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2        
+        "difficulty": 2
       },
       {
         "slug": "minesweeper",
@@ -171,7 +171,7 @@
         "uuid": "c8f6abc0-41a4-4104-8050-2df35f0d469a",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2        
+        "difficulty": 2
       },
       {
         "slug": "beer-song",
@@ -208,7 +208,7 @@
       "icon": "easy",
       "title": "Easy",
       "content": "Statements are easily readable and understandable."
-    },    
+    },
     {
       "icon": "productive",
       "title": "Productive",
