@@ -66,16 +66,8 @@ CLASS zcl_elyses_enchantments IMPLEMENTATION.
 
 
   METHOD set_item.
-
     result = stack.
-
-    " abaplint issue #2452, can't do: result[ position ] = replacement.
-
-    READ TABLE result INDEX position ASSIGNING FIELD-SYMBOL(<card>).
-    IF <card> IS ASSIGNED.
-      <card> = replacement.
-    ENDIF.
-
+    result[ position ] = replacement.
   ENDMETHOD.
 
 
