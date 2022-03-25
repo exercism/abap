@@ -12,10 +12,20 @@ Behind the scenes, your ABAP code is compiled and executed using the so-called [
 
 ## On Your Own System
 
-Start your ABAP Development Tools (or transaction SE24 if you have an older system) and create a new ABAP class named like the class in the exercise. Implement the class and implement the test class as well by copying the test code from the Exercism website. You can then run the unit tests locally. 
+### Complete track
 
-### Troubleshooting
+The easiest way to get started using your own system for practicing is to clone this repository using [abapGit](https://github.com/abapGit/abapGit). This will create the stubs and test classes for all exercises that are currently available.
+
+### Individual exercises
+
+Start your ABAP Development Tools (or transactions `SE24` or `SE80` if you have an older system) and create a new ABAP class named like the class in the exercise. Implement the class stub and test class as well by copying and pasting the code from the Exercism website. 
+
+### Implementing solutions
+
+Now you can edit the class for an exercise and implement a solution. Then run the ABAP unit tests to check if it passes all tests. Once completed and tested successfully, cut and paste your code into the editor for the exercise on the Exercism website. Run the tests there as well. 
+
+### Testing and completing the exercise
 
 When coding and testing in your own system, the standard SAP ABAP compiler and execution is used. If your tests fail, it's likely related to your own code. Take another look. 
 
-If your code passes the unit tests successfully, cut & paste your class implementation into the exercise on Exercism and select "Run Tests". The tests should pass there as well, of course. If it does not, see the troubleshooting section above. 
+If your code passes the unit tests successfully, cut and paste your class implementation into the exercise on the Exercism website and select "Run Tests". The tests should pass there as well, of course. If it does not, see the troubleshooting section above. 
