@@ -28,4 +28,4 @@ Now you can edit the class for an exercise and implement a solution. Then run th
 
 When coding and testing in your own system, the standard SAP ABAP compiler and execution is used. If your tests fail, it's likely related to your own code. Take another look. 
 
-If your code passes the unit tests successfully, cut & paste your class implementation into the exercise on the Exercism website and select "Run Tests". The tests should pass there as well, of course. If it does not, see the troubleshooting section above. 
+If your code passes the unit tests successfully, cut and paste your class implementation into the exercise on the Exercism website and select "Run Tests". The tests should pass there as well, of course. If it does not, see the troubleshooting section above. 
