@@ -18,7 +18,7 @@ For details, see [Testing on the ABAP track](https://exercism.org/docs/tracks/ab
 
 We welcome contributions of all sorts and sizes, from reporting issues to submitting patches, or added complete new exercises. 
 
-For details, see [Contribution Guidelines](https://github.com/exercism/javascript/blob/main/CONTRIBUTING.md).
+For details, see [Contribution Guidelines](./CONTRIBUTING.md).
 
 ## Testing
 
