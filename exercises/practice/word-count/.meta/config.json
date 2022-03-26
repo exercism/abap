@@ -1,0 +1,20 @@
+{
+    "authors": [
+      "marianfoo"
+    ],
+    "contributors": [],
+    "files": {
+      "solution": [
+        "zcl_word_count.clas.abap"
+      ],
+      "test": [
+        "zcl_word_count.clas.testclass.abap"
+      ],
+      "example": [
+        ".meta/zcl_word_count.clas.abap"
+      ]
+    },
+    "blurb": "Given a phrase, count the occurrences of each word in that phrase.",
+    "source": "This is a classic toy problem, but we were reminded of it by seeing it in the Go Tour.",
+    "source_url": "https://github.com/exercism/javascript/tree/main/exercises/practice/word-count"
+  }
