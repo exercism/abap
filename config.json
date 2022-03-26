@@ -19,7 +19,16 @@
     "highlightjs_language": "abap"
   },
   "exercises": {
-    "concept": [],
+    "concept": [
+      {
+        "slug": "lasagna",
+        "name": "Lucian's Luscious Lasagna",
+        "uuid": "0bb8f970-fe74-41f2-8ae6-2d771d87b607",
+        "concepts": ["basics"],
+        "prerequisites": [],
+        "status": "active"
+      }
+    ],
     "practice": [
       {
         "slug": "hello-world",
