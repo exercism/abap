@@ -155,7 +155,7 @@
         "uuid": "174e3905-92ad-49c9-ae58-118388db6778",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2        
+        "difficulty": 2
       },
       {
         "slug": "minesweeper",
@@ -163,7 +163,7 @@
         "uuid": "c8f6abc0-41a4-4104-8050-2df35f0d469a",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2        
+        "difficulty": 2
       },
       {
         "slug": "darts",
@@ -175,7 +175,13 @@
       }
     ]
   },
-  "concepts": [],
+  "concepts": [
+    {
+      "uuid": "4a11ac86-a699-43e9-922e-f75681c86fd9",
+      "slug": "basics",
+      "name": "Basics"
+    }
+  ],
   "key_features": [],
   "tags": [
     "paradigm/object_oriented",
