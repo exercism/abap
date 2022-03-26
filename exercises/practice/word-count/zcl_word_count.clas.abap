@@ -23,35 +23,6 @@ ENDCLASS.
 CLASS zcl_word_count IMPLEMENTATION.
 
   METHOD count_words.
-    DATA(lv_phrase) = phrase.
-    CONDENSE lv_phrase.
-    REPLACE ALL OCCURRENCES OF ',' IN lv_phrase WITH ` `.
-    REPLACE ALL OCCURRENCES OF '''' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '\n' IN lv_phrase WITH ` `.
-    REPLACE ALL OCCURRENCES OF '.' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '!' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF ':' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '"' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '&' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '@' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '$' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '%' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '^' IN lv_phrase WITH ''.
-    CONDENSE lv_phrase.
-
-    SPLIT lv_phrase AT space INTO TABLE DATA(lt_phrases).
-
-    LOOP AT lt_phrases ASSIGNING FIELD-SYMBOL(<lower_phrase>).
-      <lower_phrase> = to_lower( <lower_phrase> ).
-    ENDLOOP.
-    LOOP AT lt_phrases ASSIGNING FIELD-SYMBOL(<phrase>)
-            GROUP BY ( phrase = <phrase>  size  = GROUP SIZE )
-            ASSIGNING FIELD-SYMBOL(<phrases>).
-
-      DATA(return_structure) = VALUE return_structure( word = <phrases>-phrase count = <phrases>-size ).
-      APPEND return_structure TO result.
-    ENDLOOP.
-
-
+" add your code here
   ENDMETHOD.
 ENDCLASS.
