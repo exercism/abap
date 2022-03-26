@@ -126,6 +126,15 @@
         "difficulty": 2
       },
       {
+        "slug": "phone-number",
+        "name": "Phone Number",
+        "uuid": "73cc3dcb-c79e-4c8f-90f3-3fe3aa48face",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": ["parsing", "transforming"]
+      },
+      {
         "slug": "raindrops",
         "name": "Raindrops",
         "uuid": "eaee0cbd-c525-4431-bedf-69bbce8c18bf",
