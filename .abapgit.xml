@@ -3,7 +3,7 @@
  <asx:values>
   <DATA>
    <MASTER_LANGUAGE>E</MASTER_LANGUAGE>
-   <STARTING_FOLDER>/exercises/practice/</STARTING_FOLDER>
+   <STARTING_FOLDER>/exercises/</STARTING_FOLDER>
    <FOLDER_LOGIC>PREFIX</FOLDER_LOGIC>
    <IGNORE>
     <item>*/.docs/*</item>
