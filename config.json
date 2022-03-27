@@ -197,6 +197,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "custom-signs",
+        "name": "Custom Signs",
+        "uuid": "f6ffd6ef-5b5d-45f9-b9e4-294d6e3a0797",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ]
   },
