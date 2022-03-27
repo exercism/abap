@@ -8,7 +8,7 @@
         "zcl_phone_number.clas.abap"
       ],
       "test": [
-        "zcl_phone_number.clas.testclass.abap"
+        "zcl_phone_number.clas.testclasses.abap"
       ],
       "example": [
         ".meta/zcl_phone_number.clas.abap"
