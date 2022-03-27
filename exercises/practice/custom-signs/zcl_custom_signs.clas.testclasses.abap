@@ -1,4 +1,4 @@
-CLASS lcl_sign DEFINITION FINAL FOR TESTING
+CLASS ltc_sign DEFINITION FINAL FOR TESTING
   DURATION SHORT
   RISK LEVEL HARMLESS.
 
@@ -14,7 +14,7 @@ CLASS lcl_sign DEFINITION FINAL FOR TESTING
 ENDCLASS.
 
 
-CLASS lcl_sign IMPLEMENTATION.
+CLASS ltc_sign IMPLEMENTATION.
 
   METHOD setup.
     cut = NEW zcl_custom_signs( ).
@@ -107,19 +107,19 @@ CLASS ltc_graduation IMPLEMENTATION.
 
   METHOD rob_2021.
     cl_abap_unit_assert=>assert_equals(
-    act = cut->graduation_for(
-      name = 'Rob'
-      year = '2021' )
-    exp = |Congratulations Rob!\nClass of 2021| ).
+        act = cut->graduation_for(
+          name = 'Rob'
+          year = '2021' )
+        exp = |Congratulations Rob!\nClass of 2021| ).
   ENDMETHOD.
 
 
   METHOD jill_1999.
     cl_abap_unit_assert=>assert_equals(
-    act = cut->graduation_for(
-      name = 'Jill'
-      year = '1999' )
-    exp = |Congratulations Jill!\nClass of 1999| ).
+      act = cut->graduation_for(
+        name = 'Jill'
+        year = '1999' )
+      exp = |Congratulations Jill!\nClass of 1999| ).
   ENDMETHOD.
 
 ENDCLASS.
@@ -151,30 +151,29 @@ CLASS ltc_cost IMPLEMENTATION.
 
   METHOD character_count.
     cl_abap_unit_assert=>assert_equals(
-    act = cut->cost_of(
-      sign = |Happy Birthday!|
-      currency = 'dollars' )
-    exp = 'Your sign costs 50.00 dollars.' ).
+      act = cut->cost_of(
+        sign = |Happy Birthday!|
+        currency = 'dollars' )
+      exp = 'Your sign costs 50.00 dollars.' ).
   ENDMETHOD.
 
 
   METHOD line_breaks_included.
     cl_abap_unit_assert=>assert_equals(
-    act = cut->cost_of(
-      sign = |Congratulations Rob\nClass of 2021|
-      currency = 'dollars' )
-    exp = 'Your sign costs 86.00 dollars.' ).
+      act = cut->cost_of(
+        sign = |Congratulations Rob\nClass of 2021|
+        currency = 'dollars' )
+      exp = 'Your sign costs 86.00 dollars.' ).
   ENDMETHOD.
 
 
   METHOD different_currency.
     cl_abap_unit_assert=>assert_equals(
-    act = cut->cost_of(
-      sign = |Happy Easter, little sister!|
-      currency = 'euros' )
-    exp = 'Your sign costs 76.00 euros.' ).
+      act = cut->cost_of(
+        sign = |Happy Easter, little sister!|
+        currency = 'euros' )
+      exp = 'Your sign costs 76.00 euros.' ).
   ENDMETHOD.
-
 
 
 ENDCLASS.
