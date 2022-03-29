@@ -8,7 +8,7 @@
         "zcl_word_count.clas.abap"
       ],
       "test": [
-        "zcl_word_count.clas.testclass.abap"
+        "zcl_word_count.clas.testclasses.abap"
       ],
       "example": [
         ".meta/zcl_word_count.clas.abap"
