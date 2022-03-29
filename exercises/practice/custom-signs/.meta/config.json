@@ -1,0 +1,10 @@
+{
+  "blurb": "Learn about characters by helping a sign company create custom messages for their signs.",
+  "authors": ["pokrakam"],
+  "contributors": [],
+  "files": {
+    "solution": ["zcl_custom_signs.clas.abap"],
+    "test": ["zcl_custom_signs.clas.testclasses.abap"],
+    "example": [".meta/zcl_custom_signs.clas.abap"]
+  }
+}
