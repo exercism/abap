@@ -8,5 +8,5 @@
     "test": ["zcl_darts.clas.testclasses.abap"],
     "example": [".meta/zcl_darts.clas.abap"]
   },
-  "source": "Inspired by an exercise created by a professor Della Paolera in Argentina"
+  "source": "Inspired by an exercise created by a professor Della Paolera in Argentina."
 }
