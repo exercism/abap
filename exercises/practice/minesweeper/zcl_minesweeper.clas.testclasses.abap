@@ -29,7 +29,7 @@ ENDCLASS.
 CLASS ltc_test IMPLEMENTATION.
 
   METHOD setup.
-    CREATE OBJECT cut.
+    cut = NEW zcl_minesweeper( ).
   ENDMETHOD.
 
 
