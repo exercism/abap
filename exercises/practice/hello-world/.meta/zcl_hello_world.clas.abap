@@ -1,12 +1,12 @@
 CLASS zcl_hello_world DEFINITION PUBLIC.
   PUBLIC SECTION.
-    INTERFACES if_oo_adt_classrun.
+    METHODS hello RETURNING VALUE(result) TYPE string.
 ENDCLASS.
 
 CLASS zcl_hello_world IMPLEMENTATION.
 
-  METHOD if_oo_adt_classrun~main.
-    out->write( 'Hello, World!' ).
+  METHOD hello.
+    result = 'Hello, World!'.
   ENDMETHOD.
 
 ENDCLASS.
