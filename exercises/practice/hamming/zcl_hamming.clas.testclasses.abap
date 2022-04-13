@@ -73,11 +73,13 @@ CLASS ltcl_hamming IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD test_both_empty.
-    cl_abap_unit_assert=>assert_equals(
-      act = cut->hamming_distance(
-                first_strand  = ''
-                second_strand = '' )
-      exp = 0 ).
+    TRY.
+        cut->hamming_distance(
+          first_strand  = ''
+          second_strand = '' ).
+        cl_abap_unit_assert=>fail( ).
+      CATCH cx_parameter_invalid.
+    ENDTRY.
   ENDMETHOD.
 
   METHOD test_one_empty.
