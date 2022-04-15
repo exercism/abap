@@ -11,6 +11,7 @@ CLASS ltcl_hamming DEFINITION FOR TESTING RISK LEVEL HARMLESS DURATION SHORT FIN
     METHODS test_second_longer FOR TESTING RAISING cx_static_check.
     METHODS test_both_empty FOR TESTING RAISING cx_static_check.
     METHODS test_one_empty FOR TESTING RAISING cx_static_check.
+    METHODS test_illegal_character FOR TESTING RAISING cx_static_check.
 
 ENDCLASS.
 
@@ -85,6 +86,16 @@ CLASS ltcl_hamming IMPLEMENTATION.
         cut->hamming_distance(
           first_strand  = ''
           second_strand = 'CGT' ).
+        cl_abap_unit_assert=>fail( ).
+      CATCH cx_parameter_invalid.
+    ENDTRY.
+  ENDMETHOD.
+  
+  METHOD test_illegal_character.
+    TRY.
+        cut->hamming_distance(
+          first_strand  = 'AABCT'
+          second_strand = 'AACTA' ).
         cl_abap_unit_assert=>fail( ).
       CATCH cx_parameter_invalid.
     ENDTRY.
