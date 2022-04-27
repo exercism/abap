@@ -147,7 +147,7 @@ CLASS ltcl_anagram IMPLEMENTATION.
 
   METHOD test_case_insensitive_original.
     DATA(candidates) = VALUE string_table( ( |BANANA| ) ( |Banana| ) ( |banana| ) ).
-    DATA(exp_result) = VALUE string_table( ).
+    DATA(exp_result) = VALUE string_table( ( |BANANA| ) ( |Banana| ) ( |banana| ) ).
     cl_abap_unit_assert=>assert_equals(
       act = cut->anagram( input = 'BANANA' candidates = candidates )
       exp = exp_result ).
