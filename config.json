@@ -126,6 +126,15 @@
         "difficulty": 2
       },
       {
+        "slug": "phone-number",
+        "name": "Phone Number",
+        "uuid": "73cc3dcb-c79e-4c8f-90f3-3fe3aa48face",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": ["parsing", "transforming"]
+      },
+      {
         "slug": "raindrops",
         "name": "Raindrops",
         "uuid": "eaee0cbd-c525-4431-bedf-69bbce8c18bf",
@@ -171,7 +180,7 @@
         "uuid": "c8f6abc0-41a4-4104-8050-2df35f0d469a",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2
+        "difficulty": 5
       },
       {
         "slug": "beer-song",
@@ -194,6 +203,14 @@
         "slug": "elyses-enchantments",
         "name": "Elyses Enchantments",
         "uuid": "dfddaddc-4749-4f93-b539-8643d48523fe",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "custom-signs",
+        "name": "Custom Signs",
+        "uuid": "f6ffd6ef-5b5d-45f9-b9e4-294d6e3a0797",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
