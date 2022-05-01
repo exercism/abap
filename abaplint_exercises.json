@@ -262,7 +262,7 @@
     "identical_contents": true,
     "identical_descriptions": true,
     "identical_form_names": true,
-    "if_in_if": true,
+    "if_in_if": false,
     "implement_methods": true,
     "in_statement_indentation": {
       "exclude": [],
@@ -349,11 +349,7 @@
     },
     "msag_consistency": true,
     "names_no_dash": true,
-    "nesting": {
-      "exclude": [],
-      "severity": "Error",
-      "depth": 5
-    },
+    "nesting": false,
     "newline_between_methods": {
       "exclude": [],
       "severity": "Error",
@@ -424,7 +420,7 @@
     "parser_error": true,
     "parser_missing_space": true,
     "pragma_placement": true,
-    "prefer_inline": true,
+    "prefer_inline": false,
     "prefer_is_not": true,
     "prefer_raise_exception_new": true,
     "prefer_returning_to_exporting": true,

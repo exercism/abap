@@ -1,13 +1,6 @@
-# Learning
+# Recommended Learning Resources
 
-<!-- TODO: write document
+Exercism provides exercises and feedback but can be difficult to jump into for those learning ABAP for the first time. These free resources can help you get started:
 
-  This document should link to learning resources.
-
-  Feel free to link to any good learning resources you know, whether they
-  be websites, blogs, books, videos or courses.
-
-  The contents of this document are displayed on the track's documentation
-  page at `https://exercism.org/docs/tracks/<track>/learning`.
-
-  See https://exercism.org/docs/building/tracks/docs for more information. -->
+* [ABAP for Newbies Community](https://community.sap.com/topics/abap/abap-for-newbies)
+* [ABAP Language Documentation](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm)

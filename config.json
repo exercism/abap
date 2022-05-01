@@ -1,7 +1,7 @@
 {
   "language": "ABAP",
   "slug": "abap",
-  "active": false,
+  "active": true,
   "status": {
     "concept_exercises": false,
     "test_runner": true,
@@ -9,7 +9,7 @@
     "analyzer": false
   },
   "test_runner": {
-    "average_run_time": 19.0
+    "average_run_time": 9.0
   },
   "blurb": "ABAP is a high level programming language created by SAP",
   "version": 3,
@@ -30,6 +30,14 @@
         "difficulty": 1
       },
       {
+        "slug": "scrabble-score",
+        "name": "Scrabble Score",
+        "uuid": "86e73de5-3f6a-4c65-b0d6-2070d1601bdf",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "two-fer",
         "name": "Two Fer",
         "uuid": "4606da73-f376-409e-8526-f95bec03643b",
@@ -47,7 +55,7 @@
       },
       {
         "slug": "high-scores",
-        "name": "High-scores",
+        "name": "High Scores",
         "uuid": "b6df2ca1-c5b4-4552-95e3-0a9c489a0a61",
         "practices": [],
         "prerequisites": [],
@@ -110,12 +118,29 @@
         "difficulty": 4
       },
       {
+        "slug": "nth-prime",
+        "name": "Nth Prime",
+        "uuid": "f43a798e-7f77-41ca-a5d0-c63c24209c18",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "isogram",
         "name": "Isogram",
         "uuid": "fc284dd9-db92-4280-ba4c-74d91cdf8f84",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
+      },
+      {
+        "slug": "phone-number",
+        "name": "Phone Number",
+        "uuid": "73cc3dcb-c79e-4c8f-90f3-3fe3aa48face",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": ["parsing", "transforming"]
       },
       {
         "slug": "raindrops",
@@ -140,8 +165,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 3
-      }
-      ,
+      },
       {
         "slug": "matrix",
         "name": "Matrix",
@@ -152,11 +176,28 @@
       },
       {
         "slug": "prime-factors",
-        "name": "Prime-factors",
+        "name": "Prime Factors",
         "uuid": "174e3905-92ad-49c9-ae58-118388db6778",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2        
+        "difficulty": 2
+      },
+      {
+        "slug": "minesweeper",
+        "name": "Minesweeper",
+        "uuid": "c8f6abc0-41a4-4104-8050-2df35f0d469a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "beer-song",
+        "name": "Beer Song",
+        "uuid": "6573f168-d8fc-4ccf-a864-1a61f432fae1",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5,
+        "topics": ["conditionals", "loops", "strings"]
       },
       {
         "slug": "darts",
@@ -165,11 +206,58 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
+      },
+      {
+        "slug": "elyses-enchantments",
+        "name": "Elyses Enchantments",
+        "uuid": "dfddaddc-4749-4f93-b539-8643d48523fe",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "custom-signs",
+        "name": "Custom Signs",
+        "uuid": "f6ffd6ef-5b5d-45f9-b9e4-294d6e3a0797",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ]
   },
   "concepts": [],
-  "key_features": [],
+  "key_features": [
+    {
+      "icon": "evolving",
+      "title": "Evolving",
+      "content": "ABAP is a modern and constantly evolving language supported by SAP."
+    },
+    {
+      "icon": "fun",
+      "title": "Fun",
+      "content": "Always a new or old feature to discover."
+    },
+    {
+      "icon": "easy",
+      "title": "Easy",
+      "content": "Statements are easily readable and understandable."
+    },
+    {
+      "icon": "productive",
+      "title": "Productive",
+      "content": "Easily create data structures and interact with database contents."
+    },
+    {
+      "icon": "statically-typed",
+      "title": "Typed",
+      "content": "Static types linked to database schemas."
+    },
+    {
+      "icon": "stable",
+      "title": "Reliability",
+      "content": "Stable functionality to run the core of the worlds largest businesses."
+    }
+  ],
   "tags": [
     "paradigm/object_oriented",
     "paradigm/procedural",
