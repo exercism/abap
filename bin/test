@@ -33,9 +33,7 @@ exit_code=0
 for practice_exercise_dir in ./exercises/practice/*/; do
     if [ -d $practice_exercise_dir ]; then
         echo "Checking $(basename "${practice_exercise_dir}") exercise..."
-        printf '{"version":1,"status":"pass"}' > $(realpath "${practice_exercise_dir}")/expected_results.json
         results_file_path="$(realpath "${practice_exercise_dir}")/results.json"
-        expected_results_file_path="$(realpath "${practice_exercise_dir}")/expected_results.json"
         cp $(realpath "${practice_exercise_dir}")/.meta/*.clas.abap $(realpath "${practice_exercise_dir}")
         /usr/bin/time -f 'Docker total runtime: %e seconds' docker run \
             --rm \
@@ -44,12 +42,15 @@ for practice_exercise_dir in ./exercises/practice/*/; do
             --mount type=bind,src="$(realpath "${practice_exercise_dir}")",dst=/output \
             --tmpfs /tmp:rw \
             exercism/abap-test-runner $(basename "${practice_exercise_dir}") "/solution" "/output"
-        errors="$(diff "${results_file_path}" "${expected_results_file_path}")"
-        printf "$errors"
+        cat "${results_file_path}"
+        errors="$(cat "${results_file_path}" | grep "{\"version\":2,\"status\":\"pass\"" )"
 
         if [ -z ${errors} ];
-            then printf "No Errors\n\n";
-            else exit_code=1;
+            then
+                printf "\nError\n\n\n";
+                exit_code=1;
+            else
+                printf "\nNo Errors\n\n\n";
         fi
     fi
 done
