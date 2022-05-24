@@ -34,17 +34,17 @@ The baseline of work is as follows:
 
 1. Open a new issue, we'll label it with `new exercise ✨`
 1. We'll assign the issue to you, so you get to work on this exercise
-1. Clone this repository to your own SAP system using abapGit. We recommend to use SAP package `$EXECISM`
+1. Clone this repository to your own SAP system using [abapGit](https://github.com/abapGit/abapGit). We recommend to use SAP package `$EXECISM`
 (track maintainers can create a branch in this repo, others should fork it).
 1. Create a subpackage for your exercise named `$EXERCISM_<EXERCISE>`
 1. Implement the exercise stub in an ABAP class named `ZCL_<EXERCISE>`
-2. Implement unit tests for your ABAP class
-3. Stage and commit the SAP package and class 
-4. To create an example solution, we recommend the following approach since you can't use abapGit for it:
-- Copy class to `ZCL_<EXERCISE>` to `ZCL_<EXERCISE>_EXAMPLE` *and* put it into SAP package `$TMP` (or another package outside the repo)
-- Implement the solution in `ZCL_<EXERCISE>_EXAMPLE`
-- Add the class code and unit tests (testclasses) to the `.meta` directory of your branch
-7. Create an entry in `config.json`: a unique _new_ UUID (you can use the `configlet uuid` tool to generate one, scroll down to [tools](#tools) to see how you can get it), give it a difficulty (should be similar to similar exercises), and make sure the _order_ of the file is sane.
+1. Implement unit tests for your ABAP class
+1. Stage and commit the SAP package and class 
+1. To create an example solution, we recommend the following approach since you can't use abapGit for it:
+  - Copy class to `ZCL_<EXERCISE>` to `ZCL_<EXERCISE>_EXAMPLE` *and* put it into SAP package `$TMP` (or another package outside the repo)
+  - Implement the solution in `ZCL_<EXERCISE>_EXAMPLE`
+  - Add the class code and unit tests (testclasses) to the `.meta` directory of your branch
+9. Create an entry in `config.json`: a unique _new_ UUID (you can use the `configlet uuid` tool to generate one, scroll down to [tools](#tools) to see how you can get it), give it a difficulty (should be similar to similar exercises), and make sure the _order_ of the file is sane.
    Currently, the file is ordered first on concept exercise, then on "original core", finally everything else, on difficulty low to high, and ultimately lexicographically.
 
 The final step is opening a Pull Request, with these items all checked off.
