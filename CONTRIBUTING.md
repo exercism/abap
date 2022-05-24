@@ -44,7 +44,7 @@ The baseline of work is as follows:
   - Copy class to `ZCL_<EXERCISE>` to `ZCL_<EXERCISE>_EXAMPLE` *and* put it into SAP package `$TMP` (or another package outside the repo)
   - Implement the solution in `ZCL_<EXERCISE>_EXAMPLE`
   - Add the class code and unit tests (testclasses) to the `.meta` directory of your branch
-9. Create an entry in `config.json`: a unique _new_ UUID (you can use the `configlet uuid` tool to generate one, scroll down to [tools](#tools) to see how you can get it), give it a difficulty (should be similar to similar exercises), and make sure the _order_ of the file is sane.
+9. Create an entry in `config.json`: a unique _new_ UUID (you can use [UUID Generator Tool](https://www.uuidgenerator.net/) to generate one), give it a difficulty (should be similar to similar exercises), and make sure the _order_ of the file is sane.
    Currently, the file is ordered first on concept exercise, then on "original core", finally everything else, on difficulty low to high, and ultimately lexicographically.
 
 The final step is opening a Pull Request, with these items all checked off.
