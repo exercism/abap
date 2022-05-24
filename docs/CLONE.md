@@ -3,8 +3,8 @@
 ## Prerequisites
 
 1. ABAP system release 7.4 or higher
-3. abapGit v1.115.0 or higher
-2. Authorizations to implement ABAP packages, programs, and classes
+2. abapGit v1.115.0 or higher
+3. Authorizations to implement ABAP packages, programs, and classes
 
 ## Installing abapGit
 
