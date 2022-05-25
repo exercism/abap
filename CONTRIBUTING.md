@@ -34,7 +34,7 @@ The baseline of work is as follows:
 
 1. Open a new issue, we'll label it with `new exercise ✨`
 1. We'll assign the issue to you, so you get to work on this exercise
-1. Clone this repository to your own SAP system using [abapGit](https://github.com/abapGit/abapGit). We recommend to use SAP package `$EXECISM`
+1. Clone this repository to your own SAP system using [abapGit](https://github.com/abapGit/abapGit). We recommend to use SAP package `$EXERCISM`
 (track maintainers can create a branch in this repo, others should fork it).
 1. Create a subpackage for your exercise named `$EXERCISM_<EXERCISE>`
 1. Implement the exercise stub in an ABAP class named `ZCL_<EXERCISE>`
