@@ -793,7 +793,7 @@
         "severity": "Error"
       },
       "slow_parameter_passing": {
-        "exclude": [],
+        "exclude": [".*"],
         "severity": "Error"
       },
       "space_before_colon": {
