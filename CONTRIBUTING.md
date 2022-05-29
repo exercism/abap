@@ -33,14 +33,14 @@ If there is no such issue, you may open one.
 The baseline of work is as follows:
 
 1. Open a new issue, we'll label it with `new exercise ✨`
-1. We'll assign the issue to you, so you get to work on this exercise
-1. Clone this repository to your own SAP system using [abapGit](https://github.com/abapGit/abapGit). We recommend to use SAP package `$EXERCISM`
+2. We'll assign the issue to you, so you get to work on this exercise
+3. Clone this repository to your own SAP system using [abapGit](https://github.com/abapGit/abapGit). We recommend to use SAP package `$EXERCISM`
 (track maintainers can create a branch in this repo, others should fork it).
-1. Create a subpackage for your exercise named `$EXERCISM_<EXERCISE>`
-1. Implement the exercise stub in an ABAP class named `ZCL_<EXERCISE>`
-1. Implement unit tests for your ABAP class
-1. Stage and commit the SAP package and class 
-1. To create an example solution, we recommend the following approach since you can't use abapGit for it:
+4. Create a subpackage for your exercise named `$EXERCISM_<EXERCISE>`
+5. Implement the exercise stub in an ABAP class named `ZCL_<EXERCISE>`
+6. Implement unit tests for your ABAP class
+7. Stage and commit the SAP package and class 
+8. To create an example solution, we recommend the following approach since you can't use abapGit for it:
   - Copy class to `ZCL_<EXERCISE>` to `ZCL_<EXERCISE>_EXAMPLE` *and* put it into SAP package `$TMP` (or another package outside the repo)
   - Implement the solution in `ZCL_<EXERCISE>_EXAMPLE`
   - Add the class code and unit tests (testclasses) to the `.meta` directory of your branch
