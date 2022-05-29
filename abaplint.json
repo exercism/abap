@@ -525,7 +525,7 @@
         "severity": "Error"
       },
       "method_length": {
-        "exclude": [],
+        "exclude": [".*"],
         "severity": "Error",
         "statements": 100,
         "errorWhenEmpty": false,
