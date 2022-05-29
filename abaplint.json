@@ -787,7 +787,7 @@
         "severity": "Error"
       },
       "slow_parameter_passing": {
-        "exclude": [],
+        "exclude": [".*"],
         "severity": "Error"
       },
       "space_before_colon": {
@@ -838,7 +838,7 @@
         "pattern": "^TY_.+$"
       },
       "uncaught_exception": {
-        "exclude": [],
+        "exclude": [".*"],
         "severity": "Error"
       },
       "unknown_types": {
