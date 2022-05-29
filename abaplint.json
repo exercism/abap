@@ -484,7 +484,7 @@
         "ignorePatterns": [],
         "local": "^LCL_.+$",
         "exception": "^LCX_.+$",
-        "test": "^LTCL_.+$"
+        "test": "^LT.+$"
       },
       "local_testclass_consistency": {
         "exclude": [],
@@ -528,7 +528,7 @@
         "exclude": [],
         "severity": "Error",
         "statements": 100,
-        "errorWhenEmpty": true,
+        "errorWhenEmpty": false,
         "ignoreTestClasses": false,
         "checkForms": true
       },
