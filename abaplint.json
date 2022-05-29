@@ -9,7 +9,13 @@
       "useApackDependencies": false,
       "skipIncludesWithoutMain": false
     },
-    "dependencies": [],
+    "dependencies": [
+      {
+        "url": "https://github.com/abaplint/deps",
+        "folder": "/lint_deps",
+        "files": "/src/**/*.*"
+      }      
+    ],
     "syntax": {
       "version": "v740sp08",
       "errorNamespace": "^(Z|Y|LCL_|TY_|LIF_)",
@@ -525,7 +531,7 @@
         "severity": "Error"
       },
       "method_length": {
-        "exclude": [".*"],
+        "exclude": [],
         "severity": "Error",
         "statements": 100,
         "errorWhenEmpty": false,
@@ -838,7 +844,7 @@
         "pattern": "^TY_.+$"
       },
       "uncaught_exception": {
-        "exclude": [".*"],
+        "exclude": [],
         "severity": "Error"
       },
       "unknown_types": {
