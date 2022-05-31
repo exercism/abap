@@ -847,7 +847,7 @@
       "pattern": "^TY_.+$"
     },
     "uncaught_exception": {
-      "exclude": [],
+      "exclude": [".*"],
       "severity": "Error"
     },
     "unknown_types": {
