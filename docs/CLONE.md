@@ -26,9 +26,9 @@ Use this method if your system is connected to the Internet and has access to Gi
 
 ![abapGit Online Repo](https://github.com/exercism/abap/blob/main/docs/clone_01.png?raw=true)
 
-2. On the Repository Overview, select "New Online"
+2. On the "Repository Overview", select "New Online"
 3. Enter the following values
-- URL: `[https://github.com/exercism/abap](https://github.com/exercism/abap)`
+- URL: `https://github.com/exercism/abap`
 - Package: `$exercism`
 - Display Name: `Exercism - ABAP Track`
 
@@ -52,7 +52,7 @@ Use this method if your system is *not* connected to the Internet.
 ![abapGit Offline Repo](https://github.com/exercism/abap/blob/main/docs/clone_10.png?raw=true)
 
 3. Run abapGit
-4. On the Repository Overview, select "New Offline"
+4. On the "Repository Overview", select "New Offline"
 5. Enter the following values
 - Repository Name: `Exercism - ABAP Track`
 - Package: `$exercism`
@@ -76,6 +76,6 @@ Use this method if your system is *not* connected to the Internet.
 You can remove all objects from your system in the following way:
 
 1. Run abapGit
-2. Go to the Execism - ABAP Track repository
+2. Go to the `Execism - ABAP Track` repository
 3. Select "Advanced > Uninstall"
 4. Confirm the deletion of all objects and the repository
