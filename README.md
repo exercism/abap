@@ -1,4 +1,4 @@
-# ABAP
+# Exercism ABAP Track
 
 [![configlet](https://github.com/exercism/abap/workflows/configlet/badge.svg)](https://github.com/exercism/abap/actions?query=workflow%3Aconfiglet) [![test](https://github.com/exercism/abap/workflows/test/badge.svg)](https://github.com/exercism/abap/actions?query=workflow%3Atest)
 

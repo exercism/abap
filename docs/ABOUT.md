@@ -18,6 +18,10 @@ ABAP Platform
 
 In short, it's a big market and there's demand for more people who can develop in ABAP.
 
+## How to Learn ABAP using Exercism?
+
+You can find details on how to learn ABAP, install it locally, and test your ABAP skills in the [track-specific documentation](https://exercism.org/docs/tracks/abap).
+
 ## Background Information
 
 [WikiPedia](https://en.wikipedia.org/wiki/ABAP)
