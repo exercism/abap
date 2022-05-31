@@ -16,7 +16,6 @@ The ABAP track with all exercises is implemented as an abapGit repository. To cl
 4. Upload the source from `zabapgit.abap` to program `zabapgit_standalone`
 5. Activate the program
 
-Note: Read this documentation including screen shots on [GitHub]()
 ## Installing Exercism ABAP Track
 
 ### Online Repository
