@@ -14,7 +14,7 @@ Behind the scenes, your ABAP code is compiled and executed using the so-called [
 
 ### Complete track
 
-The easiest way to get started using your own system for practicing is to clone this repository using [abapGit](https://github.com/abapGit/abapGit). This will create the stubs and test classes for all exercises that are currently available.
+The easiest way to get started using your own system for practicing is to clone [this repository](https://github.com/exercism/abap) using [abapGit](https://github.com/abapGit/abapGit). This will create the stubs and test classes for all exercises that are currently available.
 
 ### Individual exercises
 
