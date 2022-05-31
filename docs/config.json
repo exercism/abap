@@ -1,33 +1,39 @@
 {
-    "docs": [
-      {
-        "uuid": "21b340f7-5709-4bfb-9e6f-b70e452c0d76",
-        "slug": "installation",
-        "path": "docs/INSTALLATION.md",
-        "title": "Installing ABAP locally",
-        "blurb": "Learn how to install ABAP locally to solve Exercism's exercises on your own machine"
-      },
-      {
-        "uuid": "21a13a0d-687b-40d2-933e-d510241e10d8",
-        "slug": "learning",
-        "path": "docs/LEARNING.md",
-        "title": "How to learn ABAP",
-        "blurb": "An overview of how to get started from scratch with ABAP"
-      },
-      {
-        "uuid": "e7aa0a32-7ee1-4a39-8f48-8f895ba2a4e9",
-        "slug": "tests",
-        "path": "docs/TESTS.md",
-        "title": "Testing on the ABAP track",
-        "blurb": "Learn how to test your ABAP exercises on Exercism"
-      },
-      {
-        "uuid": "81756fdb-cbf1-4dd2-966f-59b820c447af",
-        "slug": "resources",
-        "path": "docs/RESOURCES.md",
-        "title": "Useful ABAP resources",
-        "blurb": "A collection of useful resources to help you master ABAP"
-      }
-    ]
+  "docs": [
+    {
+      "uuid": "21b340f7-5709-4bfb-9e6f-b70e452c0d76",
+      "slug": "20-installation",
+      "path": "docs/INSTALLATION.md",
+      "title": "Installing ABAP locally",
+      "blurb": "Learn how to install ABAP locally to solve Exercism's exercises on your own machine"
+    },
+    {
+      "uuid": "21a13a0d-687b-40d2-933e-d510241e10d8",
+      "slug": "10-learning",
+      "path": "docs/LEARNING.md",
+      "title": "How to learn ABAP",
+      "blurb": "An overview of how to get started from scratch with ABAP"
+    },
+    {
+      "uuid": "e7aa0a32-7ee1-4a39-8f48-8f895ba2a4e9",
+      "slug": "30-tests",
+      "path": "docs/TESTS.md",
+      "title": "Testing on the ABAP track",
+      "blurb": "Learn how to test your ABAP exercises on Exercism"
+    },
+    {
+      "uuid": "28d04b1a-195d-4633-9fb4-042f703a7d37",
+      "slug": "40-clone",
+      "path": "docs/CLONE.md",
+      "title": "Clone the ABAP track",
+      "blurb": "Instructions on how to clone the ABAP track to your own system"
+    },
+    {
+      "uuid": "81756fdb-cbf1-4dd2-966f-59b820c447af",
+      "slug": "50-resources",
+      "path": "docs/RESOURCES.md",
+      "title": "Useful ABAP resources",
+      "blurb": "A collection of useful resources to help you master ABAP"
+    }
+  ]
 }
-  
