@@ -4,19 +4,19 @@ CLASS zcl_grains DEFINITION
   CREATE PUBLIC .
 
   PUBLIC SECTION.
-  TYPES type_result TYPE p LENGTH 16 DECIMALS 0.
-  METHODS square
-    IMPORTING
-      input         TYPE i
-    RETURNING
-      VALUE(result) TYPE type_result
-    RAISING
-      cx_parameter_invalid.
-  METHODS total
-    RETURNING
-      VALUE(result) TYPE type_result
-    RAISING
-      cx_parameter_invalid.
+    TYPES type_result TYPE p LENGTH 16 DECIMALS 0.
+    METHODS square
+      IMPORTING
+        input         TYPE i
+      RETURNING
+        VALUE(result) TYPE type_result
+      RAISING
+        cx_parameter_invalid.
+    METHODS total
+      RETURNING
+        VALUE(result) TYPE type_result
+      RAISING
+        cx_parameter_invalid.
   PROTECTED SECTION.
   PRIVATE SECTION.
 
