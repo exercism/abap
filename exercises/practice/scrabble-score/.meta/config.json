@@ -1,0 +1,12 @@
+{
+  "blurb": "Given a word, compute the Scrabble score for that word.",
+  "authors": ["marianfoo"],
+  "contributors": [
+  ],
+  "files": {
+    "solution": ["zcl_scrabble_score.clas.abap"],
+    "test": ["zcl_scrabble_score.clas.testclasses.abap"],
+    "example": [".meta/zcl_scrabble_score.clas.abap"]
+  },
+  "source_url": "https://github.com/rchatley/extreme_startup"
+}

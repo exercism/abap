@@ -1,5 +1,5 @@
 {
-  "blurb": "Resistor Color",
+  "blurb": "Convert a resistor band's color to its numeric representation",
   "authors": ["larshp"],
   "contributors": [],
   "files": {

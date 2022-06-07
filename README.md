@@ -2,14 +2,30 @@
 
 [![configlet](https://github.com/exercism/abap/workflows/configlet/badge.svg)](https://github.com/exercism/abap/actions?query=workflow%3Aconfiglet) [![test](https://github.com/exercism/abap/workflows/test/badge.svg)](https://github.com/exercism/abap/actions?query=workflow%3Atest)
 
-Exercism exercises in ABAP.
+**Exercism exercises in ABAP**
+
+This is the ABAP track, one of the many tracks on [Exercism](https://exercism.org/). It holds all the exercises that are currently implemented and available for students to complete. The track consists of various various practice exercises which you can find in the [config.json](https://github.com/exercism/abap/blob/main/config.json).
+
+## Exercises for Students
+
+With exercism, you can solve and test all exercises directly on the [Exercism](https://exercism.org/) website.
+
+Alternatively, you can clone this repository to your own SAP system using [abapGit](https://github.com/abapGit/abapGit). Solve the exercises in your system and bring the solution back to the website.
+
+For details, see [Testing on the ABAP track](https://exercism.org/docs/tracks/abap/tests)
+
+## Contributing to the Track
+
+We welcome contributions of all sorts and sizes, from reporting issues to submitting patches, or added complete new exercises. 
+
+For details, see [Contribution Guidelines](./CONTRIBUTING.md).
 
 ## Testing
 
 To test the exercises, run `./bin/test`.
 This command will iterate over all exercises and check to see if their exemplar/example implementation passes all the tests.
 
-### Track linting
+### Track Linting
 
 [`configlet`](https://exercism.org/docs/building/configlet) is an Exercism-wide tool for working with tracks. You can download it by running:
 
