@@ -9,7 +9,7 @@ CLASS zcl_word_count DEFINITION
         word  TYPE string,
         count TYPE i,
       END OF return_structure,
-      return_table TYPE STANDARD TABLE OF return_structure WITH EMPTY KEY.
+      return_table TYPE STANDARD TABLE OF return_structure WITH KEY word.
     METHODS count_words
       IMPORTING
         !phrase       TYPE string
@@ -23,35 +23,28 @@ ENDCLASS.
 CLASS zcl_word_count IMPLEMENTATION.
 
   METHOD count_words.
-    DATA(lv_phrase) = phrase.
-    CONDENSE lv_phrase.
-    REPLACE ALL OCCURRENCES OF ',' IN lv_phrase WITH ` `.
-    REPLACE ALL OCCURRENCES OF '''' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '\n' IN lv_phrase WITH ` `.
-    REPLACE ALL OCCURRENCES OF '.' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '!' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF ':' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '"' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '&' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '@' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '$' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '%' IN lv_phrase WITH ''.
-    REPLACE ALL OCCURRENCES OF '^' IN lv_phrase WITH ''.
-    CONDENSE lv_phrase.
+    DATA(clean) = replace( val = to_lower( phrase )
+                           sub = `'`
+                           with = ``
+                           occ = 0 ).
+    clean = replace( val = clean
+                     sub = `\n`
+                     with = ` `
+                     occ = 0 ).
+    clean = replace( val = clean
+                     sub = `\t`
+                     with = ` `
+                     occ = 0 ).
+    clean = replace( val = clean
+                     regex = `[^a-z0-9]`
+                     with = ` `
+                     occ = 0 ).
 
-    SPLIT lv_phrase AT space INTO TABLE DATA(lt_phrases).
+    SPLIT condense( clean ) AT ` ` INTO TABLE DATA(words).
 
-    LOOP AT lt_phrases ASSIGNING FIELD-SYMBOL(<lower_phrase>).
-      <lower_phrase> = to_lower( <lower_phrase> ).
+    LOOP AT words INTO DATA(word).
+      DATA(one_result) = VALUE return_structure( word = word count = 1 ).
+      COLLECT one_result INTO result.
     ENDLOOP.
-    LOOP AT lt_phrases ASSIGNING FIELD-SYMBOL(<phrase>)
-            GROUP BY ( phrase = <phrase>  size  = GROUP SIZE )
-            ASSIGNING FIELD-SYMBOL(<phrases>).
-
-      DATA(return_structure) = VALUE return_structure( word = <phrases>-phrase count = <phrases>-size ).
-      APPEND return_structure TO result.
-    ENDLOOP.
-
-
   ENDMETHOD.
 ENDCLASS.
