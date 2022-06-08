@@ -78,6 +78,14 @@
         "difficulty": 1
       },
       {
+        "slug": "grains",
+        "name": "Grains",
+        "uuid": "ec0e08bc-c3c1-4e3e-9f62-29a4740e22dc",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "kindergarten-garden",
         "name": "Kindergarten Garden",
         "uuid": "571dd0ad-8903-42d4-a57e-96e2d669dced",
