@@ -189,8 +189,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["loops", "lists", "regular_expressions", "strings"],
-        "status": "wip"
+        "topics": ["loops", "lists", "regular_expressions", "strings"]
       },
       {
         "slug": "beer-song",
