@@ -23,33 +23,6 @@ ENDCLASS.
 CLASS zcl_word_count IMPLEMENTATION.
 
   METHOD count_words.
-    DATA(clean) = replace( val = to_lower( phrase )
-                           sub = `'`
-                           with = ``
-                           occ = 0 ).
-    clean = replace( val = clean
-                     sub = `\n`
-                     with = ` `
-                     occ = 0 ).
-    clean = replace( val = clean
-                     sub = `\t`
-                     with = ` `
-                     occ = 0 ).
-    clean = replace( val = clean
-                     regex = `[^a-z0-9]`
-                     with = ` `
-                     occ = 0 ).
-
-    SPLIT condense( clean ) AT ` ` INTO TABLE DATA(words).
-
-    LOOP AT words ASSIGNING FIELD-SYMBOL(<word>).
-      DATA(one_result) = VALUE return_structure( word = <word> count = 1 ).
-      READ TABLE result ASSIGNING FIELD-SYMBOL(<result>) WITH TABLE KEY word = one_result-word.
-      IF sy-subrc = 0.
-        <result>-count = <result>-count + one_result-count.
-      ELSE.
-        INSERT one_result INTO TABLE result.
-      ENDIF.
-    ENDLOOP.
+    "Add solution here
   ENDMETHOD.
 ENDCLASS.
