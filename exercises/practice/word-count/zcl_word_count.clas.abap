@@ -44,7 +44,6 @@ CLASS zcl_word_count IMPLEMENTATION.
 
     LOOP AT words INTO DATA(word).
       DATA(one_result) = VALUE return_structure( word = word count = 1 ).
-      " COLLECT one_result INTO result.
       READ TABLE result ASSIGNING FIELD-SYMBOL(<result>) WITH TABLE KEY word = one_result-word.
       IF sy-subrc = 0.
         <result>-count = <result>-count + one_result-count.
