@@ -5,7 +5,6 @@
       ".*/.docs/.*",
       ".*/.meta/.*"
     ],
-    "noIssues": [],
     "skipGeneratedGatewayClasses": true,
     "skipGeneratedPersistentClasses": true,
     "skipGeneratedFunctionGroups": true,
@@ -14,16 +13,13 @@
   },
   "dependencies": [
     {
-      "url": "https://github.com/abaplint/deps",
-      "folder": "/lint_deps",
+      "url": "https://github.com/open-abap/open-abap",
       "files": "/src/**/*.*"
     }
   ],
   "syntax": {
     "version": "v740sp08",
-    "errorNamespace": "^(Z|Y|LCL_|TY_|LIF_)",
-    "globalConstants": [],
-    "globalMacros": []
+    "errorNamespace": "."
   },
   "rules": {
     "7bit_ascii": {

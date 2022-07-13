@@ -1,7 +1,6 @@
 {
   "global": {
     "files": "{/exercises/practice/**/*.testclasses.abap,/exercises/practice/**/.meta/*.abap,/exercises/concept/**/*.testclasses.abap,/exercises/concept/**/.meta/*.abap}",
-    "exclude": [],
     "skipGeneratedGatewayClasses": true,
     "skipGeneratedPersistentClasses": true,
     "skipGeneratedFunctionGroups": true,
@@ -11,53 +10,24 @@
   "dependencies": [
     {
       "url": "https://github.com/open-abap/open-abap",
-      "folder": "/deps",
       "files": "/src/**/*.*"
     }
   ],
   "syntax": {
-    "version": "v755",
-    "errorNamespace": ".",
-    "globalConstants": [],
-    "globalMacros": []
+    "version": "v740sp08",
+    "errorNamespace": "."
   },
   "rules": {
     "7bit_ascii": true,
     "abapdoc": false,
     "allowed_object_naming": true,
-    "allowed_object_types": {
-      "exclude": [],
-      "severity": "Error",
-      "allowed": []
-    },
+    "allowed_object_types": true,
     "ambiguous_statement": true,
-    "avoid_use": {
-      "exclude": [],
-      "severity": "Error",
-      "define": true,
-      "statics": true,
-      "defaultKey": true,
-      "break": true,
-      "describeLines": true
-    },
+    "avoid_use": true,
     "begin_end_names": true,
     "begin_single_include": true,
     "call_transaction_authority_check": true,
-    "chain_mainly_declarations": {
-      "exclude": [],
-      "severity": "Error",
-      "definitions": true,
-      "write": true,
-      "move": true,
-      "refresh": true,
-      "unassign": true,
-      "clear": true,
-      "hide": true,
-      "free": true,
-      "include": true,
-      "check": true,
-      "sort": true
-    },
+    "chain_mainly_declarations": true,
     "check_abstract": true,
     "check_comments": {
       "exclude": [],
@@ -67,42 +37,17 @@
     "check_ddic": true,
     "check_include": true,
     "check_no_handler_pragma": true,
-    "check_subrc": {
-      "exclude": [],
-      "severity": "Error",
-      "openDataset": true,
-      "authorityCheck": true,
-      "selectSingle": true,
-      "selectTable": true,
-      "updateDatabase": true,
-      "insertDatabase": true,
-      "modifyDatabase": true,
-      "readTable": true,
-      "assign": true,
-      "find": true
-    },
+    "check_subrc": true,
     "check_syntax": true,
     "check_text_elements": true,
     "check_transformation_exists": true,
     "class_attribute_names": false,
     "cloud_types": true,
     "colon_missing_space": true,
-    "commented_code": {
-      "exclude": [],
-      "severity": "Error",
-      "allowIncludeInFugr": true
-    },
-    "constant_classes": {
-      "exclude": [],
-      "severity": "Error",
-      "mapping": []
-    },
+    "commented_code": true,
+    "constant_classes": true,
     "constructor_visibility_public": true,
-    "contains_tab": {
-      "exclude": [],
-      "severity": "Error",
-      "spaces": 1
-    },
+    "contains_tab": true,
     "cyclic_oo": {
       "exclude": [],
       "severity": "Error",

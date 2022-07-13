@@ -33,7 +33,7 @@ jobs:
         with:
           node-version: '16'
       - run: npm install @abaplint/cli -g
-      - run: abaplint abaplint_exercises.json
+      - run: abaplint abaplint.json
       - run: abaplint abaplint_solutions.json
       - run: docker pull exercism/abap-test-runner
       - name: Run tests for all exercises
