@@ -78,6 +78,14 @@
         "difficulty": 1
       },
       {
+        "slug": "grains",
+        "name": "Grains",
+        "uuid": "ec0e08bc-c3c1-4e3e-9f62-29a4740e22dc",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "kindergarten-garden",
         "name": "Kindergarten Garden",
         "uuid": "571dd0ad-8903-42d4-a57e-96e2d669dced",
@@ -181,6 +189,15 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
+      },
+      {
+        "slug": "word-count",
+        "name": "Word Count",
+        "uuid": "a8f558ad-28df-46fa-9ac7-aac9afad5a67",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": ["loops", "lists", "regular_expressions", "strings"]
       },
       {
         "slug": "beer-song",
