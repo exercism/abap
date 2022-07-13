@@ -28,7 +28,7 @@ CLASS ltcl_lasagne IMPLEMENTATION.
   METHOD test_constant1.
     cl_abap_unit_assert=>assert_equals(
       act = cut->expected_minutes_in_oven
-      exp = 40 ).
+      exp = 4 ).
   ENDMETHOD.
 
   METHOD test_constant2.
