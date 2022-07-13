@@ -23,7 +23,25 @@ echo "Checking"
  for concept_exercise_dir in ./exercises/concept/*/; do
      if [ -d $concept_exercise_dir ]; then
          echo "Checking $(basename "${concept_exercise_dir}") exercise..."
-         # TODO: run command to verify that the exemplar solution passes the tests
+        results_file_path="$(realpath "${concept_exercise_dir}")/results.json"
+        cp $(realpath "${concept_exercise_dir}")/.meta/*.clas.abap $(realpath "${concept_exercise_dir}")
+        /usr/bin/time -f 'Docker total runtime: %e seconds' docker run \
+            --rm \
+            --network none \
+            --mount type=bind,src="$(realpath "${concept_exercise_dir}")",dst=/solution \
+            --mount type=bind,src="$(realpath "${concept_exercise_dir}")",dst=/output \
+            --tmpfs /tmp:rw \
+            exercism/abap-test-runner $(basename "${concept_exercise_dir}") "/solution" "/output"
+        cat "${results_file_path}"
+        errors="$(cat "${results_file_path}" | grep "{\"version\":2,\"status\":\"pass\"" )"
+
+        if [ -z ${errors} ];
+            then
+                printf "\nError\n\n\n";
+                exit_code=1;
+            else
+                printf "\nNo Errors\n\n\n";
+        fi
      fi
  done
 
