@@ -234,7 +234,13 @@
       }
     ]
   },
-  "concepts": [],
+  "concepts": [
+    {
+      "uuid": "4a11ac86-a699-43e9-922e-f75681c86fd9",
+      "slug": "basics",
+      "name": "Basics"
+    }
+  ],
   "key_features": [
     {
       "icon": "evolving",
