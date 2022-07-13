@@ -3,7 +3,8 @@ CLASS ltcl_lasagne DEFINITION FOR TESTING RISK LEVEL HARMLESS DURATION SHORT FIN
   PRIVATE SECTION.
     DATA cut TYPE REF TO zcl_lasagne.
     METHODS setup.
-    METHODS test_constant FOR TESTING RAISING cx_static_check.
+    METHODS test_constant1 FOR TESTING RAISING cx_static_check.
+    METHODS test_constant2 FOR TESTING RAISING cx_static_check.
     METHODS test_remaining_25 FOR TESTING RAISING cx_static_check.
     METHODS test_remaining_5 FOR TESTING RAISING cx_static_check.
     METHODS test_remaining_39 FOR TESTING RAISING cx_static_check.
@@ -24,16 +25,16 @@ CLASS ltcl_lasagne IMPLEMENTATION.
     cut = NEW zcl_lasagne( ).
   ENDMETHOD.
 
-  METHOD test_constant.
+  METHOD test_constant1.
     cl_abap_unit_assert=>assert_equals(
-        act = cut->expected_minutes_in_oven
-        exp = 40 ).
+      act = cut->expected_minutes_in_oven
+      exp = 40 ).
   ENDMETHOD.
 
-  METHOD test_constant.
+  METHOD test_constant2.
     cl_abap_unit_assert=>assert_equals(
-          act = cut->preparation_minutes_per_layer
-          exp = 2 ).
+      act = cut->preparation_minutes_per_layer
+      exp = 2 ).
   ENDMETHOD.
 
   METHOD test_remaining_25.
