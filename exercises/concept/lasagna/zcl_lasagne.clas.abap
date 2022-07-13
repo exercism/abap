@@ -5,8 +5,8 @@ CLASS zcl_lasagne DEFINITION
 
   PUBLIC SECTION.
 
-    CONSTANTS expected_minutes_in_oven TYPE i VALUE 20 .
-    CONSTANTS preparation_minutes_per_layer  TYPE i VALUE 1 .
+    CONSTANTS expected_minutes_in_oven TYPE i VALUE 20.
+    CONSTANTS preparation_minutes_per_layer TYPE i VALUE 1.
 
     METHODS remaining_minutes_in_oven
       IMPORTING
