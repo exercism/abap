@@ -1,21 +1,21 @@
 {
-    "authors": [
-      "marianfoo"
+  "authors": [
+    "marianfoo"
+  ],
+  "contributors": [],
+  "files": {
+    "solution": [
+      "zcl_lasagne.clas.abap"
     ],
-    "contributors": [],
-    "files": {
-      "solution": [
-        "zcl_lasagne.clas.abap"
-      ],
-      "test": [
-        "zcl_lasagne.class.testclasses.abap"
-      ],
-      "exemplar": [
-        ".meta/zcl_lasagne.clas.abap"
-      ]
-    },
-    "forked_from": [
-      "csharp/lasagna"
+    "test": [
+      "zcl_lasagne.clas.testclasses.abap"
     ],
-    "blurb": "Learn the basics of ABAP cooking a brilliant lasagna from your favorite cooking book."
-  }
+    "exemplar": [
+      ".meta/zcl_lasagne.clas.abap"
+    ]
+  },
+  "forked_from": [
+    "csharp/lasagna"
+  ],
+  "blurb": "Learn the basics of ABAP cooking a brilliant lasagna from your favorite cooking book."
+}
