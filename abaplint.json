@@ -5,7 +5,6 @@
       ".*/.docs/.*",
       ".*/.meta/.*"
     ],
-    "noIssues": [],
     "skipGeneratedGatewayClasses": true,
     "skipGeneratedPersistentClasses": true,
     "skipGeneratedFunctionGroups": true,
