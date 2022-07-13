@@ -643,9 +643,8 @@
       "shlp": "^Z"
     },
     "obsolete_statement": {
-      "exclude": [],
-      "severity": "Error",
       "refresh": true,
+      "clientSpecified": true,
       "compute": true,
       "add": true,
       "subtract": true,
@@ -771,15 +770,7 @@
       "selectStar": true,
       "starOkayIfFewColumns": 10
     },
-    "selection_screen_naming": {
-      "exclude": [],
-      "severity": "Error",
-      "patternKind": "required",
-      "ignoreNames": [],
-      "ignorePatterns": [],
-      "parameter": "^P_.+$",
-      "selectOption": "^S_.+$"
-    },
+    "selection_screen_naming": true,
     "sequential_blank": {
       "exclude": [],
       "severity": "Error",
