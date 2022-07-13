@@ -1,6 +1,6 @@
 {
   "global": {
-    "files": "{/exercises/practice/**/*.testclasses.abap,/exercises/practice/**/.meta/*.abap}",
+    "files": "{/exercises/practice/**/*.testclasses.abap,/exercises/practice/**/.meta/*.abap,/exercises/concept/**/*.testclasses.abap,/exercises/concept/**/.meta/*.abap}",
     "exclude": [],
     "skipGeneratedGatewayClasses": true,
     "skipGeneratedPersistentClasses": true,
