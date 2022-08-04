@@ -15,7 +15,7 @@ CLASS ltcl_itab_basics IMPLEMENTATION.
 
   METHOD test_fill_itab.
 
-    DATA(expected_values) = VALUE cut->itab_data_type(
+    DATA(expected_values) = VALUE zcl_itab_basics=>itab_data_type(
         ( group = 'A' number = 10  description = 'Group A-2' )
         ( group = 'B' number = 5   description = 'Group B' )
         ( group = 'A' number = 6   description = 'Group A-1' )
@@ -31,7 +31,7 @@ CLASS ltcl_itab_basics IMPLEMENTATION.
 
 
   METHOD test_add_to_itab.
-    DATA(expected_values) = VALUE cut->itab_data_type(
+    DATA(expected_values) = VALUE zcl_itab_basics=>itab_data_type(
       ( group = 'A' number = 10  description = 'Group A-2' )
       ( group = 'B' number = 5   description = 'Group B' )
       ( group = 'A' number = 6   description = 'Group A-1' )
@@ -46,7 +46,7 @@ CLASS ltcl_itab_basics IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD test_sort_itab.
-    DATA(expected_values) = VALUE cut->itab_data_type(
+    DATA(expected_values) = VALUE zcl_itab_basics=>itab_data_type(
       ( group = 'A' number = 19  description = 'Group A-4' )
       ( group = 'A' number = 13  description = 'Group A-3' )
       ( group = 'A' number = 10  description = 'Group A-2' )
