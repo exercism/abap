@@ -39,6 +39,30 @@
         "difficulty": 1
       },
       {
+        "slug": "itab-aggregation",
+        "name": "ITAB Aggregation",
+        "uuid": "b31ecd5d-939b-44a5-80ac-798787c2dde3",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "itab-combination",
+        "name": "ITAB Combination",
+        "uuid": "859b8764-71d0-461a-a30d-c2e0fee75ced",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "itab-nesting",
+        "name": "ITAB Nesting",
+        "uuid": "9aad92ad-1522-4612-8640-1545b7167857",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "hello-world",
         "name": "Hello, World!",
         "uuid": "837b21ed-7f1c-45d0-ad9d-c0c8e081b707",

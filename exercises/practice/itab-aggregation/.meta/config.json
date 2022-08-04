@@ -1,0 +1,13 @@
+{
+  "blurb": "Given a certain internal table, aggregate the data while also grouping it",
+  "authors": ["jung-thomas"],
+  "contributors": [
+  ],
+  "files": {
+    "solution": ["zcl_itab_aggregation.clas.abap"],
+    "test": ["zcl_itab_aggregation.clas.testclasses.abap"],
+    "example": [".meta/zcl_itab_aggregation.clas.abap"]
+  },
+  "source": "ABAP Internal Tables",
+  "source_url": "https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenitab.htm"
+}
