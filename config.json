@@ -31,6 +31,14 @@
     ],
     "practice": [
       {
+        "slug": "itab-basics",
+        "name": "ITAB Basics",
+        "uuid": "b82db578-ac72-480a-a907-409a0a82cbd7",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "hello-world",
         "name": "Hello, World!",
         "uuid": "837b21ed-7f1c-45d0-ad9d-c0c8e081b707",

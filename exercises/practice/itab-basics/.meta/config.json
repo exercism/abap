@@ -1,0 +1,13 @@
+{
+  "blurb": "Basics of Internal Tables: Initialization, Sorting, and Searching",
+  "authors": ["jung-thomas"],
+  "contributors": [
+  ],
+  "files": {
+    "solution": ["zcl_itab_basics.clas.abap"],
+    "test": ["zcl_itab_basics.clas.testclasses.abap"],
+    "example": [".meta/zcl_itab_basics.clas.abap"]
+  },
+  "source": "ABAP Internal Tables",
+  "source_url": "https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenitab.htm"
+}
