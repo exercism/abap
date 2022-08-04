@@ -61,9 +61,9 @@ CLASS zcl_itab_basics IMPLEMENTATION.
   METHOD search_itab.
     DATA(temp_data) = sort_itab( ).
     READ TABLE temp_data WITH KEY number = 6 TRANSPORTING NO FIELDS.
-    if sy-subrc = 0.
-     result_index = sy-tabix.
-    endif.
+    IF sy-subrc = 0.
+      result_index = sy-tabix.
+    ENDIF.
   ENDMETHOD.
 
 ENDCLASS.
