@@ -5,7 +5,7 @@ CLASS zcl_itab_basics DEFINITION
 
 
   PUBLIC SECTION.
-    TYPES  group TYPE c LENGTH 1.
+    TYPES group TYPE c LENGTH 1.
     TYPES: BEGIN OF initial_type,
              group       TYPE group,
              number      TYPE i,
@@ -60,9 +60,10 @@ CLASS zcl_itab_basics IMPLEMENTATION.
 
   METHOD search_itab.
     DATA(temp_data) = sort_itab( ).
-    READ TABLE temp_data
-     WITH KEY number = 6 TRANSPORTING NO FIELDS.
-    result_index = sy-tabix.
+    READ TABLE temp_data WITH KEY number = 6 TRANSPORTING NO FIELDS.
+    if sy-subrc = 0.
+     result_index = sy-tabix.
+    endif.
   ENDMETHOD.
 
 ENDCLASS.
