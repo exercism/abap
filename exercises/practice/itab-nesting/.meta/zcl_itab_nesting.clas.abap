@@ -32,7 +32,7 @@ CLASS zcl_itab_nesting DEFINITION
     TYPES: BEGIN OF album_song_nested_type,
              album_id   TYPE string,
              album_name TYPE string,
-             songs      TYPE STANDARD TABLE OF song_nested_type WITH KEY song_Id,
+             songs      TYPE STANDARD TABLE OF song_nested_type WITH KEY song_id,
            END OF album_song_nested_type.
     TYPES: BEGIN OF artist_album_nested_type,
              artist_id   TYPE string,

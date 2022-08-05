@@ -6,19 +6,18 @@ Your class will be given two internal tables which contain two completely differ
 
 
 ```abap
-    TYPES: BEGIN OF alphatab_type,
-             cola TYPE string,
-             colb TYPE string,
-             colc TYPE string,
-           END OF alphatab_type.
-    TYPES: alphas TYPE STANDARD TABLE OF alphatab_type.
-
-    TYPES: BEGIN OF numtab_type,
-             col1 TYPE string,
-             col2 TYPE string,
-             col3 TYPE string,
-           END OF numtab_type.
-    TYPES: nums TYPE STANDARD TABLE OF numtab_type.
+TYPES: BEGIN OF alphatab_type,
+         cola TYPE string,
+         colb TYPE string,
+         colc TYPE string,
+       END OF alphatab_type.
+TYPES: alphas TYPE STANDARD TABLE OF alphatab_type.
+TYPES: BEGIN OF numtab_type,
+         col1 TYPE string,
+         col2 TYPE string,
+         col3 TYPE string,
+       END OF numtab_type.
+TYPES: nums TYPE STANDARD TABLE OF numtab_type.
 ```
 
 The data in the ALPHA table is as shown below.
@@ -42,12 +41,12 @@ Your task is to return an internal table with records which combine the values o
 The expected return table has the following definition:
 
 ```abap
-    TYPES: BEGIN OF combined_data_type,
-             colx TYPE string,
-             coly TYPE string,
-             colz TYPE string,
-           END OF combined_data_type.
-    TYPES: combined_data TYPE STANDARD TABLE OF combined_data_type WITH EMPTY KEY.
+TYPES: BEGIN OF combined_data_type,
+         colx TYPE string,
+         coly TYPE string,
+         colz TYPE string,
+       END OF combined_data_type.
+TYPES: combined_data TYPE STANDARD TABLE OF combined_data_type WITH EMPTY KEY.
 ```
 
 ## Bonus

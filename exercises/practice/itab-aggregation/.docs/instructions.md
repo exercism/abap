@@ -5,11 +5,11 @@ Learn how to aggregate and group data within an ABAP internal table.
 You class will be given an internal table named `initial_numbers`.  It has two columns: `GROUP` and `NUMBER`.
 
 ```abap
-    TYPES: BEGIN OF initial_numbers_type,
-             group  TYPE group,
-             number TYPE i,
-           END OF initial_numbers_type,
-           initial_numbers TYPE STANDARD TABLE OF initial_numbers_type WITH EMPTY KEY.
+TYPES: BEGIN OF initial_numbers_type,
+        group  TYPE group,
+        number TYPE i,
+       END OF initial_numbers_type,
+       initial_numbers TYPE STANDARD TABLE OF initial_numbers_type WITH EMPTY KEY.
 ```
 
 The data in this table consists of three groups - A, B, and C.  There are multiple records in each group.
@@ -28,15 +28,15 @@ Your task is to return an internal table with one record per group. This record 
 The expected return table has the following definition:
 
 ```abap
-    TYPES: BEGIN OF aggregated_data_type,
-             group   TYPE group,
-             count   TYPE i,
-             sum     TYPE i,
-             min     TYPE i,
-             max     TYPE i,
-             average TYPE f,
-           END OF aggregated_data_type,
-           aggregated_data TYPE STANDARD TABLE OF aggregated_data_Type WITH EMPTY KEY.
+TYPES: BEGIN OF aggregated_data_type,
+        group   TYPE group,
+        count   TYPE i,
+        sum     TYPE i,
+        min     TYPE i,
+        max     TYPE i,
+        average TYPE f,
+       END OF aggregated_data_type,
+       aggregated_data TYPE STANDARD TABLE OF aggregated_data_Type WITH EMPTY KEY.
 ```
 
 ## Bonus

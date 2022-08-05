@@ -6,25 +6,24 @@ Your class will be given three internal tables which contain three completely di
 
 
 ```abap
-    TYPES: BEGIN OF artists_type,
-             artist_id   TYPE string,
-             artist_name TYPE string,
-           END OF artists_type.
-    TYPES: artists TYPE STANDARD TABLE OF artists_type WITH KEY artist_id.
-    TYPES: BEGIN OF albums_type,
-             artist_id  TYPE string,
-             album_id   TYPE string,
-             album_name TYPE string,
-           END OF albums_type.
-    TYPES: albums TYPE STANDARD TABLE OF albums_type WITH KEY artist_id album_id.
-    TYPES: BEGIN OF songs_type,
-             artist_id TYPE string,
-             album_id  TYPE string,
-             song_id   TYPE string,
-             song_name TYPE string,
-           END OF songs_type.
-    TYPES: songs TYPE STANDARD TABLE OF songs_type WITH KEY artist_id album_id song_id.
-
+TYPES: BEGIN OF artists_type,
+         artist_id   TYPE string,
+         artist_name TYPE string,
+       END OF artists_type.
+TYPES: artists TYPE STANDARD TABLE OF artists_type WITH KEY artist_id.
+TYPES: BEGIN OF albums_type,
+         artist_id  TYPE string,
+         album_id   TYPE string,
+         album_name TYPE string,
+       END OF albums_type.
+TYPES: albums TYPE STANDARD TABLE OF albums_type WITH KEY artist_id album_id.
+TYPES: BEGIN OF songs_type,
+         artist_id TYPE string,
+         album_id  TYPE string,
+         song_id   TYPE string,
+         song_name TYPE string,
+       END OF songs_type.
+TYPES: songs TYPE STANDARD TABLE OF songs_type WITH KEY artist_id album_id song_id.
 ```
 
 The data in the ARTISTS table is as shown below.
@@ -68,21 +67,21 @@ Your task is to return an internal table with records which combine the values o
 The expected return table has the following definition:
 
 ```abap
-    TYPES: BEGIN OF song_nested_type,
-             song_id   TYPE string,
-             song_name TYPE string,
-           END OF song_nested_type.
-    TYPES: BEGIN OF album_song_nested_type,
-             album_id   TYPE string,
-             album_name TYPE string,
-             songs      TYPE STANDARD TABLE OF song_nested_type WITH KEY song_Id,
-           END OF album_song_nested_type.
-    TYPES: BEGIN OF artist_album_nested_type,
-             artist_id   TYPE string,
-             artist_name TYPE string,
-             albums      TYPE STANDARD TABLE OF album_song_nested_type WITH KEY album_id,
-           END OF artist_album_nested_type.
-    TYPES: nested_data TYPE STANDARD TABLE OF artist_album_nested_type WITH KEY artist_id.
+TYPES: BEGIN OF song_nested_type,
+         song_id   TYPE string,
+         song_name TYPE string,
+       END OF song_nested_type.
+TYPES: BEGIN OF album_song_nested_type,
+         album_id   TYPE string,
+         album_name TYPE string,
+         songs      TYPE STANDARD TABLE OF song_nested_type WITH KEY song_Id,
+       END OF album_song_nested_type.
+TYPES: BEGIN OF artist_album_nested_type,
+         artist_id   TYPE string,
+         artist_name TYPE string,
+         albums      TYPE STANDARD TABLE OF album_song_nested_type WITH KEY album_id,
+       END OF artist_album_nested_type.
+TYPES: nested_data TYPE STANDARD TABLE OF artist_album_nested_type WITH KEY artist_id.
 ```
 
 ## Bonus

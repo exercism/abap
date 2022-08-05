@@ -5,13 +5,13 @@ Learn the basics about ABAP internal tables.
 You class has an internal table named `initial_data`.  It has three columns: `GROUP`, `NUMBER`, and `DESCRIPTION`. 
 
 ```abap
-    TYPES  group TYPE c LENGTH 1.
-    TYPES: BEGIN OF initial_type,
-             group       TYPE group,
-             number      TYPE i,
-             description TYPE string,
-           END OF initial_type,
-           initial_data TYPE STANDARD TABLE OF initial_type WITH EMPTY KEY.
+TYPES  group TYPE c LENGTH 1.
+TYPES: BEGIN OF initial_type,
+         group       TYPE group,
+         number      TYPE i,
+         description TYPE string,
+       END OF initial_type,
+       initial_data TYPE STANDARD TABLE OF initial_type WITH EMPTY KEY.
 ```
 
 ## Step 1
