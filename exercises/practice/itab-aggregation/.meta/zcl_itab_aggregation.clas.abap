@@ -19,7 +19,7 @@ CLASS zcl_itab_aggregation DEFINITION
              max     TYPE i,
              average TYPE f,
            END OF aggregated_data_type,
-           aggregated_data TYPE STANDARD TABLE OF aggregated_data_Type WITH EMPTY KEY.
+           aggregated_data TYPE STANDARD TABLE OF aggregated_data_type WITH EMPTY KEY.
 
     METHODS perform_aggregation
       IMPORTING
@@ -34,9 +34,9 @@ ENDCLASS.
 CLASS zcl_itab_aggregation IMPLEMENTATION.
   METHOD perform_aggregation.
     LOOP AT initial_numbers REFERENCE INTO DATA(initial_number)
-       GROUP BY ( key = initial_number->group  count = GROUP SIZE )
-       ASCENDING
-       REFERENCE INTO DATA(group_key).
+        GROUP BY ( key = initial_number->group  count = GROUP SIZE )
+        ASCENDING
+        REFERENCE INTO DATA(group_key).
 
       APPEND INITIAL LINE TO aggregated_data REFERENCE INTO DATA(aggregated_item).
       aggregated_item->group = group_key->key.
