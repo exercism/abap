@@ -2,7 +2,7 @@
 
 Learn the basics about ABAP internal tables.
 
-Your class has an internal table named `initial_data`.  It has three columns: `GROUP`, `NUMBER`, and `DESCRIPTION`. 
+Your class has an internal table named `initial_data`. It has three columns: `GROUP`, `NUMBER`, and `DESCRIPTION`. 
 
 ```abap
 TYPES  group TYPE c LENGTH 1.
