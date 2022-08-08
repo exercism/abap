@@ -3,7 +3,6 @@ CLASS zcl_itab_basics DEFINITION
   FINAL
   CREATE PUBLIC .
 
-
   PUBLIC SECTION.
     TYPES group TYPE c LENGTH 1.
     TYPES: BEGIN OF initial_type,
@@ -14,26 +13,27 @@ CLASS zcl_itab_basics DEFINITION
            itab_data_type TYPE STANDARD TABLE OF initial_type WITH EMPTY KEY.
 
     METHODS fill_itab
-      RETURNING
-        VALUE(initial_data) TYPE itab_data_type.
-
+           RETURNING
+             VALUE(initial_data) TYPE itab_data_type.
+     
     METHODS add_to_itab
-      RETURNING
-        VALUE(updated_data) TYPE itab_data_type.
-
+           IMPORTING initial_data TYPE itab_data_type
+           RETURNING
+             VALUE(updated_data) TYPE itab_data_type.
+     
     METHODS sort_itab
-      RETURNING
-        VALUE(updated_data) TYPE itab_data_type.
-
+           IMPORTING initial_data TYPE itab_data_type
+           RETURNING
+             VALUE(updated_data) TYPE itab_data_type.
+     
     METHODS search_itab
-      RETURNING
-        VALUE(result_index) TYPE i.
+           IMPORTING initial_data TYPE itab_data_type
+           RETURNING
+             VALUE(result_index) TYPE i.
 
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
-
-
 
 CLASS zcl_itab_basics IMPLEMENTATION.
   METHOD fill_itab.
@@ -47,19 +47,19 @@ CLASS zcl_itab_basics IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD add_to_itab.
-    updated_data = fill_itab( ).
+    updated_data = initial_data.
     APPEND
       VALUE #( group = 'A' number = 19  description = 'Group A-4' )
       TO updated_data.
   ENDMETHOD.
 
   METHOD sort_itab.
-    updated_data = add_to_itab( ).
+    updated_data = initial_data.
     SORT updated_data BY group ASCENDING number DESCENDING.
   ENDMETHOD.
 
   METHOD search_itab.
-    DATA(temp_data) = sort_itab( ).
+    DATA(temp_data) = initial_data.
     READ TABLE temp_data WITH KEY number = 6 TRANSPORTING NO FIELDS.
     IF sy-subrc = 0.
       result_index = sy-tabix.

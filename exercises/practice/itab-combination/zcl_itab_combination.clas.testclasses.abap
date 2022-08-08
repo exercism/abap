@@ -1,14 +1,22 @@
-*"* use this source file for your ABAP unit test classes
 CLASS ltcl_itab_combination DEFINITION FOR TESTING RISK LEVEL HARMLESS DURATION SHORT FINAL.
   PRIVATE SECTION.
     DATA cut TYPE REF TO zcl_itab_combination.
     METHODS setup.
+    METHODS test_empty_input FOR TESTING RAISING cx_static_check.
     METHODS test_combination FOR TESTING RAISING cx_static_check.
 ENDCLASS.
 CLASS ltcl_itab_combination IMPLEMENTATION.
 
   METHOD setup.
     cut = NEW zcl_itab_combination( ).
+  ENDMETHOD.
+
+  METHOD test_empty_input.
+    cl_abap_unit_assert=>assert_equals(
+      act = cut->perform_combination( alphas = VALUE #( )
+                                      nums = VALUE #( ) )
+      exp = VALUE zcl_itab_combination=>combined_data( )
+      msg = `No Cheating!` ).
   ENDMETHOD.
 
   METHOD test_combination.

@@ -2,12 +2,22 @@ CLASS ltcl_itab_nesting DEFINITION FOR TESTING RISK LEVEL HARMLESS DURATION SHOR
   PRIVATE SECTION.
     DATA cut TYPE REF TO zcl_itab_nesting.
     METHODS setup.
+    METHODS test_empty_input FOR TESTING RAISING cx_static_check.
     METHODS test_nesting FOR TESTING RAISING cx_static_check.
 ENDCLASS.
 CLASS ltcl_itab_nesting IMPLEMENTATION.
 
   METHOD setup.
     cut = NEW zcl_itab_nesting( ).
+  ENDMETHOD.
+
+  METHOD test_empty_input.
+    cl_abap_unit_assert=>assert_equals(
+      act = cut->perform_nesting( artists = VALUE #( )
+                                  albums = VALUE #( )
+                                  songs = VALUE #( ) )
+      exp = VALUE zcl_itab_nesting=>nested_data( )
+      msg = `No Cheating!` ).
   ENDMETHOD.
 
   METHOD test_nesting.

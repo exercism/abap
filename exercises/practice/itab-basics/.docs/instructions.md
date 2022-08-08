@@ -5,7 +5,7 @@ Learn the basics about ABAP internal tables.
 Your class has an internal table named `initial_data`. It has three columns: `GROUP`, `NUMBER`, and `DESCRIPTION`. 
 
 ```abap
-TYPES  group TYPE c LENGTH 1.
+TYPES group TYPE c LENGTH 1.
 TYPES: BEGIN OF initial_type,
          group       TYPE group,
          number      TYPE i,
@@ -37,7 +37,7 @@ Next implement the method `add_to_itab` to add a record to the end of the intern
 
 ## Step 3
 
-Now please sort the internal in the method `sort_itab` with the `GROUP` column in alphabetical order and the `NUMBER` column in descending order.
+Now please sort the internal table in the method `sort_itab` with the `GROUP` column in alphabetical order and the `NUMBER` column in descending order.
 
 ## Step 4
 

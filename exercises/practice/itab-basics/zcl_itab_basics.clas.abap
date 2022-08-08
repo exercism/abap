@@ -14,20 +14,23 @@ CLASS zcl_itab_basics DEFINITION
            itab_data_type TYPE STANDARD TABLE OF initial_type WITH EMPTY KEY.
 
     METHODS fill_itab
-      RETURNING
-        VALUE(initial_data) TYPE itab_data_type.
+           RETURNING
+             VALUE(initial_data) TYPE itab_data_type.
 
     METHODS add_to_itab
-      RETURNING
-        VALUE(updated_data) TYPE itab_data_type.
+           IMPORTING initial_data TYPE itab_data_type
+           RETURNING
+            VALUE(updated_data) TYPE itab_data_type.
 
     METHODS sort_itab
-      RETURNING
-        VALUE(updated_data) TYPE itab_data_type.
+           IMPORTING initial_data TYPE itab_data_type
+           RETURNING
+            VALUE(updated_data) TYPE itab_data_type.
 
     METHODS search_itab
-      RETURNING
-        VALUE(result_index) TYPE i.
+           IMPORTING initial_data TYPE itab_data_type
+           RETURNING
+             VALUE(result_index) TYPE i.
 
   PROTECTED SECTION.
   PRIVATE SECTION.
@@ -41,17 +44,17 @@ CLASS zcl_itab_basics IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD add_to_itab.
-    updated_data = fill_itab( ).
+    updated_data = initial_data.
     "add solution here
   ENDMETHOD.
 
   METHOD sort_itab.
-    updated_data = add_to_itab( ).
+    updated_data = initial_data.
     "add solution here
   ENDMETHOD.
 
   METHOD search_itab.
-    DATA(temp_data) = sort_itab( ).
+    DATA(temp_data) = initial_data.
     "add solution here
   ENDMETHOD.
 
