@@ -15,17 +15,17 @@ CLASS zcl_itab_basics DEFINITION
     METHODS fill_itab
            RETURNING
              VALUE(initial_data) TYPE itab_data_type.
-     
+
     METHODS add_to_itab
            IMPORTING initial_data TYPE itab_data_type
            RETURNING
              VALUE(updated_data) TYPE itab_data_type.
-     
+
     METHODS sort_itab
            IMPORTING initial_data TYPE itab_data_type
            RETURNING
              VALUE(updated_data) TYPE itab_data_type.
-     
+
     METHODS search_itab
            IMPORTING initial_data TYPE itab_data_type
            RETURNING
