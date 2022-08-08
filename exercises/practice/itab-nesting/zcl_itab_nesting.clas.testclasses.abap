@@ -15,12 +15,12 @@ CLASS ltcl_itab_nesting IMPLEMENTATION.
     cl_abap_unit_assert=>assert_equals(
       act = cut->perform_nesting(
         artists     = VALUE #( ( artist_id = '1' artist_name = 'Godsmack' )
-                                ( artist_id = '2' artist_name = 'Disturbed' )
+*                               ( artist_id = '2' artist_name = 'Disturbed' )
                                 ( artist_id = '3' artist_name = 'Shinedown' ) )
         albums      = VALUE #( ( artist_id = '1' album_id = '1' album_name = 'Faceless' )
                                 ( artist_id = '1' album_id = '2' album_name = 'When Lengends Rise' )
-                                ( artist_id = '2' album_id = '1' album_name = 'The Sickness' )
-                                ( artist_id = '2' album_id = '2' album_name = 'Indestructible' )
+*                                ( artist_id = '2' album_id = '1' album_name = 'The Sickness' )
+*                                ( artist_id = '2' album_id = '2' album_name = 'Indestructible' )
                                 ( artist_id = '3' album_id = '1' album_name = 'The Sound of Madness' )
                                 ( artist_id = '3' album_id = '2' album_name = 'Planet Zero' )
                                 )
@@ -28,10 +28,10 @@ CLASS ltcl_itab_nesting IMPLEMENTATION.
                                 ( artist_id = '1' album_id = '1' song_id = '2' song_name = 'Changes' )
                                 ( artist_id = '1' album_id = '2' song_id = '1' song_name = 'Bullet Proof' )
                                 ( artist_id = '1' album_id = '2' song_id = '2' song_name = 'Under Your Scars' )
-                                ( artist_id = '2' album_id = '1' song_id = '1' song_name = 'Voices' )
-                                ( artist_id = '2' album_id = '1' song_id = '2' song_name = 'Stupify' )
-                                ( artist_id = '2' album_id = '2' song_id = '1' song_name = 'Inside The Fire' )
-                                ( artist_id = '2' album_id = '2' song_id = '2' song_name = 'The Night' )
+*                                ( artist_id = '2' album_id = '1' song_id = '1' song_name = 'Voices' )
+*                                ( artist_id = '2' album_id = '1' song_id = '2' song_name = 'Stupify' )
+*                                ( artist_id = '2' album_id = '2' song_id = '1' song_name = 'Inside The Fire' )
+*                                ( artist_id = '2' album_id = '2' song_id = '2' song_name = 'The Night' )
                                 ( artist_id = '3' album_id = '1' song_id = '1' song_name = 'Second Chance' )
                                 ( artist_id = '3' album_id = '1' song_id = '2' song_name = 'Breaking Inside' )
                                 ( artist_id = '3' album_id = '2' song_id = '1' song_name = 'Dysfunctional You' )
@@ -49,16 +49,16 @@ CLASS ltcl_itab_nesting IMPLEMENTATION.
                                                                 ( song_id = '2' song_name = 'Under Your Scars' )
                                                                 ) )
                                         ) )
-                 ( artist_id = '2' artist_name = 'Disturbed'
-                    albums      = VALUE #( ( album_id = '1' album_name = 'The Sickness'
-                                          songs       = VALUE #( ( song_id = '1' song_name = 'Voices' )
-                                                                 ( song_id = '2' song_name = 'Stupify' )
-                                                                ) )
-                                           ( album_id = '2' album_name = 'Indestructible'
-                                          songs       = VALUE #( ( song_id = '1' song_name = 'Inside The Fire' )
-                                                                 ( song_id = '2' song_name = 'The Night' )
-                                                                ) )
-                                       ) )
+*                 ( artist_id = '2' artist_name = 'Disturbed'
+*                    albums      = VALUE #( ( album_id = '1' album_name = 'The Sickness'
+*                                          songs       = VALUE #( ( song_id = '1' song_name = 'Voices' )
+*                                                                 ( song_id = '2' song_name = 'Stupify' )
+*                                                                ) )
+*                                           ( album_id = '2' album_name = 'Indestructible'
+*                                          songs       = VALUE #( ( song_id = '1' song_name = 'Inside The Fire' )
+*                                                                 ( song_id = '2' song_name = 'The Night' )
+*                                                                ) )
+*                                       ) )
                  ( artist_id = '3' artist_name = 'Shinedown'
                     albums      = VALUE #( ( album_id = '1' album_name = 'The Sound of Madness'
                                           songs       = VALUE #( ( song_id = '1' song_name = 'Second Chance' )
