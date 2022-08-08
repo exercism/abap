@@ -15,7 +15,7 @@ CLASS ltcl_itab_nesting IMPLEMENTATION.
     cl_abap_unit_assert=>assert_equals(
       act = cut->perform_nesting(
         artists     = VALUE #( ( artist_id = '1' artist_name = 'Godsmack' )
-                               ( artist_id = '2' artist_name = 'Shinedown' ) )
+                                ( artist_id = '2' artist_name = 'Shinedown' ) )
         albums      = VALUE #( ( artist_id = '1' album_id = '1' album_name = 'Faceless' )
                                 ( artist_id = '1' album_id = '2' album_name = 'When Lengends Rise' )
                                 ( artist_id = '2' album_id = '1' album_name = 'The Sound of Madness' )

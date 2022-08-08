@@ -31,8 +31,7 @@ The data in the ARTISTS table is as shown below.
 | ARTIST_ID | ARTIST_NAME | 
 | --- | --- | 
 | 1 | Godsmack | 
-| 2 | Disturbed | 
-| 3 | Shinedown | 
+| 2 | Shinedown | 
 
 The data in the ALBUMS table is as shown below.
 
@@ -40,10 +39,8 @@ The data in the ALBUMS table is as shown below.
 | --- | --- | --- |
 | 1 | 1 | Faceless | 
 | 1 | 2 | When Lengends Rise |
-| 2 | 1 | The Sickness |
-| 2 | 2 | Indestructible | 
-| 3 | 1 | The Sound of Madness |
-| 3 | 2 | Planet Zero |
+| 2 | 1 | The Sound of Madness |
+| 2 | 2 | Planet Zero |
 
 The data in the SONGS table is as shown below.
 
@@ -53,14 +50,10 @@ The data in the SONGS table is as shown below.
 | 1 | 1 | 2 | Changes |
 | 1 | 2 | 1 | Bullet Proof |
 | 1 | 2 | 2 | Under Your Scars |
-| 2 | 1 | 1 | Voices |
-| 2 | 1 | 2 | Stupify |
-| 2 | 2 | 1 | Inside The Fire |
-| 2 | 2 | 2 | The Night |
-| 3 | 1 | 1 | Second Chance |
-| 3 | 1 | 2 | Breaking Inside |
-| 3 | 2 | 1 | Dysfunctional You |
-| 3 | 2 | 2 | Daylight |
+| 2 | 1 | 1 | Second Chance |
+| 2 | 1 | 2 | Breaking Inside |
+| 2 | 2 | 1 | Dysfunctional You |
+| 2 | 2 | 2 | Daylight |
 
 Your task is to return an internal table with records which combine the values of each internal table in a structured way, nesting the SONGS internal table into the ALBUMS internal table and of course nesting the ALBUMS internal table into the ARTISTS internal table.  
 
