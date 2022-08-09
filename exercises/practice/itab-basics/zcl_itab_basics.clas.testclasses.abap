@@ -39,8 +39,7 @@ CLASS ltcl_itab_basics IMPLEMENTATION.
 
     cl_abap_unit_assert=>assert_equals(
       act = lines( cut->add_to_itab( VALUE #( ) ) )
-      exp = 1
-      msg = `No Cheating!` ).
+      exp = 1 ).
 
   ENDMETHOD.
 
@@ -65,8 +64,7 @@ CLASS ltcl_itab_basics IMPLEMENTATION.
   METHOD test_sort_itab_empty.
     cl_abap_unit_assert=>assert_equals(
       act = cut->sort_itab( VALUE #( ) )
-      exp = VALUE zcl_itab_basics=>itab_data_type( )
-      msg = `No Cheating!` ).
+      exp = VALUE zcl_itab_basics=>itab_data_type( ) ).
   ENDMETHOD.
 
   METHOD test_sort_itab.
@@ -87,8 +85,7 @@ CLASS ltcl_itab_basics IMPLEMENTATION.
   METHOD test_search_itab_empty.
     cl_abap_unit_assert=>assert_equals(
       act = cut->search_itab( VALUE #( ) )
-      exp = 0
-      msg = `No Cheating!` ).
+      exp = 0 ).
   ENDMETHOD.
 
   METHOD test_search_itab.

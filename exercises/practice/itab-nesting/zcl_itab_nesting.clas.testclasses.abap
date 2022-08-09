@@ -29,7 +29,7 @@ CLASS ltcl_itab_nesting IMPLEMENTATION.
         songs       = VALUE #( ( artist_id = '1' album_id = '1' song_id = '1' song_name = 'Straight Out Of Line' ) ) )
       exp = VALUE zcl_itab_nesting=>nested_data( ( artist_id = '1' artist_name = 'Godsmack'
                            albums = VALUE #( ( album_id = '1' album_name = 'Faceless'
-                                               songs   = VALUE #( ( song_id = '1' song_name = 'Straight Out Of Line' ) )
+                                               songs = VALUE #( ( song_id = '1' song_name = 'Straight Out Of Line' ) )
                                              ) )
                                    ) ) ).
   ENDMETHOD.
@@ -41,7 +41,7 @@ CLASS ltcl_itab_nesting IMPLEMENTATION.
         albums      = VALUE #( )
         songs       = VALUE #( ) )
       exp = VALUE zcl_itab_nesting=>nested_data( ( artist_id = '1' artist_name = 'Godsmack'
-                                        albums      = VALUE #( ) ) ) ).
+                                        albums = VALUE #( ) ) ) ).
   ENDMETHOD.
 
 
