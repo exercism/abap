@@ -3,6 +3,8 @@ CLASS ltcl_itab_nesting DEFINITION FOR TESTING RISK LEVEL HARMLESS DURATION SHOR
     DATA cut TYPE REF TO zcl_itab_nesting.
     METHODS setup.
     METHODS test_empty_input FOR TESTING RAISING cx_static_check.
+    METHODS test_single_artist FOR TESTING RAISING cx_static_check.
+    METHODS test_single_artist_no_album FOR TESTING RAISING cx_static_check.
     METHODS test_nesting FOR TESTING RAISING cx_static_check.
 ENDCLASS.
 CLASS ltcl_itab_nesting IMPLEMENTATION.
@@ -16,9 +18,32 @@ CLASS ltcl_itab_nesting IMPLEMENTATION.
       act = cut->perform_nesting( artists = VALUE #( )
                                   albums = VALUE #( )
                                   songs = VALUE #( ) )
-      exp = VALUE zcl_itab_nesting=>nested_data( )
-      msg = `No Cheating!` ).
+      exp = VALUE zcl_itab_nesting=>nested_data( ) ).
   ENDMETHOD.
+
+  METHOD test_single_artist.
+    cl_abap_unit_assert=>assert_equals(
+      act = cut->perform_nesting(
+        artists     = VALUE #( ( artist_id = '1' artist_name = 'Godsmack' ) )
+        albums      = VALUE #( ( artist_id = '1' album_id = '1' album_name = 'Faceless' ) )
+        songs       = VALUE #( ( artist_id = '1' album_id = '1' song_id = '1' song_name = 'Straight Out Of Line' ) ) )
+      exp = VALUE zcl_itab_nesting=>nested_data( ( artist_id = '1' artist_name = 'Godsmack'
+                           albums = VALUE #( ( album_id = '1' album_name = 'Faceless'
+                                               songs   = VALUE #( ( song_id = '1' song_name = 'Straight Out Of Line' ) )
+                                             ) )
+                                   ) ) ).
+  ENDMETHOD.
+
+  METHOD test_single_artist_no_album.
+    cl_abap_unit_assert=>assert_equals(
+      act = cut->perform_nesting(
+        artists     = VALUE #( ( artist_id = '1' artist_name = 'Godsmack' ) )
+        albums      = VALUE #( )
+        songs       = VALUE #( ) )
+      exp = VALUE zcl_itab_nesting=>nested_data( ( artist_id = '1' artist_name = 'Godsmack'
+                                        albums      = VALUE #( ) ) ) ).
+  ENDMETHOD.
+
 
   METHOD test_nesting.
 
