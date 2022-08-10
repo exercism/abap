@@ -2,7 +2,7 @@
 
 Learn how to combine data from two different internal tables into one result internal table. 
 
-Your class will be given two internal tables which contain two completely different datasets, ALPHAS and NUMS
+Your class will be given two internal tables which contain two completely different datasets, ALPHAS and NUMS.
 
 
 ```abap
