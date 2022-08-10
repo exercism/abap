@@ -1,0 +1,13 @@
+{
+  "blurb": "Given three different internal tables, combine the data from each table into one internal table while using nested tables",
+  "authors": ["rich-heilman"],
+  "contributors": [
+  ],
+  "files": {
+    "solution": ["zcl_itab_nesting.clas.abap"],
+    "test": ["zcl_itab_nesting.clas.testclasses.abap"],
+    "example": [".meta/zcl_itab_nesting.clas.abap"]
+  },
+  "source": "ABAP Internal Tables",
+  "source_url": "https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenitab.htm"
+}
