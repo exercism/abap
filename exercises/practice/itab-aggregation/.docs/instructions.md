@@ -2,7 +2,8 @@
 
 Learn how to aggregate and group data within an ABAP internal table.
 
-You class will be given an internal table named `initial_numbers`.  It has two columns: `GROUP` and `NUMBER`.
+
+Your class will be given an internal table named `initial_numbers`.  It has two columns: `GROUP` and `NUMBER`.
 
 ```abap
 TYPES: BEGIN OF initial_numbers_type,

@@ -1,6 +1,6 @@
 # Instructions
 
-Learn how to combine data from three different internal tables into one result internal table while nesting the associated data.. 
+Learn how to combine data from three different internal tables into one result internal table while nesting the associated data. 
 
 Your class will be given three internal tables which contain three completely different datasets, ARTISTS, ALBUMS, and SONGS. 
 
