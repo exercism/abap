@@ -24,7 +24,7 @@ The data in this table consists of three groups - A, B, and C.  There are multip
 | A | 13 |
 | C | 500 |
 
-Your task is to return an internal table with one record per group. This record should contain the number of records in the original table per group (`COUNT`), the sum of all `NUMBER` values in this group (`SUM)`, the minimum value in the group (`MIN`), the maximum value in the group (`MAX`) and the average of all values in that group (`AVERAGE`).  
+Your task is to return an internal table with one record per group. This record should contain the number of records in the original table per group (`COUNT`), the sum of all `NUMBER` values in this group (`SUM`), the minimum value in the group (`MIN`), the maximum value in the group (`MAX`) and the average of all values in that group (`AVERAGE`).  
 
 The expected return table has the following definition:
 
