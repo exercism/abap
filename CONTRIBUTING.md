@@ -16,10 +16,11 @@ Before contributing code to any existing exercise or any new exercise, please ha
 
 ### New exercise
 
-There are two ways to implement new exercises (exercises that don't exist in this track).
+There are a few ways to implement new exercises (exercises that don't exist in this track).
 
-1. Pick one from [the list of exercises][list-of-exercises] (implemented in other tracks).
-2. Create a new, track-specific exercise from scratch.
+1. Pick one from [the list of exercises][list-of-exercises].
+2. Port an exercism implemented in other tracks (check for example, the [JavaScript Track](https://exercism.org/tracks/javascript/exercises)).
+3. Create a new, track-specific exercise from scratch.
 
 #### Implementing existing exercise
 
@@ -34,10 +35,9 @@ The baseline of work is as follows:
 
 1. Open a new issue, we'll label it with `new exercise ✨`
 2. We'll assign the issue to you, so you get to work on this exercise
-3. Clone this repository to your own SAP system using [abapGit](https://github.com/abapGit/abapGit). We recommend to use SAP package `$EXERCISM`
-(track maintainers can create a branch in this repo, others should fork it).
+3. Clone this repository to your own SAP system using [abapGit](https://github.com/abapGit/abapGit). We recommend to use SAP package `$EXERCISM`. The folder logic needs to be "Mixed". Track maintainers can create a branch in this repo, others should fork it.
 4. Create a subpackage for your exercise named `$EXERCISM_<EXERCISE>`
-5. Implement the exercise stub in an ABAP class named `ZCL_<EXERCISE>`
+5. Implement the exercise stub in an ABAP class named `ZCL_<EXERCISE>` (code without solution)
 6. Implement unit tests for your ABAP class
 7. Stage and commit the SAP package and class 
 8. To create an example solution, we recommend the following approach since you can't use abapGit for it:
@@ -107,6 +107,7 @@ You may improve these files by making the required changes and opening a new Pul
 [web-syllabus]: https://exercism.org/tracks/abap/concepts
 [file-config]: https://github.com/exercism/abap/blob/main/config.json
 [file-docs]: https://github.com/exercism/abap/tree/main/docs
+[list-of-exercises]: https://github.com/exercism/problem-specifications/
 [issue-open]: https://github.com/exercism/abap/issues
 [issue-discussion]: https://github.com/exercism/abap/labels/discussion%20%3Aspeech_balloon%3A
 [issue-new-exercise]: https://github.com/exercism/abap/issues?q=is%3Aopen+is%3Aissue+label%3A%22%3Asparkles%3A+new+exercise%22
