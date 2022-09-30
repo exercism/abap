@@ -29,7 +29,7 @@ Given the decimal input 3, the function would return the following string_table:
 This is because the decimal number 3 is 2+1 in powers of two and thus `11` in binary.
 
 Let's now examine the input 19 which is 16+2+1 in powers of two and thus `10011` in binary.
-Recalling that the addition of 16 (`10000` in binary) reverses an array and that we already know what array is returned given input 3, the string_table returned for input 19 is:
+Recalling that the addition of 16 (`10000` in binary) reverses the sequence and that we already know what result is returned given input 3, the string_table returned for input 19 is:
 
 | Row | TABLE_LINE   |
 | --- | ------------ |
