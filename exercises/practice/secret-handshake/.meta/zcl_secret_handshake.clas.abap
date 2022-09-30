@@ -20,7 +20,7 @@ CLASS zcl_secret_handshake IMPLEMENTATION.
     DATA binary_zero TYPE x VALUE 0.
     DATA(binary_code) = CONV xstring( code ).
 
-    DATA(codes_transl) = VALUE string_table(  ( `wink` ) ( `double blink` )  ( `close your eyes` )  ( `jump` ) ).
+    DATA(codes_transl) = VALUE string_table( ( `wink` ) ( `double blink` ) ( `close your eyes` ) ( `jump` ) ).
 
     LOOP AT codes_transl REFERENCE INTO DATA(command).
       IF CONV xstring( 2 ** ( sy-tabix - 1 ) ) BIT-AND binary_code > binary_zero.
