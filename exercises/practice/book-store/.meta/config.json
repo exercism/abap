@@ -1,0 +1,20 @@
+{
+  "blurb": "To try and encourage more sales of different books from a popular 5 book series, a bookshop has decided to offer discounts of multiple-book purchases.",
+  "authors": [
+    "bau-mann"
+  ],
+  "contributors": [],
+  "files": {
+    "solution": [
+      "zcl_book_store.clas.abap"
+    ],
+    "test": [
+      "zcl_book_store.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_book_store.clas.abap"
+    ]
+  },
+  "source": "Inspired by the harry potter kata from Cyber-Dojo.",
+  "source_url": "http://cyber-dojo.org"
+}
