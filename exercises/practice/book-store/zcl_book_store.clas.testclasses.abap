@@ -34,7 +34,7 @@ CLASS ltcl_book_store DEFINITION FINAL FOR TESTING
     METHODS groups_of_four FOR TESTING RAISING cx_static_check.
     "!One group of one and four is cheaper than one group of two and three
     METHODS one_group_of_one_and_four FOR TESTING RAISING cx_static_check.
-    "! One group of one and two plus three groups of four is cheaper than one group of each size"
+    "! One group of one and two plus three groups of four is cheaper than one group of each size
     METHODS mixed_1 FOR TESTING RAISING cx_static_check.
 
 ENDCLASS.
