@@ -59,16 +59,14 @@ CLASS zcl_book_store IMPLEMENTATION.
                              ( book_id = i
                                quantity = lines( FILTER #( basket WHERE table_line = i ) ) ) ).
 
-      LOOP AT discount_grps REFERENCE INTO grp.
-        IF max_grp >= grp->unique_books.
-          WHILE lines( FILTER #( basket_aggr USING KEY quantity WHERE quantity > 0 ) ) >= grp->unique_books.
-            SORT basket_aggr BY quantity DESCENDING.
-            DO grp->unique_books TIMES.
-              basket_aggr[ sy-index ]-quantity -= 1.
-            ENDDO.
-            new_total += grp->unique_books * 8 * ( 1 - grp->discount ).
-          ENDWHILE.
-        ENDIF.
+      LOOP AT discount_grps REFERENCE INTO grp WHERE unique_books <= max_grp.
+        WHILE lines( FILTER #( basket_aggr USING KEY quantity WHERE quantity > 0 ) ) >= grp->unique_books.
+          SORT basket_aggr BY quantity DESCENDING.
+          DO grp->unique_books TIMES.
+            basket_aggr[ sy-index ]-quantity -= 1.
+          ENDDO.
+          new_total += grp->unique_books * 8 * ( 1 - grp->discount ).
+        ENDWHILE.
       ENDLOOP.
 
       total = nmin( val1 = total val2 = new_total ).
