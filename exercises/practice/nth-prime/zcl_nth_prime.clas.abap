@@ -18,10 +18,9 @@ ENDCLASS.
 
 
 CLASS zcl_nth_prime IMPLEMENTATION.
-  
+
   METHOD prime.
     " add solution here
   ENDMETHOD.
-
 
 ENDCLASS.
