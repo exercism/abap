@@ -17,9 +17,9 @@ ENDCLASS.
 
 
 CLASS zcl_darts IMPLEMENTATION.
+
   METHOD score.
     " add solution here
   ENDMETHOD.
-
 
 ENDCLASS.
