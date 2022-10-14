@@ -10,7 +10,7 @@ ENDCLASS.
 CLASS zcl_two_fer IMPLEMENTATION.
 
   METHOD two_fer.
-* add solution here
+    " add solution here
   ENDMETHOD.
 
 ENDCLASS.

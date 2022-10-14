@@ -23,6 +23,7 @@ ENDCLASS.
 CLASS zcl_word_count IMPLEMENTATION.
 
   METHOD count_words.
-    "Add solution here
+    " add solution here
   ENDMETHOD.
+
 ENDCLASS.
