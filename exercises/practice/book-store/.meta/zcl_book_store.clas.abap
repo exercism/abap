@@ -37,7 +37,7 @@ CLASS zcl_book_store IMPLEMENTATION.
     DATA basket_aggr TYPE TABLE OF basket_aggr_line
       WITH NON-UNIQUE SORTED KEY quantity COMPONENTS quantity.
 
-    DATA basket_line type ref to book_id.
+    DATA basket_line TYPE REF TO book_id.
 
     DATA filtered_basket_aggr LIKE basket_aggr.
 
