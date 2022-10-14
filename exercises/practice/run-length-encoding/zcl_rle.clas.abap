@@ -17,16 +17,12 @@ ENDCLASS.
 CLASS zcl_rle IMPLEMENTATION.
 
   METHOD encode.
-
-    "Add solution here
-
+    " add solution here
   ENDMETHOD.
 
 
   METHOD decode.
-
-    "Add solution here
-
+    " add solution here
   ENDMETHOD.
 
 ENDCLASS.

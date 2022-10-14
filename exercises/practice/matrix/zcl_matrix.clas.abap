@@ -25,6 +25,7 @@ ENDCLASS.
 
 
 CLASS zcl_matrix IMPLEMENTATION.
+
   METHOD matrix_row.
     " add solution here
   ENDMETHOD.
@@ -32,4 +33,5 @@ CLASS zcl_matrix IMPLEMENTATION.
   METHOD matrix_column.
     " add solution here
   ENDMETHOD.
+
 ENDCLASS.

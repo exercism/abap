@@ -17,9 +17,9 @@ ENDCLASS.
 
 
 CLASS zcl_prime_factors IMPLEMENTATION.
+
   METHOD factors.
     " add solution here
   ENDMETHOD.
-
 
 ENDCLASS.

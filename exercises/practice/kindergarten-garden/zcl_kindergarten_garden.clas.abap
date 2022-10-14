@@ -20,10 +20,8 @@ ENDCLASS.
 
 CLASS zcl_kindergarten_garden IMPLEMENTATION.
 
-
   METHOD plants.
     " add solution here
   ENDMETHOD.
-
 
 ENDCLASS.

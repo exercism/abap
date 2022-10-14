@@ -10,7 +10,7 @@ ENDCLASS.
 CLASS zcl_raindrops IMPLEMENTATION.
 
   METHOD raindrops.
-* add solution here
+    " add solution here
   ENDMETHOD.
 
 ENDCLASS.

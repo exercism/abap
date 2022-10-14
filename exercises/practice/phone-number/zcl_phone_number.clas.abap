@@ -20,6 +20,7 @@ ENDCLASS.
 CLASS zcl_phone_number IMPLEMENTATION.
 
   METHOD clean.
-" add your code here
+    " add solution here
   ENDMETHOD.
+
 ENDCLASS.

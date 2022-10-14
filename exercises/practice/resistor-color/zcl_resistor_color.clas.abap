@@ -10,7 +10,7 @@ ENDCLASS.
 CLASS zcl_resistor_color IMPLEMENTATION.
 
   METHOD resistor_color.
-* add solution here
+    " add solution here
   ENDMETHOD.
 
 ENDCLASS.
