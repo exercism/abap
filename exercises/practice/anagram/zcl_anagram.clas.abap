@@ -17,6 +17,7 @@ ENDCLASS.
 
 
 CLASS zcl_anagram IMPLEMENTATION.
+
   METHOD anagram.
     " add solution here
   ENDMETHOD.
