@@ -20,10 +20,10 @@ ENDCLASS.
 CLASS zcl_atbash_cipher IMPLEMENTATION.
 
   METHOD decode.
-* todo
+    " add solution here
   ENDMETHOD.
 
   METHOD encode.
-* todo
+    " add solution here
   ENDMETHOD.
 ENDCLASS.

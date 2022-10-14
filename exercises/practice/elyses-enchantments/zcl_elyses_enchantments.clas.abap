@@ -62,42 +62,42 @@ ENDCLASS.
 CLASS zcl_elyses_enchantments IMPLEMENTATION.
 
   METHOD get_item.
-    "Implement solution here
+    " add solution here
   ENDMETHOD.
 
 
   METHOD set_item.
-    "Implement solution here
+    " add solution here
   ENDMETHOD.
 
 
   METHOD insert_item_at_top.
-    "Implement solution here
+    " add solution here
   ENDMETHOD.
 
 
   METHOD get_size_of_stack.
-    "Implement solution here
+    " add solution here
   ENDMETHOD.
 
 
   METHOD insert_item_at_bottom.
-    "Implement solution here
+    " add solution here
   ENDMETHOD.
 
 
   METHOD remove_item.
-    "Implement solution here
+    " add solution here
   ENDMETHOD.
 
 
   METHOD remove_item_from_bottom.
-    "Implement solution here
+    " add solution here
   ENDMETHOD.
 
 
   METHOD remove_item_from_top.
-    "Implement solution here
+    " add solution here
   ENDMETHOD.
 
 ENDCLASS.

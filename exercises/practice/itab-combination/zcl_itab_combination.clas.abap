@@ -42,7 +42,7 @@ ENDCLASS.
 CLASS zcl_itab_combination IMPLEMENTATION.
 
   METHOD perform_combination.
-
+    " add solution here
   ENDMETHOD.
 
 ENDCLASS.

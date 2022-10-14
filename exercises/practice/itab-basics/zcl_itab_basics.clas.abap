@@ -40,22 +40,22 @@ ENDCLASS.
 
 CLASS zcl_itab_basics IMPLEMENTATION.
   METHOD fill_itab.
-    "add solution here
+    " add solution here
   ENDMETHOD.
 
   METHOD add_to_itab.
     updated_data = initial_data.
-    "add solution here
+    " add solution here
   ENDMETHOD.
 
   METHOD sort_itab.
     updated_data = initial_data.
-    "add solution here
+    " add solution here
   ENDMETHOD.
 
   METHOD search_itab.
     DATA(temp_data) = initial_data.
-    "add solution here
+    " add solution here
   ENDMETHOD.
 
 ENDCLASS.

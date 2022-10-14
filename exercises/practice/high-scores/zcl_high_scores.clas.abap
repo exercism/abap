@@ -53,5 +53,4 @@ CLASS zcl_high_scores IMPLEMENTATION.
     " add solution here
   ENDMETHOD.
 
-
 ENDCLASS.

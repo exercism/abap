@@ -20,7 +20,7 @@ CLASS zcl_clock DEFINITION
 
   PRIVATE SECTION.
 
-* add solution here
+  " add solution here
 
 ENDCLASS.
 
@@ -29,21 +29,21 @@ ENDCLASS.
 CLASS zcl_clock IMPLEMENTATION.
 
   METHOD add.
-* add solution here
+    " add solution here
   ENDMETHOD.
 
 
   METHOD constructor.
-* add solution here
+    " add solution here
   ENDMETHOD.
 
 
   METHOD get.
-* add solution here
+    " add solution here
   ENDMETHOD.
 
 
   METHOD sub.
-* add solution here
+    " add solution here
   ENDMETHOD.
 ENDCLASS.

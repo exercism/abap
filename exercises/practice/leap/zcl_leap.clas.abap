@@ -10,7 +10,7 @@ ENDCLASS.
 CLASS zcl_leap IMPLEMENTATION.
 
   METHOD leap.
-* add solution here
+    " add solution here
   ENDMETHOD.
 
 ENDCLASS.

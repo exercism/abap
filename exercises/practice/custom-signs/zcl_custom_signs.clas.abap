@@ -33,22 +33,22 @@ CLASS zcl_custom_signs IMPLEMENTATION.
 
 
   METHOD build_sign.
-    "Implement solution here
+    " add solution here
   ENDMETHOD.
 
 
   METHOD build_birthday_sign.
-    "Implement solution here
+    " add solution here
   ENDMETHOD.
 
 
   METHOD graduation_for.
-    "Implement solution here
+    " add solution here
   ENDMETHOD.
 
 
   METHOD cost_of.
-    "Implement solution here
+    " add solution here
   ENDMETHOD.
 
 
