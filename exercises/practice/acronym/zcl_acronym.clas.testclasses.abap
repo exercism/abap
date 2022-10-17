@@ -25,13 +25,13 @@ CLASS ltcl_acronym  IMPLEMENTATION.
   METHOD setup.
     cut = NEW zcl_acronym( ).
   ENDMETHOD.
-  
+
   METHOD basic_phrase.
     cl_abap_unit_assert=>assert_equals(
        act = cut->parse( `Portable Network Graphics`)
        exp = `PNG` ).
   ENDMETHOD.
-  
+
   METHOD lowercase_words.
     cl_abap_unit_assert=>assert_equals(
        act = cut->parse( `Ruby on Rails`)
