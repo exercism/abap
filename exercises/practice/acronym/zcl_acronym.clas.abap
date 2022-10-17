@@ -4,9 +4,9 @@ CLASS zcl_acronym DEFINITION
   CREATE PUBLIC .
 
   PUBLIC SECTION.
-  METHODS:
-    parse IMPORTING phrase type string
-          RETURNING VALUE(acronym) TYPE string.
+    METHODS:
+      parse IMPORTING phrase         TYPE string
+            RETURNING VALUE(acronym) TYPE string.
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
@@ -14,9 +14,7 @@ ENDCLASS.
 
 
 CLASS zcl_acronym IMPLEMENTATION.
-METHOD parse.
-"Implement solution
-
-
-ENDMETHOD.
+  METHOD parse.
+    "Implement solution
+  ENDMETHOD.
 ENDCLASS.
