@@ -1,89 +1,89 @@
 *"* use this source file for your ABAP unit test classes
-class ltcl_acronym definition final for testing
-  duration short
-  risk level harmless.
+CLASS ltcl_acronym DEFINITION FINAL FOR TESTING
+  DURATION SHORT
+  RISK LEVEL HARMLESS.
 
-  private section.
-      DATA cut TYPE REF TO zcl_acronym.
+  PRIVATE SECTION.
+    DATA cut TYPE REF TO zcl_acronym.
 
     METHODS setup.
-    methods:
-      basic_phrase for testing,
-      lowercase_words for testing,
-      punctuations for testing,
-      all_caps for testing,
-      punc_wo_space for testing,
-      long_phrase for testing,
-      consecutive_delimeters for testing ,
-      apostrophes for testing,
-      underscore for testing,
-      empty_string for testing.
-endclass.
+    METHODS:
+      basic_phrase FOR TESTING,
+      lowercase_words FOR TESTING,
+      punctuations FOR TESTING,
+      all_caps FOR TESTING,
+      punc_wo_space FOR TESTING,
+      long_phrase FOR TESTING,
+      consecutive_delimeters FOR TESTING ,
+      apostrophes FOR TESTING,
+      underscore FOR TESTING,
+      empty_string FOR TESTING.
+ENDCLASS.
 
 
-class ltcl_acronym  implementation.
-   METHOD setup.
-   cut = new zcl_acronym( ).
-   ENDMETHOD.
-  method basic_phrase.
+CLASS ltcl_acronym  IMPLEMENTATION.
+  METHOD setup.
+    cut = NEW zcl_acronym(  ).
+  ENDMETHOD.
+  METHOD basic_phrase.
 
-   cl_abap_unit_assert=>assert_equals(
-      act = cut->parse( `Portable Network Graphics`)
-      exp = `PNG` ).
-  endmethod.
-  method lowercase_words.
+    cl_abap_unit_assert=>assert_equals(
+       act = cut->parse( `Portable Network Graphics`)
+       exp = `PNG` ).
+  ENDMETHOD.
+  METHOD lowercase_words.
 
-   cl_abap_unit_assert=>assert_equals(
-      act = cut->parse( `Ruby on Rails`)
-      exp = `ROR` ).
-  endmethod.
+    cl_abap_unit_assert=>assert_equals(
+       act = cut->parse( `Ruby on Rails`)
+       exp = `ROR` ).
+  ENDMETHOD.
 
-  method all_caps.
-   cl_abap_unit_assert=>assert_equals(
-      act = cut->parse( `GNU Image Manipulation Program`)
-      exp = `GIMP` ).
-  endmethod.
+  METHOD all_caps.
+    cl_abap_unit_assert=>assert_equals(
+       act = cut->parse( `GNU Image Manipulation Program`)
+       exp = `GIMP` ).
+  ENDMETHOD.
 
-  method apostrophes.
-   cl_abap_unit_assert=>assert_equals(
-      act = cut->parse( `Halley's Comet`)
-      exp = `HC` ).
-  endmethod.
+  METHOD apostrophes.
+    cl_abap_unit_assert=>assert_equals(
+       act = cut->parse( `Halley's Comet`)
+       exp = `HC` ).
+  ENDMETHOD.
 
-  method consecutive_delimeters.
-   cl_abap_unit_assert=>assert_equals(
-      act = cut->parse( `Something - I made up from thin air`)
-      exp = `SIMUFTA` ).
-  endmethod.
+  METHOD consecutive_delimeters.
+    cl_abap_unit_assert=>assert_equals(
+       act = cut->parse( `Something - I made up from thin air`)
+       exp = `SIMUFTA` ).
+  ENDMETHOD.
 
-  method empty_string.
-   cl_abap_unit_assert=>assert_equals(
-      act = cut->parse( ``)
-      exp = `` ).
-  endmethod.
+  METHOD empty_string.
+    cl_abap_unit_assert=>assert_equals(
+       act = cut->parse( ``)
+       exp = `` ).
+  ENDMETHOD.
 
-  method long_phrase.
-   cl_abap_unit_assert=>assert_equals(
-      act = cut->parse( `Rolling On The Floor Laughing So Hard That My Dogs Came Over And Licked Me`)
-      exp = `ROTFLSHTMDCOALM` ).
-  endmethod.
+  METHOD long_phrase.
+    cl_abap_unit_assert=>assert_equals(
+       act = cut->parse( `Rolling On The Floor Laughing So Hard That My Dogs Came Over And Licked Me`)
+       exp = `ROTFLSHTMDCOALM` ).
+  ENDMETHOD.
 
-  method punctuations.
-   cl_abap_unit_assert=>assert_equals(
-      act = cut->parse( `First In, First Out`)
-      exp = `FIFO` ).
-  endmethod.
+  METHOD punctuations.
+    cl_abap_unit_assert=>assert_equals(
+       act = cut->parse( `First In, First Out`)
+       exp = `FIFO` ).
+  ENDMETHOD.
 
-  method punc_wo_space.
-   cl_abap_unit_assert=>assert_equals(
-      act = cut->parse( `Complementary metal-oxide semiconductor`)
-      exp = `CMOS` ).
-  endmethod.
+  METHOD punc_wo_space.
+    cl_abap_unit_assert=>assert_equals(
+       act = cut->parse( `Complementary metal-oxide semiconductor`)
+       exp = `CMOS` ).
+  ENDMETHOD.
 
-  method underscore.
-   cl_abap_unit_assert=>assert_equals(
-      act = cut->parse( `The Road _Not_ Taken`)
-      exp = `TRNT` ).
-  endmethod.
+  METHOD underscore.
+    cl_abap_unit_assert=>assert_equals(
+       act = cut->parse( `The Road _Not_ Taken`)
+       exp = `TRNT` ).
+  ENDMETHOD.
 
-endclass.
+ENDCLASS.
