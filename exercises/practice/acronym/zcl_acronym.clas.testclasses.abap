@@ -23,7 +23,7 @@ endclass.
 
 class ltcl_acronym  implementation.
    METHOD setup.
-   cut = new zcl_acronym(  ).
+   cut = new zcl_acronym( ).
    ENDMETHOD.
   method basic_phrase.
 
