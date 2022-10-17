@@ -288,7 +288,15 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 7
-      }
+      },
+      {
+        "slug": "Acronym",
+        "name": "Acronym",
+        "uuid": "065bf2a6-4e4a-11ed-bdc3-0242ac120002",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      }      
     ]
   },
   "concepts": [
