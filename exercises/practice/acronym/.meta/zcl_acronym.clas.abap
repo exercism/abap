@@ -1,4 +1,4 @@
-CLASS zcl_acronym_example DEFINITION
+CLASS zcl_acronym DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_acronym_example IMPLEMENTATION.
+CLASS zcl_acronym IMPLEMENTATION.
   METHOD parse.
     DATA(str) = phrase.
     REPLACE ALL OCCURRENCES OF REGEX '-' IN str WITH ` `.
