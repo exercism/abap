@@ -17,15 +17,13 @@ CLASS zcl_acronym_example IMPLEMENTATION.
     DATA(str) = phrase.
     REPLACE ALL OCCURRENCES OF REGEX '-' IN str WITH ` `.
     REPLACE ALL OCCURRENCES OF REGEX '['',_,]' IN str WITH ``.
-
     SPLIT str AT space INTO TABLE DATA(ph_tab).
     DELETE ph_tab WHERE table_line IS INITIAL.
-    check ph_tab is not INITIAL.
-    acronym = REDUCE string( INIT res = ``
-                             FOR i = 1 UNTIL i > lines( ph_tab )
-                             NEXT
-                             res &&= to_upper( substring( val = ph_tab[ i ] off = 0 len = 1 ) )
-                              ).
-
+    IF ph_tab IS INITIAL.
+      RETURN.
+    ENDIF.
+    LOOP AT ph_tab INTO DATA(phr).
+      acronym &&= to_upper( substring( val = phr off = 0 len = 1 ) ).
+    ENDLOOP.
   ENDMETHOD.
 ENDCLASS.
