@@ -1,0 +1,12 @@
+{
+  "blurb": "Convert a long phrase to its acronym.",
+  "authors": ["dwivedirahul44"],
+  "contributors": [
+  ],
+  "files": {
+    "solution": ["zcl_acronym.clas.abap"],
+    "test": ["zcl_acronym.clas.testclasses.abap"],
+    "example": [".meta/zcl_acronym.clas.abap"]
+  },
+  "source_url": "https://github.com/monkbroc"
+}
