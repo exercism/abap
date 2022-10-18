@@ -291,8 +291,8 @@
       },
       {
         "slug": "Acronym",
-        "name": "Acronym",
-        "uuid": "065bf2a6-4e4a-11ed-bdc3-0242ac120002",
+        "name": "acronym",
+        "uuid": "425e218f-6feb-4fa2-a3cc-3c7239c50eaf",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
