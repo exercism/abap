@@ -296,7 +296,15 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
-      }      
+      } ,
+      {
+        "slug": "armstrong-numbers",
+        "name": "Armstrong Numbers",
+        "uuid": "8dc36b6e-cc15-4953-baca-7c6475b7112a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      }        
     ]
   },
   "concepts": [
