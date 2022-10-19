@@ -1,4 +1,3 @@
-*"* use this source file for your ABAP unit test classes
 CLASS ltcl_armstrong_numbers DEFINITION FINAL FOR TESTING
   DURATION SHORT
   RISK LEVEL HARMLESS.
