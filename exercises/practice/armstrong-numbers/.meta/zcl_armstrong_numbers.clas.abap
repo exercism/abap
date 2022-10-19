@@ -5,8 +5,8 @@ CLASS zcl_armstrong_numbers DEFINITION
 
   PUBLIC SECTION.
 
-    METHODS: is_armstrong_number IMPORTING num           TYPE i
-                                 RETURNING VALUE(result) TYPE abap_bool.
+    METHODS is_armstrong_number IMPORTING num           TYPE i
+                                RETURNING VALUE(result) TYPE abap_bool.
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
