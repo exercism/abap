@@ -1,0 +1,12 @@
+{
+  "blurb": "Determine if a number is an Armstrong number.",
+  "authors": ["dwivedirahul44"],
+  "contributors": [
+  ],
+  "files": {
+    "solution": ["zcl_zrmstrong_numbers.clas.abap"],
+    "test": ["zcl_zrmstrong_numbers.clas.testclasses.abap"],
+    "example": [".meta/zcl_zrmstrong_numbers.clas.abap"]
+  },
+  "source_url": "https://en.wikipedia.org/wiki/Narcissistic_number"
+}
