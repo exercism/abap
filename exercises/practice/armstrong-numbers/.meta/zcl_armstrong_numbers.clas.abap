@@ -24,7 +24,6 @@ CLASS zcl_armstrong_numbers IMPLEMENTATION.
     numstr = condense( CONV string( num ) ).
     digits = strlen( numstr ).
     DO digits TIMES.
-
       chk_num += ipow( base = CONV i( substring( val = numstr off = counter len = 1 ) ) exp = digits ).
       counter += 1.
     ENDDO.
