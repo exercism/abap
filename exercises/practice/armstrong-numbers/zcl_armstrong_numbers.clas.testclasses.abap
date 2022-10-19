@@ -24,6 +24,7 @@ CLASS ltcl_ IMPLEMENTATION.
   METHOD setup.
     cut = NEW zcl_armstrong_numbers( ).
   ENDMETHOD.
+  
   METHOD tst_153.
     cl_abap_unit_assert=>assert_equals( exp = abap_true act = cut->is_armstrong_number( 153 ) ).
   ENDMETHOD.
