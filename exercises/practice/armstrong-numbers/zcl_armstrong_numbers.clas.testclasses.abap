@@ -1,6 +1,5 @@
 *"* use this source file for your ABAP unit test classes
-*"* use this source file for your ABAP unit test classes
-CLASS ltcl_ DEFINITION FINAL FOR TESTING
+CLASS ltcl_armstrong_numbers DEFINITION FINAL FOR TESTING
   DURATION SHORT
   RISK LEVEL HARMLESS.
 
@@ -20,7 +19,7 @@ CLASS ltcl_ DEFINITION FINAL FOR TESTING
 ENDCLASS.
 
 
-CLASS ltcl_ IMPLEMENTATION.
+CLASS ltcl_armstrong_numbers IMPLEMENTATION.
   METHOD setup.
     cut = NEW zcl_armstrong_numbers( ).
   ENDMETHOD.
@@ -36,12 +35,12 @@ CLASS ltcl_ IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD tst_10.
-    cl_abap_unit_assert=>assert_equals( exp = abap_true
+    cl_abap_unit_assert=>assert_equals( exp = abap_false
                                         act = cut->is_armstrong_number( 10 ) ).
   ENDMETHOD.
 
   METHOD tst_100.
-    cl_abap_unit_assert=>assert_equals( exp = abap_true
+    cl_abap_unit_assert=>assert_equals( exp = abap_false
                                         act = cut->is_armstrong_number( 100 ) ).
   ENDMETHOD.
 
