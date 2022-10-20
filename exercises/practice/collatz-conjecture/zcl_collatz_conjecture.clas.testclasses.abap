@@ -43,9 +43,7 @@ CLASS ltcl_collatz_conjecture IMPLEMENTATION.
   METHOD test_0.
     TRY.
         cut->ret_steps( 0 ).
-
       CATCH cx_parameter_invalid INTO DATA(exc_ref).
-
     ENDTRY.
     cl_abap_unit_assert=>assert_bound( exc_ref ).
   ENDMETHOD.
@@ -53,9 +51,7 @@ CLASS ltcl_collatz_conjecture IMPLEMENTATION.
   METHOD test_minus_20.
     TRY.
         cut->ret_steps( -20 ).
-
       CATCH cx_parameter_invalid INTO DATA(exc_ref).
-
     ENDTRY.
     cl_abap_unit_assert=>assert_bound( exc_ref ).
   ENDMETHOD.
