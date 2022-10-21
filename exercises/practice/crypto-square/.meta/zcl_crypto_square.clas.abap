@@ -52,7 +52,7 @@ CLASS zcl_crypto_square IMPLEMENTATION.
                         }{ COND string( WHEN row_id + 1 = row
                                           AND col + 1 < column
                                           AND row > 1  THEN ` `
-                                        ELSE `` ) }| .
+                                        ELSE `` ) }|.
         row_id += 1.
       ENDWHILE.
       row_id = 0.
