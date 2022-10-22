@@ -40,19 +40,25 @@ CLASS zcl_crypto_square IMPLEMENTATION.
     ENDWHILE.
     DATA(col) = 0.
     DATA(row_id) = 0.
-
+    data(offset) = 0.
+    data(nxt_row) = 0.
+    data(nxt_col) = 0.
     WHILE col <> column.
+
       WHILE row_id <> row.
-        crypto_text &&= |{ COND string( WHEN ( ( row_id * column ) + col ) >= str_len
+        offset = ( row_id * column ) + col .
+        nxt_row = row_id + 1.
+        nxt_col = col + 1.
+        crypto_text &&= |{ COND string( WHEN offset >= str_len
                                           THEN COND string( WHEN row > 1 THEN ` `
                                                             ELSE `` )
-                                          ELSE to_lower( substring( val = str
-                                                                    off = ( ( row_id * column ) + col )
-                                                                    len = 1 ) ) )
-                        }{ COND string( WHEN row_id + 1 = row
-                                          AND col + 1 < column
-                                          AND row > 1  THEN ` `
-                                        ELSE `` ) }|.
+                                        ELSE to_lower( substring( val = str
+                                                                  off = offset
+                                                                  len = 1 ) ) )
+                         }{ COND string( WHEN nxt_row = row
+                                           AND nxt_col < column
+                                           AND row > 1  THEN ` `
+                                         ELSE `` ) }|.
         row_id += 1.
       ENDWHILE.
       row_id = 0.
