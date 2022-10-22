@@ -40,9 +40,9 @@ CLASS zcl_crypto_square IMPLEMENTATION.
     ENDWHILE.
     DATA(col) = 0.
     DATA(row_id) = 0.
-    data(offset) = 0.
-    data(nxt_row) = 0.
-    data(nxt_col) = 0.
+    DATA(offset) = 0.
+    DATA(nxt_row) = 0.
+    DATA(nxt_col) = 0.
     WHILE col <> column.
 
       WHILE row_id <> row.
