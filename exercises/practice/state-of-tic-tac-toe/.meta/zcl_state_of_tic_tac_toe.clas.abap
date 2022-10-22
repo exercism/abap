@@ -6,7 +6,7 @@ CLASS zcl_state_of_tic_tac_toe DEFINITION
   PUBLIC SECTION.
 
     TYPES player_type TYPE c LENGTH 1.
-    TYPES grid_type TYPE TABLE OF string INITIAL SIZE 3.
+    TYPES board_type TYPE TABLE OF string INITIAL SIZE 3.
 
     CONSTANTS: BEGIN OF player_enum,
                  one TYPE player_type VALUE 'X',
@@ -20,12 +20,12 @@ CLASS zcl_state_of_tic_tac_toe DEFINITION
                END OF state_enum.
 
     METHODS get_state
-      IMPORTING grid         TYPE grid_type
+      IMPORTING board         TYPE board_type
       RETURNING VALUE(state) TYPE string
       RAISING   zcx_tic_tac_toe_invalid_board.
   PROTECTED SECTION.
   PRIVATE SECTION.
-    DATA grid TYPE grid_type.
+    DATA board TYPE board_type.
     METHODS count_plies_for_player
       IMPORTING player       TYPE player_type
       RETURNING VALUE(plies) TYPE i.
@@ -46,7 +46,7 @@ CLASS zcl_state_of_tic_tac_toe IMPLEMENTATION.
 
   METHOD get_state.
 
-    me->grid = grid.
+    me->board = board.
     IF count_plies_for_player( player_enum-two ) > count_plies_for_player( player_enum-one ).
       RAISE EXCEPTION NEW zcx_tic_tac_toe_invalid_board( ).  " Wrong turn order: O started
     ENDIF.
@@ -70,7 +70,7 @@ CLASS zcl_state_of_tic_tac_toe IMPLEMENTATION.
 
   METHOD count_plies_for_player.
     DO 3 TIMES.
-      plies += count( val = grid[ sy-index ] sub = player ).
+      plies += count( val = board[ sy-index ] sub = player ).
     ENDDO.
   ENDMETHOD.
 
@@ -81,21 +81,21 @@ CLASS zcl_state_of_tic_tac_toe IMPLEMENTATION.
   METHOD count_wins.
     DATA row TYPE string.
     DO 3 TIMES.
-      wins += add_one_if_row_is_won( row = grid[ sy-index ] player = player ).
+      wins += add_one_if_row_is_won( row = board[ sy-index ] player = player ).
     ENDDO.
     DO 3 TIMES.
-      row = |{ substring( val = grid[ 1 ] off = sy-index - 1 len = 1 ) }| &&
-            |{ substring( val = grid[ 2 ] off = sy-index - 1 len = 1 ) }| &&
-            |{ substring( val = grid[ 3 ] off = sy-index - 1 len = 1 ) }|.
+      row = |{ substring( val = board[ 1 ] off = sy-index - 1 len = 1 ) }| &&
+            |{ substring( val = board[ 2 ] off = sy-index - 1 len = 1 ) }| &&
+            |{ substring( val = board[ 3 ] off = sy-index - 1 len = 1 ) }|.
       wins += add_one_if_row_is_won( row = row player = player ).
     ENDDO.
-    row = |{ substring( val = grid[ 1 ] off = 0 len = 1 ) }| &&
-          |{ substring( val = grid[ 2 ] off = 1 len = 1 ) }| &&
-          |{ substring( val = grid[ 3 ] off = 2 len = 1 ) }|.
+    row = |{ substring( val = board[ 1 ] off = 0 len = 1 ) }| &&
+          |{ substring( val = board[ 2 ] off = 1 len = 1 ) }| &&
+          |{ substring( val = board[ 3 ] off = 2 len = 1 ) }|.
     wins += add_one_if_row_is_won( row = row player = player ).
-    row = |{ substring( val = grid[ 1 ] off = 2 len = 1 ) }| &&
-          |{ substring( val = grid[ 2 ] off = 1 len = 1 ) }| &&
-          |{ substring( val = grid[ 3 ] off = 0 len = 1 ) }|.
+    row = |{ substring( val = board[ 1 ] off = 2 len = 1 ) }| &&
+          |{ substring( val = board[ 2 ] off = 1 len = 1 ) }| &&
+          |{ substring( val = board[ 3 ] off = 0 len = 1 ) }|.
     wins += add_one_if_row_is_won( row = row player = player ).
   ENDMETHOD.
 
