@@ -296,7 +296,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
-      } ,
+      },
       {
         "slug": "armstrong-numbers",
         "name": "Armstrong Numbers",
@@ -304,7 +304,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
-      } ,
+      },
       {
         "slug": "collatz-conjecture",
         "name": "Collatz Conjecture",
@@ -312,7 +312,15 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
-      }       
+      },
+      {
+        "slug": "state-of-tic-tac-toe",
+        "name": "State of Tic-Tac-Toe",
+        "uuid": "47290e3c-885c-4940-bdaf-6aaf1fbfbae2",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      }
     ]
   },
   "concepts": [
