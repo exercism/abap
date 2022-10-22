@@ -22,7 +22,7 @@ CLASS zcl_state_of_tic_tac_toe DEFINITION
     METHODS get_state
       IMPORTING grid         TYPE grid_type
       RETURNING VALUE(state) TYPE string
-      RAISING   cx_parameter_invalid.
+      RAISING   zcx_tic_tac_toe_invalid_board.
   PROTECTED SECTION.
   PRIVATE SECTION.
     DATA grid TYPE grid_type.
@@ -48,13 +48,13 @@ CLASS zcl_state_of_tic_tac_toe IMPLEMENTATION.
 
     me->grid = grid.
     IF count_plies_for_player( player_enum-two ) > count_plies_for_player( player_enum-one ).
-      RAISE EXCEPTION NEW cx_parameter_invalid( ).  " Wrong turn order: O started
+      RAISE EXCEPTION NEW zcx_tic_tac_toe_invalid_board( ).  " Wrong turn order: O started
     ENDIF.
     IF abs( count_plies_for_player( player_enum-two ) - count_plies_for_player( player_enum-one ) ) > 1.
-      RAISE EXCEPTION NEW cx_parameter_invalid( ).  " Wrong turn order: one player went twice
+      RAISE EXCEPTION NEW zcx_tic_tac_toe_invalid_board( ).  " Wrong turn order: one player went twice
     ENDIF.
     IF count_wins( player_enum-one ) > 0 AND  count_wins( player_enum-two ) > 0.
-      RAISE EXCEPTION NEW cx_parameter_invalid( ).  " Continued playing after win
+      RAISE EXCEPTION NEW zcx_tic_tac_toe_invalid_board( ).  " Continued playing after win
     ENDIF.
     IF count_wins( player_enum-one ) + count_wins( player_enum-two ) = 0.
       IF total_plies( ) = 9.

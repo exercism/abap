@@ -266,7 +266,7 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
                                  ( `   ` )
                                  ( `   ` ) ) ).
         cl_abap_unit_assert=>fail(  ).
-      CATCH cx_parameter_invalid.
+      CATCH zcx_tic_tac_toe_invalid_board.
         " pass
     ENDTRY.
   ENDMETHOD.
@@ -277,7 +277,7 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
                                  ( `   ` )
                                  ( `   ` ) ) ).
         cl_abap_unit_assert=>fail(  ).
-      CATCH cx_parameter_invalid.
+      CATCH zcx_tic_tac_toe_invalid_board.
         " pass
     ENDTRY.
   ENDMETHOD.
@@ -288,7 +288,7 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
                                  ( `OOO` )
                                  ( `   ` ) ) ).
         cl_abap_unit_assert=>fail(  ).
-      CATCH cx_parameter_invalid.
+      CATCH zcx_tic_tac_toe_invalid_board.
         " pass
     ENDTRY.
   ENDMETHOD.
@@ -299,7 +299,7 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
                                  ( `OOO` )
                                  ( `   ` ) ) ).
         cl_abap_unit_assert=>fail(  ).
-      CATCH cx_parameter_invalid.
+      CATCH zcx_tic_tac_toe_invalid_board.
         " pass
     ENDTRY.
   ENDMETHOD.
@@ -310,7 +310,7 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
                                  ( `OOO` )
                                  ( `XOX` ) ) ).
         cl_abap_unit_assert=>fail(  ).
-      CATCH cx_parameter_invalid.
+      CATCH zcx_tic_tac_toe_invalid_board.
         " pass
     ENDTRY.
   ENDMETHOD.
