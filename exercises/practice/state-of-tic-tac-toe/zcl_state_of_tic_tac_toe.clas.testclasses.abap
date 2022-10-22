@@ -118,7 +118,7 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
     cl_abap_unit_assert=>assert_equals(
       exp = zcl_state_of_tic_tac_toe=>state_enum-win
       act = cut->get_state( VALUE #( ( `XXX` )
-                                     ( `XOO ` )
+                                     ( `XOO` )
                                      ( `O  ` ) ) ) ).
   ENDMETHOD.
 
