@@ -46,7 +46,7 @@ CLASS zcl_crypto_square IMPLEMENTATION.
     WHILE col <> column.
 
       WHILE row_id <> row.
-        offset = ( row_id * column ) + col .
+        offset = ( row_id * column ) + col.
         nxt_row = row_id + 1.
         nxt_col = col + 1.
         crypto_text &&= |{ COND string( WHEN offset >= str_len
