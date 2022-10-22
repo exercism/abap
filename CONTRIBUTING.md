@@ -39,6 +39,11 @@ The baseline of work is as follows:
 4. Create a subpackage for your exercise named `$EXERCISM_<EXERCISE>`
 5. Implement the exercise stub in an ABAP class named `ZCL_<EXERCISE>` (code without solution)
 6. Implement unit tests for your ABAP class
+  - The default display of tests on the Exercism website shows only ~50 characters
+  - For best usability, try to avoid long lines of code in your test class
+  - Put `act` and `exp` parameters when calling `cl_abap_unit_assert` on individual lines with little indent
+  - [Not so good example](https://github.com/exercism/abap/raw/main/docs/testclass_not_so_good.png)
+  - [Good example](https://github.com/exercism/abap/raw/main/docs/testclass_good.png)
 7. Stage and commit the SAP package and class 
 8. To create an example solution, we recommend the following approach since you can't use abapGit for it:
   - Copy class to `ZCL_<EXERCISE>` to `ZCL_<EXERCISE>_EXAMPLE` *and* put it into SAP package `$TMP` (or another package outside the repo)
