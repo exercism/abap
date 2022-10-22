@@ -79,7 +79,7 @@ CLASS zcl_state_of_tic_tac_toe IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD count_wins.
-    DATA row TYPE row_type.
+    DATA row TYPE string.
     DO 3 TIMES.
       wins += add_one_if_row_is_won( row = grid[ sy-index ] player = player ).
     ENDDO.
