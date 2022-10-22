@@ -43,9 +43,9 @@ CLASS zcl_crypto_square IMPLEMENTATION.
     DATA(offset) = 0.
     DATA(nxt_row) = 0.
     DATA(nxt_col) = 0.
-    WHILE col <> column.
+    WHILE col < column.
 
-      WHILE row_id <> row.
+      WHILE row_id < row.
         offset = ( row_id * column ) + col.
         nxt_row = row_id + 1.
         nxt_col = col + 1.
