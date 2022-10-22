@@ -66,8 +66,9 @@ CLASS ltcl_crypto_square IMPLEMENTATION.
 
   METHOD test_54char_7by8.
     DATA(inp_string) = `If man was meant to stay on the ground, god would have given us roots.`.
+    DATA(exp_string) = `imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau `.
     cl_abap_unit_assert=>assert_equals(
-      exp = `imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau `
+      exp = exp_string
       act = cut->encode( inp_string ) ).
   ENDMETHOD.
 ENDCLASS.
