@@ -23,8 +23,6 @@ CLASS ltcl_state_of_tic_tac_toe DEFINITION FINAL FOR TESTING
     "! Finished game where X won via top row victory
     METHODS finished_game_where_x_won_v_4 FOR TESTING RAISING cx_static_check.
     "! Finished game where X won via middle row victory
-    METHODS finished_game_where_x_won_v_5 FOR TESTING RAISING cx_static_check.
-    "! Finished game where X won via middle row victory
     METHODS finished_game_where_x_won_v_6 FOR TESTING RAISING cx_static_check.
     "! Finished game where X won via bottom row victory
     METHODS finished_game_where_x_won_v_7 FOR TESTING RAISING cx_static_check.
@@ -122,14 +120,6 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
       act = cut->get_state( VALUE #( ( `XXX` )
                                      ( `XOO ` )
                                      ( `O  ` ) ) ) ).
-  ENDMETHOD.
-
-  METHOD finished_game_where_x_won_v_5.
-    cl_abap_unit_assert=>assert_equals(
-      exp = zcl_state_of_tic_tac_toe=>state_enum-win
-      act = cut->get_state( VALUE #( ( `O O` )
-                                     ( `XXX` )
-                                     ( ` O ` ) ) ) ).
   ENDMETHOD.
 
   METHOD finished_game_where_x_won_v_6.
