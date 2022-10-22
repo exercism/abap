@@ -4,13 +4,13 @@
   ],
   "files": {
     "solution": [
-      "state_of_tic_tac_toe.clas.abap"
+      "zcl_state_of_tic_tac_toe.clas.abap"
     ],
     "test": [
-      "state_of_tic_tac_toe.clas.testclasses.abap"
+      "zcl_state_of_tic_tac_toe.clas.testclasses.abap"
     ],
     "example": [
-      ".meta/state_of_tic_tac_toe.clas.abap"
+      ".meta/zcl_state_of_tic_tac_toe.clas.abap"
     ]
   },
   "blurb": "Determine the game state of a match of Tic-Tac-Toe.",
