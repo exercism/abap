@@ -31,21 +31,24 @@ CLASS zcl_crypto_square IMPLEMENTATION.
     IF str_len = 0.
       RETURN.
     ENDIF.
-    WHILE ( column * row ) < str_len.
+    DO.
+      IF ( column * row ) >= str_len.
+        EXIT.
+      ENDIF.
       IF column > row.
         row  += 1.
       ELSE.
         column += 1.
       ENDIF.
-    ENDWHILE.
+    ENDDO.
     DATA(col) = 0.
     DATA(row_id) = 0.
     DATA(offset) = 0.
     DATA(nxt_row) = 0.
     DATA(nxt_col) = 0.
-    WHILE col < column.
+    DO column TIMES.
 
-      WHILE row_id < row.
+      DO row TIMES.
         offset = ( row_id * column ) + col.
         nxt_row = row_id + 1.
         nxt_col = col + 1.
@@ -60,9 +63,9 @@ CLASS zcl_crypto_square IMPLEMENTATION.
                                            AND row > 1  THEN ` `
                                          ELSE `` ) }|.
         row_id += 1.
-      ENDWHILE.
+      ENDDO.
       row_id = 0.
       col += 1.
-    ENDWHILE.
+    ENDDO.
   ENDMETHOD.
 ENDCLASS.
