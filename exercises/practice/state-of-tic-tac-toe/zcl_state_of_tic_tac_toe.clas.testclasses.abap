@@ -255,7 +255,7 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
         cut->get_state( VALUE #( ( `XX ` )
                                  ( `   ` )
                                  ( `   ` ) ) ).
-        cl_abap_unit_assert=>fail(  ).
+        cl_abap_unit_assert=>fail( ).
       CATCH cx_parameter_invalid.
         " pass
     ENDTRY.
@@ -266,7 +266,7 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
         cut->get_state( VALUE #( ( `OOX` )
                                  ( `   ` )
                                  ( `   ` ) ) ).
-        cl_abap_unit_assert=>fail(  ).
+        cl_abap_unit_assert=>fail( ).
       CATCH cx_parameter_invalid.
         " pass
     ENDTRY.
@@ -277,7 +277,7 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
         cut->get_state( VALUE #( ( `XXX` )
                                  ( `OOO` )
                                  ( `   ` ) ) ).
-        cl_abap_unit_assert=>fail(  ).
+        cl_abap_unit_assert=>fail( ).
       CATCH cx_parameter_invalid.
         " pass
     ENDTRY.
@@ -288,7 +288,7 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
         cut->get_state( VALUE #( ( `XXX` )
                                  ( `OOO` )
                                  ( `   ` ) ) ).
-        cl_abap_unit_assert=>fail(  ).
+        cl_abap_unit_assert=>fail( ).
       CATCH cx_parameter_invalid.
         " pass
     ENDTRY.
@@ -299,7 +299,7 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
         cut->get_state( VALUE #( ( `XXX` )
                                  ( `OOO` )
                                  ( `XOX` ) ) ).
-        cl_abap_unit_assert=>fail(  ).
+        cl_abap_unit_assert=>fail( ).
       CATCH cx_parameter_invalid.
         " pass
     ENDTRY.
