@@ -51,14 +51,17 @@ CLASS zcl_state_of_tic_tac_toe IMPLEMENTATION.
   METHOD get_state.
 
     me->board = board.
+    " Wrong turn order: O started
     IF count_plies_for_player( player_enum-two ) > count_plies_for_player( player_enum-one ).
-      RAISE EXCEPTION NEW cx_parameter_invalid( ).  " Wrong turn order: O started
+      RAISE EXCEPTION NEW cx_parameter_invalid( ).
     ENDIF.
+    " Wrong turn order: one player went twice
     IF abs( count_plies_for_player( player_enum-two ) - count_plies_for_player( player_enum-one ) ) > 1.
-      RAISE EXCEPTION NEW cx_parameter_invalid( ).  " Wrong turn order: one player went twice
+      RAISE EXCEPTION NEW cx_parameter_invalid( ).
     ENDIF.
+    " Continued playing after win
     IF count_wins( player_enum-one ) > 0 AND count_wins( player_enum-two ) > 0.
-      RAISE EXCEPTION NEW cx_parameter_invalid( ).  " Continued playing after win
+      RAISE EXCEPTION NEW cx_parameter_invalid( ).
     ENDIF.
     IF count_wins( player_enum-one ) + count_wins( player_enum-two ) = 0.
       IF total_plies( ) = 9.
