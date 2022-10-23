@@ -25,7 +25,7 @@ CLASS zcl_crypto_square IMPLEMENTATION.
     str = replace( val   = str
                    regex = '[[:punct:]]'
                    with  = ' '
-                   occ   = 0 ). 
+                   occ   = 0 ).
     CONDENSE str NO-GAPS.
     DATA(str_len) = strlen( str ).
     IF str_len = 0.
