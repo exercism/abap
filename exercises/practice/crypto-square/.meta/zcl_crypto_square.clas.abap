@@ -17,6 +17,7 @@ CLASS zcl_crypto_square IMPLEMENTATION.
     DATA:
       column TYPE i VALUE 2,
       row    TYPE i VALUE 1.
+      
     DATA(str) = plain_text.
     str = replace( val   = str
                    regex = '[\.,\-]'
@@ -26,11 +27,14 @@ CLASS zcl_crypto_square IMPLEMENTATION.
                    regex = '[[:punct:]]'
                    with  = ' '
                    occ   = 0 ).
+                   
     CONDENSE str NO-GAPS.
+    
     DATA(str_len) = strlen( str ).
     IF str_len = 0.
       RETURN.
     ENDIF.
+    
     DO str_len TIMES.
       IF ( column * row ) >= str_len.
         EXIT.
@@ -41,13 +45,14 @@ CLASS zcl_crypto_square IMPLEMENTATION.
         column += 1.
       ENDIF.
     ENDDO.
+    
     DATA(col) = 0.
     DATA(row_id) = 0.
     DATA(offset) = 0.
     DATA(nxt_row) = 0.
     DATA(nxt_col) = 0.
+    
     DO column TIMES.
-
       DO row TIMES.
         offset = ( row_id * column ) + col.
         nxt_row = row_id + 1.
