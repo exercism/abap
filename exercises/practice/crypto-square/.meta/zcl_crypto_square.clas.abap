@@ -31,7 +31,7 @@ CLASS zcl_crypto_square IMPLEMENTATION.
     IF str_len = 0.
       RETURN.
     ENDIF.
-    DO.
+    DO str_len TIMES.
       IF ( column * row ) >= str_len.
         EXIT.
       ENDIF.
