@@ -6,6 +6,7 @@ CLASS zcl_state_of_tic_tac_toe DEFINITION
   PUBLIC SECTION.
 
     TYPES player_type TYPE c LENGTH 1.
+    "! E.g., ( ( `XOO` ) ( ` X ` ) ( `  X` ) )
     TYPES board_type TYPE TABLE OF string INITIAL SIZE 3.
 
     CONSTANTS: BEGIN OF player_enum,
@@ -19,10 +20,13 @@ CLASS zcl_state_of_tic_tac_toe DEFINITION
                  win          TYPE string VALUE `Win`,
                END OF state_enum.
 
+    "! @parameter state | Possible values are enumerated in state_enum
+    "! @raising cx_parameter_invalid | Board is invalid
     METHODS get_state
-      IMPORTING board         TYPE board_type
+      IMPORTING board        TYPE board_type
       RETURNING VALUE(state) TYPE string
-      RAISING   zcx_tic_tac_toe_invalid_board.
+      RAISING   cx_parameter_invalid.
+
   PROTECTED SECTION.
   PRIVATE SECTION.
     DATA board TYPE board_type.
@@ -48,13 +52,13 @@ CLASS zcl_state_of_tic_tac_toe IMPLEMENTATION.
 
     me->board = board.
     IF count_plies_for_player( player_enum-two ) > count_plies_for_player( player_enum-one ).
-      RAISE EXCEPTION NEW zcx_tic_tac_toe_invalid_board( ).  " Wrong turn order: O started
+      RAISE EXCEPTION NEW cx_parameter_invalid( ).  " Wrong turn order: O started
     ENDIF.
     IF abs( count_plies_for_player( player_enum-two ) - count_plies_for_player( player_enum-one ) ) > 1.
-      RAISE EXCEPTION NEW zcx_tic_tac_toe_invalid_board( ).  " Wrong turn order: one player went twice
+      RAISE EXCEPTION NEW cx_parameter_invalid( ).  " Wrong turn order: one player went twice
     ENDIF.
-    IF count_wins( player_enum-one ) > 0 AND  count_wins( player_enum-two ) > 0.
-      RAISE EXCEPTION NEW zcx_tic_tac_toe_invalid_board( ).  " Continued playing after win
+    IF count_wins( player_enum-one ) > 0 AND count_wins( player_enum-two ) > 0.
+      RAISE EXCEPTION NEW cx_parameter_invalid( ).  " Continued playing after win
     ENDIF.
     IF count_wins( player_enum-one ) + count_wins( player_enum-two ) = 0.
       IF total_plies( ) = 9.

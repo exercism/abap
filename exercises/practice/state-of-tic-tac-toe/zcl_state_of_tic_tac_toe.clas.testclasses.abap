@@ -198,7 +198,7 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
     cl_abap_unit_assert=>assert_equals(
       exp = zcl_state_of_tic_tac_toe=>state_enum-win
       act = cut->get_state( VALUE #( ( `XXX` )
-                                     ( `XOO ` )
+                                     ( `XOO` )
                                      ( `XOO` ) ) ) ).
   ENDMETHOD.
 
@@ -255,8 +255,8 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
         cut->get_state( VALUE #( ( `XX ` )
                                  ( `   ` )
                                  ( `   ` ) ) ).
-        cl_abap_unit_assert=>fail( ).
-      CATCH zcx_tic_tac_toe_invalid_board.
+        cl_abap_unit_assert=>fail(  ).
+      CATCH cx_parameter_invalid.
         " pass
     ENDTRY.
   ENDMETHOD.
@@ -266,8 +266,8 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
         cut->get_state( VALUE #( ( `OOX` )
                                  ( `   ` )
                                  ( `   ` ) ) ).
-        cl_abap_unit_assert=>fail( ).
-      CATCH zcx_tic_tac_toe_invalid_board.
+        cl_abap_unit_assert=>fail(  ).
+      CATCH cx_parameter_invalid.
         " pass
     ENDTRY.
   ENDMETHOD.
@@ -277,8 +277,8 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
         cut->get_state( VALUE #( ( `XXX` )
                                  ( `OOO` )
                                  ( `   ` ) ) ).
-        cl_abap_unit_assert=>fail( ).
-      CATCH zcx_tic_tac_toe_invalid_board.
+        cl_abap_unit_assert=>fail(  ).
+      CATCH cx_parameter_invalid.
         " pass
     ENDTRY.
   ENDMETHOD.
@@ -288,8 +288,8 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
         cut->get_state( VALUE #( ( `XXX` )
                                  ( `OOO` )
                                  ( `   ` ) ) ).
-        cl_abap_unit_assert=>fail( ).
-      CATCH zcx_tic_tac_toe_invalid_board.
+        cl_abap_unit_assert=>fail(  ).
+      CATCH cx_parameter_invalid.
         " pass
     ENDTRY.
   ENDMETHOD.
@@ -299,8 +299,8 @@ CLASS ltcl_state_of_tic_tac_toe IMPLEMENTATION.
         cut->get_state( VALUE #( ( `XXX` )
                                  ( `OOO` )
                                  ( `XOX` ) ) ).
-        cl_abap_unit_assert=>fail( ).
-      CATCH zcx_tic_tac_toe_invalid_board.
+        cl_abap_unit_assert=>fail(  ).
+      CATCH cx_parameter_invalid.
         " pass
     ENDTRY.
   ENDMETHOD.
