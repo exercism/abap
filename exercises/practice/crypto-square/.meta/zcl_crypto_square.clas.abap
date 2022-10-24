@@ -1,5 +1,5 @@
 
-CLASS zcl_crypto_square_example DEFINITION
+CLASS zcl_crypto_square DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC.
@@ -13,7 +13,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_crypto_square_example IMPLEMENTATION.
+CLASS zcl_crypto_square IMPLEMENTATION.
   METHOD encode.
     DATA:
       column TYPE i VALUE 2,
