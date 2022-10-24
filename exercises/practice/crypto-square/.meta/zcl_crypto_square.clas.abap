@@ -1,4 +1,3 @@
-
 CLASS zcl_crypto_square DEFINITION
   PUBLIC
   FINAL
