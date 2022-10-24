@@ -42,9 +42,9 @@ CLASS zcl_crypto_square IMPLEMENTATION.
                     FOR j = 0 UNTIL j = row
                       NEXT txt &&= |{
                         "check offset beyond string length?
-                        COND string( WHEN ( ( j * column ) + i ) >= str_len 
+                        COND string( WHEN ( ( j * column ) + i ) >= str_len
                                        "add space if , more than one row in square
-                                       THEN COND string( WHEN row > 1 
+                                       THEN COND string( WHEN row > 1
                                                            THEN ` `
                                                          ELSE `` )
                                      ELSE to_lower( substring( val = str
@@ -53,7 +53,7 @@ CLASS zcl_crypto_square IMPLEMENTATION.
                      }{ COND string( WHEN j + 1 = row
                                       AND i + 1 < column
                                       "add succeeding space for each letter group
-                                      AND row > 1  THEN ` ` 
+                                      AND row > 1  THEN ` `
                                      ELSE `` ) }| ).
   ENDMETHOD.
 ENDCLASS.
