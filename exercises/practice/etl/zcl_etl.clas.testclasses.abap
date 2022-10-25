@@ -5,7 +5,7 @@ CLASS ltcl_etl DEFINITION FINAL FOR TESTING
   PRIVATE SECTION.
     DATA cut TYPE REF TO zcl_etl.
     METHODS:
-      setup ,
+      setup,
       single_letter FOR TESTING,
       single_score_multi_letter FOR TESTING,
       two_score_two_letters FOR TESTING,
@@ -16,7 +16,7 @@ ENDCLASS.
 
 CLASS ltcl_etl IMPLEMENTATION.
   METHOD setup.
-    cut = NEW zcl_etl(  ).
+    cut = NEW zcl_etl( ).
   ENDMETHOD.
 
   METHOD single_letter.
@@ -61,6 +61,7 @@ CLASS ltcl_etl IMPLEMENTATION.
       exp = exp ).
 
   ENDMETHOD.
+  
   METHOD multi_score_multi_letter.
     DATA(inp) = VALUE zcl_etl=>tty_legacy_data(
                   ( number = 1  string = `A,E,I,O,U,L,N,R,S,T` )
@@ -103,6 +104,7 @@ CLASS ltcl_etl IMPLEMENTATION.
       act = cut->transform( inp )
       exp = exp ).
   ENDMETHOD.
+  
   METHOD duplicate_letter.
     DATA(inp) = VALUE zcl_etl=>tty_legacy_data(
                   ( number = 1  string = `A,E,D` )
@@ -110,7 +112,7 @@ CLASS ltcl_etl IMPLEMENTATION.
 
     TRY.
         cut->transform( inp ).
-        cl_abap_unit_assert=>fail(  ).
+        cl_abap_unit_assert=>fail( ).
       CATCH cx_parameter_invalid.
     ENDTRY.
   ENDMETHOD.
