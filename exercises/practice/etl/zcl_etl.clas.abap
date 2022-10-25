@@ -10,7 +10,7 @@ CLASS zcl_etl DEFINITION
         string TYPE string,
       END OF ty_legacy_data,
       BEGIN OF ty_new_data,
-        letter TYPE c length 1,
+        letter TYPE c LENGTH 1,
         number TYPE i,
       END OF ty_new_data,
       tty_legacy_data TYPE SORTED TABLE OF ty_legacy_data WITH UNIQUE KEY number,
