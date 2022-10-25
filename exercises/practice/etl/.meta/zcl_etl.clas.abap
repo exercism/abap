@@ -17,8 +17,7 @@ CLASS zcl_etl DEFINITION
       tty_new_data    TYPE SORTED TABLE OF ty_new_data WITH UNIQUE KEY letter.
 
     METHODS transform IMPORTING legacy_data     TYPE tty_legacy_data
-                      RETURNING VALUE(new_data) TYPE tty_new_data
-                      RAISING   cx_parameter_invalid.
+                      RETURNING VALUE(new_data) TYPE tty_new_data.
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
@@ -27,23 +26,19 @@ ENDCLASS.
 
 CLASS zcl_etl IMPLEMENTATION.
   METHOD transform.
-    TRY.
-        new_data = VALUE tty_new_data(
-                     FOR legacy IN legacy_data
-                     FOR i = 0 UNTIL i = strlen( replace( val = legacy-string
-                                                          sub = ','
-                                                         with = ``
-                                                          occ = 0 ) )
-                       LET str = replace( val = legacy-string
-                                          sub = ','
-                                         with = ``
-                                          occ = 0 )
-                       IN ( letter = to_lower( substring( val = str
-                                                          off = i
-                                                          len = 1 ) )
-                            number = legacy-number ) ).
-      CATCH cx_root.
-        RAISE EXCEPTION TYPE cx_parameter_invalid.
-    ENDTRY.
+    new_data = VALUE tty_new_data(
+                 FOR legacy IN legacy_data
+                 FOR i = 0 UNTIL i = strlen( replace( val = legacy-string
+                                                      sub = ','
+                                                     with = ``
+                                                      occ = 0 ) )
+                   LET str = replace( val = legacy-string
+                                      sub = ','
+                                     with = ``
+                                      occ = 0 )
+                     IN ( letter = to_lower( substring( val = str
+                                                        off = i
+                                                        len = 1 ) )
+                          number = legacy-number ) ).
   ENDMETHOD.
 ENDCLASS.
