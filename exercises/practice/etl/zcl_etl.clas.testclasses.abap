@@ -61,7 +61,7 @@ CLASS ltcl_etl IMPLEMENTATION.
       exp = exp ).
 
   ENDMETHOD.
-  
+
   METHOD multi_score_multi_letter.
     DATA(inp) = VALUE zcl_etl=>tty_legacy_data(
                   ( number = 1  string = `A,E,I,O,U,L,N,R,S,T` )
@@ -104,7 +104,7 @@ CLASS ltcl_etl IMPLEMENTATION.
       act = cut->transform( inp )
       exp = exp ).
   ENDMETHOD.
-  
+
   METHOD duplicate_letter.
     DATA(inp) = VALUE zcl_etl=>tty_legacy_data(
                   ( number = 1  string = `A,E,D` )
