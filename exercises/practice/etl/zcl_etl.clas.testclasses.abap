@@ -9,8 +9,7 @@ CLASS ltcl_etl DEFINITION FINAL FOR TESTING
       single_letter FOR TESTING,
       single_score_multi_letter FOR TESTING,
       two_score_two_letters FOR TESTING,
-      multi_score_multi_letter FOR TESTING,
-      duplicate_letter FOR TESTING.
+      multi_score_multi_letter FOR TESTING.
 ENDCLASS.
 
 
@@ -103,17 +102,5 @@ CLASS ltcl_etl IMPLEMENTATION.
     cl_abap_unit_assert=>assert_equals(
       act = cut->transform( inp )
       exp = exp ).
-  ENDMETHOD.
-
-  METHOD duplicate_letter.
-    DATA(inp) = VALUE zcl_etl=>tty_legacy_data(
-                  ( number = 1  string = `A,E,D` )
-                  ( number = 2  string = `D,G` ) ).
-
-    TRY.
-        cut->transform( inp ).
-        cl_abap_unit_assert=>fail( ).
-      CATCH cx_parameter_invalid.
-    ENDTRY.
   ENDMETHOD.
 ENDCLASS.
