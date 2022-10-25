@@ -1,0 +1,13 @@
+{
+    "blurb": "We are going to do the `Transform` step of an Extract-Transform-Load.",
+    "authors": ["dwivedirahul44"],
+    "contributors": [
+    ],
+    "files": {
+      "solution": ["zcl_etl.clas.abap"],
+      "test": ["zcl_etl.clas.testclasses.abap"],
+      "example": [".meta/zcletl.clas.abap"]
+    },
+    "source": "The Jumpstart Lab team",
+    "source_url": "http://jumpstartlab.com"
+}
