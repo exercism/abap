@@ -27,14 +27,6 @@ ENDCLASS.
 
 CLASS zcl_etl IMPLEMENTATION.
   METHOD transform.
-    TRY.
-        new_data = VALUE tty_new_data( FOR legacy IN legacy_data
-                                        FOR i = 0 UNTIL i =  strlen( replace( val = legacy-string sub = ',' with = `` occ = 0 ) )
-                                        LET str = replace( val = legacy-string sub = ',' with = `` occ = 0 )
-                                         IN ( letter =  to_lower( substring( val = str  off = i len = 1 ) )
-                                              number = legacy-number ) ).
-      CATCH cx_root.
-        RAISE EXCEPTION TYPE cx_parameter_invalid.
-    ENDTRY.
+    "Implement Solution.
   ENDMETHOD.
 ENDCLASS.
