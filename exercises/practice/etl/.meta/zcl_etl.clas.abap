@@ -38,9 +38,9 @@ CLASS zcl_etl IMPLEMENTATION.
                                           sub = ','
                                          with = ``
                                           occ = 0 )
-                       IN ( letter =  to_lower( substring( val = str
-                                                           off = i
-                                                           len = 1 ) )
+                       IN ( letter = to_lower( substring( val = str
+                                                          off = i
+                                                          len = 1 ) )
                             number = legacy-number ) ).
       CATCH cx_root.
         RAISE EXCEPTION TYPE cx_parameter_invalid.
