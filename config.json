@@ -320,7 +320,15 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 3
-      }             
+      },
+      {
+        "slug": "etl",
+        "name": "ETL",
+        "uuid": "521e9992-5122-42e9-aaeb-4234f2e3d8e4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      }       
     ]
   },
   "concepts": [
