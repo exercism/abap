@@ -57,6 +57,14 @@ Make sure the tests run and the linter is happy. It will run automatically on yo
 
 If you want to work on a new _concept_ exercise, please talk to the current maintainers of the track.
 
+### File formats
+
+This repo is compatible with abapGit. This means files have to be formatted in certain ways. The rules are specified in the [`.editorconfig`](/.editorconfig) file. 
+
+If you are creating the exercises in an ABAP system and pushing them to this repo using abapGit (as described above), then the files will be formatted automatically.
+
+However, if you are creating the files manually (in GitHub or another git client), then please make sure that your editor complies with the `.editorconfig` specifications. The typical issues are missing empty line at the end of `.abap` and `.xml` file as well as missing [UTF-8 BOM](https://en.wikipedia.org/wiki/Byte_order_mark) at the beginning of `.xml` files. An easy way to avoid the later is to copy an existing `.xml` file and adjust it accordingly.
+
 #### Creating a track-specific exercise
 
 The steps for a track-specific exercise are similar to those of implementing an established, existing exercise.
