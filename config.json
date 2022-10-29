@@ -282,6 +282,14 @@
         "difficulty": 4
       },
       {
+        "slug": "knapsack",
+        "name": "Knapsack",
+        "uuid": "2f9877d5-eec5-4048-a868-975d028147ef",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "book-store",
         "name": "Book Store",
         "uuid": "0ceab982-40cd-48b3-be49-0fc1128708fd",
@@ -336,7 +344,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 3
-      }       
+      }
     ]
   },
   "concepts": [
