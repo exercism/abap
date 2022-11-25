@@ -3,7 +3,7 @@ class ZCL_RARITY_OF_STRING definition
   final
   create public .
 
-public section.
+  public section.
 
   methods COMPUTE
     importing
