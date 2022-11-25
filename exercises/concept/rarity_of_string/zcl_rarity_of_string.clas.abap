@@ -1,17 +1,17 @@
-class ZCL_RARITY_OF_STRING definition
-  public
-  final
-  create public .
+CLASS zcl_rarity_of_string DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-  public section.
+  PUBLIC SECTION.
 
-  methods COMPUTE
-    importing
-      !STRING type STRING
-    returning
-      value(RESULT) type I .
-protected section.
-private section.
+    METHODS compute
+      IMPORTING
+        !string       TYPE string
+      RETURNING
+        VALUE(result) TYPE i .
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
