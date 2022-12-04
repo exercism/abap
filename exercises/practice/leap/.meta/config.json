@@ -1,13 +1,19 @@
 {
-  "blurb": "Given a year, report if it is a leap year.",
-  "authors": ["larshp"],
-  "contributors": [
+  "authors": [
+    "larshp"
   ],
   "files": {
-    "solution": ["zcl_leap.clas.abap"],
-    "test": ["zcl_leap.clas.testclasses.abap"],
-    "example": [".meta/zcl_leap.clas.abap"]
+    "solution": [
+      "zcl_leap.clas.abap"
+    ],
+    "test": [
+      "zcl_leap.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_leap.clas.abap"
+    ]
   },
+  "blurb": "Given a year, report if it is a leap year.",
   "source": "JavaRanch Cattle Drive, exercise 3",
   "source_url": "http://www.javaranch.com/leap.jsp"
 }
