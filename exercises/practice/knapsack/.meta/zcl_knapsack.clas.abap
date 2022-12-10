@@ -46,11 +46,13 @@ CLASS zcl_knapsack IMPLEMENTATION.
     DO lines( items ) TIMES.
       j = 1.
       DO weight_limit + 1 TIMES.
-        matrix[ i ][ j ] = nmax( val1 = matrix[ i - 1 ][ j ]  " current item not included
-                                 val2 = COND i( WHEN items[ i - 1 ]-weight <= j - 1  " weight limit met?
-                                                THEN matrix[ i - 1 ][ j - items[ i - 1 ]-weight ]  " item included
+        " Include current item only if it yields a value increase
+        " Including item is only an option if current weight limit is met
+        matrix[ i ][ j ] = nmax( val1 = matrix[ i - 1 ][ j ]
+                                 val2 = COND i( WHEN items[ i - 1 ]-weight <= j - 1
+                                                THEN matrix[ i - 1 ][ j - items[ i - 1 ]-weight ]
                                                      + items[ i - 1 ]-value
-                                                ELSE 0 ) ).  " weight limit exceeded
+                                                ELSE 0 ) ).
         j += 1.
       ENDDO.
       i += 1.
