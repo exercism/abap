@@ -1,0 +1,13 @@
+{
+  "blurb": "Create an implementation of the Affine cipher, an ancient encryption algorithm from the Middle East.",
+  "authors": ["dwivedirahul44"],
+  "contributors": [
+  ],
+  "files": {
+    "solution": ["zcl_affine_cipher.clas.abap"],
+    "test": ["zcl_affine_cipher.clas.testclasses.abap"],
+    "example": [".meta/zcl_affine_cipher.clas.abap"]
+  },
+  "source": "Wikipedia",
+  "source_url": "http://en.wikipedia.org/wiki/Affine_cipher"
+}
