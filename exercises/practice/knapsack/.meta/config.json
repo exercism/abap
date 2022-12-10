@@ -1,9 +1,15 @@
 {
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "zcl_knapsack.clas.abap"
+    ],
+    "test": [
+      "zcl_knapsack.testclasses.clas.abap"
+    ],
+    "example": [
+      ".meta/zcl_knapsack.clas.abap"
+    ]
   },
   "blurb": "Given a knapsack that can only carry a certain weight, determine which items to put in the knapsack in order to maximize their combined value.",
   "source": "Wikipedia",
