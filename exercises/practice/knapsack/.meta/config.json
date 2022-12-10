@@ -5,7 +5,7 @@
       "zcl_knapsack.clas.abap"
     ],
     "test": [
-      "zcl_knapsack.testclasses.clas.abap"
+      "zcl_knapsack.clas.testclasses.abap"
     ],
     "example": [
       ".meta/zcl_knapsack.clas.abap"
