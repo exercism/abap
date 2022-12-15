@@ -1,12 +1,18 @@
 {
-  "blurb": "Given a word and a list of possible anagrams, select the correct sublist.",
-  "authors": ["marianfoo"],
-  "contributors": [
+  "authors": [
+    "marianfoo"
   ],
   "files": {
-    "solution": ["zcl_anagram.clas.abap"],
-    "test": ["zcl_anagram.clas.testclasses.abap"],
-    "example": [".meta/zcl_anagram.clas.abap"]
+    "solution": [
+      "zcl_anagram.clas.abap"
+    ],
+    "test": [
+      "zcl_anagram.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_anagram.clas.abap"
+    ]
   },
+  "blurb": "Given a word and a list of possible anagrams, select the correct sublist.",
   "source_url": "https://github.com/rchatley/extreme_startup"
 }
