@@ -12,17 +12,17 @@ Behind the scenes, your ABAP code is compiled and executed using the so-called [
 
 ### Debugging and Logging
 
-Currently, running ABAP exercises on the Exercism website does not provide any debugging or logging capabilities. That can make it hard to determine why your tests are failing. However, there's a clever way to log data in your code.
+There is no debugger available when running ABAP exercises on the Exercism website. That can make it hard to determine why your tests are failing. However, there's a clever way to log data in your code (Note: This does not work in any ABAP system). 
 
-Here's an example. The first image shows the exercise code with some failing tests. Each failed test shows the expected and actual values:
+Here's an [example](https://exercism.org/tracks/abap/exercises/affine-cipher/solutions/mbtools). The first image shows the exercise code with some failing tests. Each failed test shows the expected and actual values:
 
 ![exercise without logging](https://github.com/exercism/abap/blob/main/docs/logging_01.png?raw=true)
 
-To make debugging easier, add a local `log` variable and concatenate intermediate data to it. At the end of your method, simply return the `log` value instead of the actual result. When you run the tests, you will now see the complete logging information in the test results: 
+To make debugging easier, add one or several calls to `console=>log()` and pass any intermediate data to the method. Using newlines (`\n`) will help to structure the output. When you run the tests, you will see the console output in the test results: 
 
 ![exercise with logging](https://github.com/exercism/abap/blob/main/docs/logging_02.png?raw=true)
 
-After correcting your code, remove the final statement returning the proper result. 
+Note: The console output is only visible for failed tests. If you are publishing your solution, you might want to remove the log statements so your published iteration is easier to read for other community members.
 
 ## On Your Own System
 
