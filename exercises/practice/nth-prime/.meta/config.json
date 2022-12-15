@@ -1,13 +1,19 @@
 {
-  "blurb": "Given a number n, determine what the nth prime is.",
-  "authors": ["marianfoo"],
-  "contributors": [
+  "authors": [
+    "marianfoo"
   ],
   "files": {
-    "solution": ["zcl_nth_prime.clas.abap"],
-    "test": ["zcl_nth_prime.clas.testclasses.abap"],
-    "example": [".meta/zcl_nth_prime.clas.abap"]
+    "solution": [
+      "zcl_nth_prime.clas.abap"
+    ],
+    "test": [
+      "zcl_nth_prime.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_nth_prime.clas.abap"
+    ]
   },
+  "blurb": "Given a number n, determine what the nth prime is.",
   "source": "A variation on Problem 7 at Project Euler",
   "source_url": "http://projecteuler.net/problem=7"
 }

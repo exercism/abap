@@ -1,13 +1,19 @@
 {
-  "blurb": "Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East.",
-  "authors": ["larshp"],
-  "contributors": [
+  "authors": [
+    "larshp"
   ],
   "files": {
-    "solution": ["zcl_atbash_cipher.clas.abap"],
-    "test": ["zcl_atbash_cipher.clas.testclasses.abap"],
-    "example": [".meta/zcl_atbash_cipher.clas.abap"]
+    "solution": [
+      "zcl_atbash_cipher.clas.abap"
+    ],
+    "test": [
+      "zcl_atbash_cipher.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_atbash_cipher.clas.abap"
+    ]
   },
+  "blurb": "Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East.",
   "source": "Wikipedia",
   "source_url": "http://en.wikipedia.org/wiki/Atbash"
 }
