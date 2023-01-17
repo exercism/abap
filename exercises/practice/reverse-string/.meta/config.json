@@ -1,10 +1,17 @@
 {
-  "blurb": "Reverse a string",
-  "authors": ["mbtools"],
-  "contributors": [],
+  "authors": [
+    "mbtools"
+  ],
   "files": {
-    "solution": ["zcl_reverse_string.clas.abap"],
-    "test": ["zcl_reverse_string.clas.testclasses.abap"],
-    "example": [".meta/zcl_reverse_string.clas.abap"]
-  }
+    "solution": [
+      "zcl_reverse_string.clas.abap"
+    ],
+    "test": [
+      "zcl_reverse_string.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_reverse_string.clas.abap"
+    ]
+  },
+  "blurb": "Reverse a string"
 }

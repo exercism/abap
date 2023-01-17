@@ -1,10 +1,17 @@
 {
-  "blurb": "Help Elyse with her Enchantments and learn about internal tables in the process.",
-  "authors": ["pokrakam"],
-  "contributors": [],
+  "authors": [
+    "pokrakam"
+  ],
   "files": {
-    "solution": ["zcl_elyses_enchantments.clas.abap"],
-    "test": ["zcl_elyses_enchantments.clas.testclasses.abap"],
-    "example": [".meta/zcl_elyses_enchantments.clas.abap"]
-  }
+    "solution": [
+      "zcl_elyses_enchantments.clas.abap"
+    ],
+    "test": [
+      "zcl_elyses_enchantments.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_elyses_enchantments.clas.abap"
+    ]
+  },
+  "blurb": "Help Elyse with her Enchantments and learn about internal tables in the process."
 }

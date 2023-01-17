@@ -1,13 +1,19 @@
 {
-  "blurb": "Implement run-length encoding and decoding.",
-  "authors": ["pokrakam"],
-  "contributors": [
+  "authors": [
+    "pokrakam"
   ],
   "files": {
-    "solution": ["zcl_rle.clas.abap"],
-    "test": ["zcl_rle.clas.testclasses.abap"],
-    "example": [".meta/zcl_rle.clas.abap"]
+    "solution": [
+      "zcl_rle.clas.abap"
+    ],
+    "test": [
+      "zcl_rle.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_rle.clas.abap"
+    ]
   },
+  "blurb": "Implement run-length encoding and decoding.",
   "source": "Wikipedia",
   "source_url": "https://en.wikipedia.org/wiki/Run-length_encoding"
 }
