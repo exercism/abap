@@ -24,8 +24,8 @@ ENDCLASS.
 
 CLASS zcl_knapsack IMPLEMENTATION.
 
-
   METHOD get_max_possible_value.
     " add solution here
   ENDMETHOD.
+
 ENDCLASS.
