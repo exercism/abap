@@ -1,12 +1,18 @@
 {
-  "blurb": "Determine if a number is an Armstrong number.",
-  "authors": ["dwivedirahul44"],
-  "contributors": [
+  "authors": [
+    "dwivedirahul44"
   ],
   "files": {
-    "solution": ["zcl_armstrong_numbers.clas.abap"],
-    "test": ["zcl_armstrong_numbers.clas.testclasses.abap"],
-    "example": [".meta/zcl_armstrong_numbers.clas.abap"]
+    "solution": [
+      "zcl_armstrong_numbers.clas.abap"
+    ],
+    "test": [
+      "zcl_armstrong_numbers.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_armstrong_numbers.clas.abap"
+    ]
   },
+  "blurb": "Determine if a number is an Armstrong number.",
   "source_url": "https://en.wikipedia.org/wiki/Narcissistic_number"
 }
