@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_CRYPTO_SQUARE</CLSNAME>
+    <CLSNAME>ZCL_RARITY_OF_STRING</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Crypto Square</DESCRIPT>
+    <DESCRIPT>Exercism: Rarity Of String</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
