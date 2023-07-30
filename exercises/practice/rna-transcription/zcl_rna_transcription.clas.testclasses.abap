@@ -7,7 +7,7 @@ CLASS ltcl_rna_transcription DEFINITION FINAL FOR TESTING
     DATA cut TYPE REF TO zcl_rna_transcription.
     METHODS setup.
     METHODS:
-      empty_RNA_sequence                    FOR TESTING,
+      empty_rna_sequence                    FOR TESTING,
       rna_complement_of_cytosine_is_guanine FOR TESTING,
       rna_complement_of_guanine_is_cytosine FOR TESTING,
       rna_complement_of_thymine_is_adenine  FOR TESTING,
@@ -21,7 +21,7 @@ CLASS ltcl_rna_transcription IMPLEMENTATION.
     cut = NEW zcl_rna_transcription( ).
   ENDMETHOD.
 
-  METHOD empty_RNA_sequence.
+  METHOD empty_rna_sequence.
     cl_abap_unit_assert=>assert_equals(
       exp = ''
       act = cut->transcribe( '' ) ).
