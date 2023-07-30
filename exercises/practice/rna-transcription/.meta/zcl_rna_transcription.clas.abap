@@ -25,13 +25,17 @@ CLASS zcl_rna_transcription IMPLEMENTATION.
     DO strlen( strand ) TIMES.
       CASE strand+offset(1).
         WHEN 'A'.
-          lv_transcribed = lv_transcribed && 'U'.
+          CONCATENATE lv_transcribed 'U'
+            INTO lv_transcribed.
         WHEN 'C'.
-          lv_transcribed = lv_transcribed && 'G'.
+          CONCATENATE lv_transcribed 'G'
+            INTO lv_transcribed.
         WHEN 'G'.
-          lv_transcribed = lv_transcribed && 'C'.
+          CONCATENATE lv_transcribed 'C'
+            INTO lv_transcribed.
         WHEN 'T'.
-          lv_transcribed = lv_transcribed && 'A'.
+          CONCATENATE lv_transcribed 'A'
+            INTO lv_transcribed.
       ENDCASE.
       offset = offset + 1.
     ENDDO.
