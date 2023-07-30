@@ -21,20 +21,21 @@ CLASS zcl_rna_transcription IMPLEMENTATION.
 
   METHOD transcribe.
     DATA(offset) = 0.
-    result = ''.
+    DATA(lv_transcribed) = ''.
     DO strlen( strand ) TIMES.
       CASE strand+offset(1).
         WHEN 'A'.
-          result = result && 'U'.
+          lv_transcribed = lv_transcribed && 'U'.
         WHEN 'C'.
-          result = result && 'G'.
+          lv_transcribed = lv_transcribed && 'G'.
         WHEN 'G'.
-          result = result && 'C'.
+          lv_transcribed = lv_transcribed && 'C'.
         WHEN 'T'.
-          result = result && 'A'.
+          lv_transcribed = lv_transcribed && 'A'.
       ENDCASE.
       offset = offset + 1.
     ENDDO.
+    result = lv_transcribed.
   ENDMETHOD.
 
 ENDCLASS.
