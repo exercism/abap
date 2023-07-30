@@ -4,7 +4,7 @@ CLASS zcl_rna_transcription DEFINITION
   CREATE PUBLIC.
 
   PUBLIC SECTION.
-    METHODS:
+    METHODS
       transcribe
         IMPORTING
           strand             TYPE string
