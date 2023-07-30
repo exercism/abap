@@ -21,7 +21,7 @@ CLASS zcl_rna_transcription IMPLEMENTATION.
 
   METHOD transcribe.
     DATA(offset) = 0.
-    DO STRLEN( strand ) TIMES.
+    DO strlen( strand ) TIMES.
       CASE strand+offset(1).
         WHEN 'A'.
           result = result && 'U'.
