@@ -62,9 +62,9 @@ CLASS zcl_triangle IMPLEMENTATION.
     IF has_negative_or_zero_sides( side_a = side_a
                                    side_b = side_b
                                    side_c = side_c ) OR
-       is_degenerate( side_a = side_a
-                      side_b = side_b
-                      side_c = side_c ).
+        is_degenerate( side_a = side_a
+                       side_b = side_b
+                       side_c = side_c ).
       RAISE EXCEPTION TYPE cx_parameter_invalid.
     ENDIF.
     " Assume failure, and perform criteria check for this triangle type
@@ -79,9 +79,9 @@ CLASS zcl_triangle IMPLEMENTATION.
     IF has_negative_or_zero_sides( side_a = side_a
                                    side_b = side_b
                                    side_c = side_c ) OR
-       is_degenerate( side_a = side_a
-                      side_b = side_b
-                      side_c = side_c ).
+        is_degenerate( side_a = side_a
+                       side_b = side_b
+                       side_c = side_c ).
       RAISE EXCEPTION TYPE cx_parameter_invalid.
     ENDIF.
     " Assume failure, and perform criteria check for this triangle type
@@ -96,9 +96,9 @@ CLASS zcl_triangle IMPLEMENTATION.
     IF has_negative_or_zero_sides( side_a = side_a
                                    side_b = side_b
                                    side_c = side_c ) OR
-       is_degenerate( side_a = side_a
-                      side_b = side_b
-                      side_c = side_c ).
+        is_degenerate( side_a = side_a
+                       side_b = side_b
+                       side_c = side_c ).
       RAISE EXCEPTION TYPE cx_parameter_invalid.
     ENDIF.
     " Assume failure, and perform criteria check for this triangle type
