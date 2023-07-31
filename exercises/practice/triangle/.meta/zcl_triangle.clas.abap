@@ -110,16 +110,16 @@ CLASS zcl_triangle IMPLEMENTATION.
 
   METHOD has_negative_or_zero_sides.
     result = abap_false.
-    IF side_a <= '0.0' OR side_b <= '0.0' OR side_c <= '0.0'.
+    IF side_a <= 0 OR side_b <= 0 OR side_c <= 0.
       result = abap_true.
     ENDIF.
   ENDMETHOD.
 
   METHOD is_degenerate.
     result = abap_false.
-    IF ( side_a + side_b <= side_c ) OR
-       ( side_a + side_c <= side_b ) OR
-       ( side_b + side_c <= side_a).
+    IF (side_a + side_b) <= side_c OR
+       (side_a + side_c) <= side_b OR
+       (side_b + side_c) <= side_a.
       result = abap_true.
     ENDIF.
   ENDMETHOD.
