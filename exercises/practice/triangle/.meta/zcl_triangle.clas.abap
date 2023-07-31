@@ -116,10 +116,11 @@ CLASS zcl_triangle IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD is_degenerate.
+    DATA(side_ab) = side_a + side_b.
+    DATA(side_ac) = side_a + side_c.
+    DATA(side_bc) = side_b + side_c.
     result = abap_false.
-    IF (side_a + side_b) <= side_c OR
-       (side_a + side_c) <= side_b OR
-       (side_b + side_c) <= side_a.
+    IF side_ab <= side_c OR side_ac <= side_b OR side_bc <= side_a.
       result = abap_true.
     ENDIF.
   ENDMETHOD.
