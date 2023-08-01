@@ -159,9 +159,9 @@ CLASS ltcl_triangle IMPLEMENTATION.
   METHOD scal_no_sides_equal.
     cl_abap_unit_assert=>assert_equals(
       exp = abap_true
-      act = cut->is_isosceles( side_a = '4.0'
-                               side_b = '5.0'
-                               side_c = '6.0' ) ).
+      act = cut->is_isosceles( side_a = '2.9'
+                               side_b = '3.6'
+                               side_c = '4.4' ) ).
   ENDMETHOD.
 
   METHOD scal_all_sides_equal.
