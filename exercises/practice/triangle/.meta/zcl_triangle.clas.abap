@@ -65,7 +65,7 @@ CLASS zcl_triangle IMPLEMENTATION.
     DATA(degenerate) = is_degenerate( side_a_val = side_a
                                       side_b_val = side_b
                                       side_c_val = side_c ).
-    IF noz_sides OR degenerate.
+    IF noz_sides = abap_true OR degenerate = abap_true.
       RAISE EXCEPTION TYPE cx_parameter_invalid.
     ENDIF.
     " Assume failure, and perform criteria check for this triangle type
@@ -83,7 +83,7 @@ CLASS zcl_triangle IMPLEMENTATION.
     DATA(degenerate) = is_degenerate( side_a_val = side_a
                                       side_b_val = side_b
                                       side_c_val = side_c ).
-    IF noz_sides OR degenerate.
+    IF noz_sides = abap_true OR degenerate = abap_true.
       RAISE EXCEPTION TYPE cx_parameter_invalid.
     ENDIF.
     " Assume failure, and perform criteria check for this triangle type
@@ -101,7 +101,7 @@ CLASS zcl_triangle IMPLEMENTATION.
     DATA(degenerate) = is_degenerate( side_a_val = side_a
                                       side_b_val = side_b
                                       side_c_val = side_c ).
-    IF noz_sides OR degenerate.
+    IF noz_sides = abap_true OR degenerate = abap_true.
       RAISE EXCEPTION TYPE cx_parameter_invalid.
     ENDIF.
     " Assume failure, and perform criteria check for this triangle type
