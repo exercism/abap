@@ -34,7 +34,7 @@ Use this method if your system is connected to the Internet and has access to Gi
 
 ![abapGit Online Repo](https://github.com/exercism/abap/blob/main/docs/clone_02.png?raw=true)
 
-4. Select "Create Online Repository". You should see a list of objects with status "A":
+4. Select "Create Online Repository". You should see a list of objects with the status "A":
 
 ![abapGit Online Repo](https://github.com/exercism/abap/blob/main/docs/clone_03.png?raw=true)
 
@@ -63,7 +63,7 @@ Use this method if your system is *not* connected to the Internet.
 
 ![abapGit Offline Repo](https://github.com/exercism/abap/blob/main/docs/clone_12.png?raw=true)
 
-7. Select "Import ZIP" and pick the downloaded ZIP file. You should see a list of objects with status "A":
+7. Select "Import ZIP" and pick the downloaded ZIP file. You should see a list of objects with the status "A":
 
 ![abapGit Offline Repo](https://github.com/exercism/abap/blob/main/docs/clone_13.png?raw=true)
 
@@ -83,6 +83,6 @@ You can remove all objects from your system in the following way:
 ## Troubleshooting
 
 - In case of connection issues, check [SSL Setup](https://docs.abapgit.org/user-guide/setup/ssl-setup.html)
-- In case of error `Package $EXERCISM_DIFFERENCE-OF-SQUARES exceeds ABAP 30-characters name limit`, please use a shorter package name like '$EXER`.
-- Some files will show diffs after pulling into your ABAP system. These are related to different end-of-file and byte-order-characters and can be ignored.
+- In case of error `Package $EXERCISM_DIFFERENCE-OF-SQUARES exceeds ABAP 30-characters name limit`, please use a shorter package name like `$exer`.
+- Some files will show diffs after pulling into your ABAP system. Differences related to end-of-file characters or byte-order-marks can be ignored.
   
