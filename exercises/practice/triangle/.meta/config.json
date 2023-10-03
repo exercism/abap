@@ -1,0 +1,13 @@
+{
+  "blurb": "Determine if a triangle is equilateral, isosceles, or scalene.",
+  "authors": ["ajborla"],
+  "contributors": [
+  ],
+  "files": {
+    "solution": ["zcl_triangle.clas.abap"],
+    "test": ["zcl_triangle.clas.testclasses.abap"],
+    "example": [".meta/zcl_triangle.clas.abap"]
+  },
+  "source": "The Ruby Koans triangle project, parts 1 & 2",
+  "source_url": "https://web.archive.org/web/20220831105330/http://rubykoans.com"
+}

@@ -1,13 +1,19 @@
 {
-  "blurb": "Given two different internal tables, combine the values of each table together into one internal table",
-  "authors": ["rich-heilman"],
-  "contributors": [
+  "authors": [
+    "rich-heilman"
   ],
   "files": {
-    "solution": ["zcl_itab_combination.clas.abap"],
-    "test": ["zcl_itab_combination.clas.testclasses.abap"],
-    "example": [".meta/zcl_itab_combination.clas.abap"]
+    "solution": [
+      "zcl_itab_combination.clas.abap"
+    ],
+    "test": [
+      "zcl_itab_combination.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_itab_combination.clas.abap"
+    ]
   },
+  "blurb": "Given two different internal tables, combine the values of each table together into one internal table",
   "source": "ABAP Internal Tables",
   "source_url": "https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenitab.htm"
 }

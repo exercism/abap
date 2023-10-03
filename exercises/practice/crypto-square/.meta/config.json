@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "dwivedirahul44"
+  ],
+  "files": {
+    "solution": [
+      "zcl_crypto_square.clas.abap"
+    ],
+    "test": [
+      "zcl_crypto_square.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_crypto_square.clas.abap"
+    ]
+  },
+  "blurb": "Implement the classic method for composing secret messages called a square code.",
+  "source": "J Dalbey's Programming Practice problems",
+  "source_url": "http://users.csc.calpoly.edu/~jdalbey/103/Projects/ProgrammingPractice.html"
+}

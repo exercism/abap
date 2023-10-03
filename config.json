@@ -9,7 +9,7 @@
     "analyzer": false
   },
   "test_runner": {
-    "average_run_time": 9.0
+    "average_run_time": 9
   },
   "blurb": "ABAP is a high level programming language created by SAP",
   "version": 3,
@@ -288,6 +288,86 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 7
+      },
+      {
+        "slug": "acronym",
+        "name": "Acronym",
+        "uuid": "425e218f-6feb-4fa2-a3cc-3c7239c50eaf",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "armstrong-numbers",
+        "name": "Armstrong Numbers",
+        "uuid": "8dc36b6e-cc15-4953-baca-7c6475b7112a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "collatz-conjecture",
+        "name": "Collatz Conjecture",
+        "uuid": "3b0744b0-6cfd-40d3-aae9-f50403abbe12",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "state-of-tic-tac-toe",
+        "name": "State of Tic-Tac-Toe",
+        "uuid": "47290e3c-885c-4940-bdaf-6aaf1fbfbae2",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "crypto-square",
+        "name": "Crypto Square",
+        "uuid": "26a24356-e26c-49f8-a302-78951892829b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "etl",
+        "name": "ETL",
+        "uuid": "521e9992-5122-42e9-aaeb-4234f2e3d8e4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "affine-cipher",
+        "name": "Affine Cipher",
+        "uuid": "85dae1ac-f9e5-411d-920e-bfa988c49876",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "difference-of-squares",
+        "name": "Difference of Squares",
+        "uuid": "6cc8cd8d-e3e5-4f05-b01d-949a23a5b298",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "triangle",
+        "name": "Triangle",
+        "uuid": "b916066b-918e-403c-9a9c-be33c4a6250d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "rna-transcription",
+        "name": "RNA Transcription",
+        "uuid": "bc73c977-cd23-40f5-a890-773e12f71d01",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
       }
     ]
   },
