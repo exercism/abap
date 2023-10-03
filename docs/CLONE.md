@@ -29,7 +29,7 @@ Use this method if your system is connected to the Internet and has access to Gi
 2. On the "Repository Overview", select "New Online"
 3. Enter the following values
 - URL: `https://github.com/exercism/abap`
-- Package: `$exercism`
+- Package: `$exer`
 - Display Name: `Exercism - ABAP Track`
 
 ![abapGit Online Repo](https://github.com/exercism/abap/blob/main/docs/clone_02.png?raw=true)
@@ -55,7 +55,7 @@ Use this method if your system is *not* connected to the Internet.
 4. On the "Repository Overview", select "New Offline"
 5. Enter the following values
 - Repository Name: `Exercism - ABAP Track`
-- Package: `$exercism`
+- Package: `$exer`
 
 ![abapGit Offline Repo](https://github.com/exercism/abap/blob/main/docs/clone_11.png?raw=true)
 
@@ -79,3 +79,10 @@ You can remove all objects from your system in the following way:
 2. Go to the `Execism - ABAP Track` repository
 3. Select "Advanced > Uninstall"
 4. Confirm the deletion of all objects and the repository
+
+## Troubleshooting
+
+- In case of connection issues, check [SSL Setup](https://docs.abapgit.org/user-guide/setup/ssl-setup.html)
+- In case of error `Package $EXERCISM_DIFFERENCE-OF-SQUARES exceeds ABAP 30-characters name limit`, please use a shorter package name like '$EXER`.
+- Some files will show diffs after pulling into your ABAP system. These are related to different end-of-file and byte-order-characters and can be ignored.
+  
