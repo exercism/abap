@@ -1,6 +1,6 @@
 # Introduction
 
-ABAP supports an object-oriented programming model that is based on classes and interfaces of ABAP Objects and a procedural programming model that is based on function modules and subroutines. Both models are interoperable, however, on Exercism the focus is solely on the object-oriented programming model.
+ABAP supports an object-oriented programming model that is based on classes and interfaces of ABAP Objects.
 
 ## (Re-)Assignment
 
@@ -28,9 +28,9 @@ my_first_constant = 20.
 // => SyntaxError: Assignment to constant variable.
 ```
 
-## Method Declarations
+## Class and Method Declarations
 
-In ABAP, units of functionality are encapsulated in _methods_, usually grouping methods together in the same class if they belong together. These methods can take parameters (arguments), and can _return_ a value using the `returning` keyword in the method definition. Methods are invoked using `( )` syntax.
+In ABAP, units of functionality are encapsulated in _methods_, usually grouping methods together in the same [class][classes] if they belong together. These methods can take parameters (arguments), and can _return_ a value using the `returning` keyword in the method definition. Methods are invoked using `( )` syntax.
 
 ```abap
 CLASS my_class DEFINITION.
@@ -61,4 +61,5 @@ add( num1 = 1 num2 = 3 ).
 [constant]: https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abapconstants.htm
 [data]: https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abapdata.htm
 [assignment]: https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenequals_operator.htm
+[classes]: https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abapclass.htm
 [methods]: https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abapmethods_functional.htm
