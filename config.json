@@ -9,7 +9,7 @@
     "analyzer": false
   },
   "test_runner": {
-    "average_run_time": 9.0
+    "average_run_time": 9
   },
   "blurb": "ABAP is a high level programming language created by SAP",
   "version": 3,
@@ -354,13 +354,29 @@
         "difficulty": 3
       },
       {
+        "slug": "triangle",
+        "name": "Triangle",
+        "uuid": "b916066b-918e-403c-9a9c-be33c4a6250d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "rna-transcription",
+        "name": "RNA Transcription",
+        "uuid": "bc73c977-cd23-40f5-a890-773e12f71d01",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "knapsack",
         "name": "Knapsack",
         "uuid": "2f9877d5-eec5-4048-a868-975d028147ef",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
-      }
+      }        
     ]
   },
   "concepts": [
