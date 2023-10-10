@@ -27,13 +27,13 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Use Node.js LTS (16.x)
-        uses: actions/setup-node@5b949b50c3461bbcd5a540b150c368278160234a
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
           node-version: '16'
       - run: npm install @abaplint/cli -g
-      - run: abaplint abaplint_exercises.json
+      - run: abaplint abaplint.json
       - run: abaplint abaplint_solutions.json
       - run: docker pull exercism/abap-test-runner
       - name: Run tests for all exercises

@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "dwivedirahul44"
+  ],
+  "files": {
+    "solution": [
+      "zcl_collatz_conjecture.clas.abap"
+    ],
+    "test": [
+      "zcl_collatz_conjecture.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_collatz_conjecture.clas.abap"
+    ]
+  },
+  "blurb": "Calculate the number of steps to reach 1 using the Collatz conjecture.",
+  "source": "An unsolved problem in mathematics named after mathematician Lothar Collatz",
+  "source_url": "https://en.wikipedia.org/wiki/3x_%2B_1_problem"
+}
