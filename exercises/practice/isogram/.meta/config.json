@@ -13,7 +13,7 @@
       ".meta/zcl_isogram.clas.abap"
     ]
   },
-  "blurb": "Determine if a word or phrase is an isogram",
+  "blurb": "Determine if a word or phrase is an isogram.",
   "source": "Wikipedia",
   "source_url": "https://en.wikipedia.org/wiki/Isogram"
 }
