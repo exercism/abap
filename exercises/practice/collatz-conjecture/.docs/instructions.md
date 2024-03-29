@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 The Collatz Conjecture or 3x+1 problem can be summarized as follows:
 
