@@ -9,20 +9,23 @@ CLASS zcl_freelancer_rates DEFINITION
       IMPORTING
         !rate_per_hour TYPE f
       RETURNING
-        VALUE(result)  TYPE f .
+        VALUE(result)  TYPE f.
+
     METHODS days_in_budget
       IMPORTING
         !budget        TYPE f
         !rate_per_hour TYPE f
       RETURNING
-        VALUE(result)  TYPE i .
+        VALUE(result)  TYPE i.
+
     METHODS price_with_monthly_discount
       IMPORTING
         !rate_per_hour TYPE f
         !num_days      TYPE f
         !discount      TYPE f
       RETURNING
-        VALUE(result)  TYPE f .
+        VALUE(result)  TYPE f.
+
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
@@ -32,12 +35,12 @@ ENDCLASS.
 CLASS zcl_freelancer_rates IMPLEMENTATION.
 
 
-
-  METHOD day_rate.
+  METHOD days_in_budget.
 * add solution here
   ENDMETHOD.
 
-  METHOD days_in_budget.
+
+  METHOD day_rate.
 * add solution here
   ENDMETHOD.
 
