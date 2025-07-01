@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "mbtools"
+  ],
+  "contributors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "zcl_flower_field.clas.abap"
+    ],
+    "test": [
+      "zcl_flower_field.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_flower_field.clas.abap"
+    ]
+  },
+  "blurb": "Mark all the flowers in a garden."
+}
