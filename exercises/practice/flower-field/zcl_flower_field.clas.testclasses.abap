@@ -10,18 +10,18 @@ CLASS ltc_test DEFINITION FINAL FOR TESTING
     METHODS assert_that IMPORTING input  TYPE string_table
                                   output TYPE string_table.
 
-    METHODS no_rows                         FOR TESTING RAISING cx_static_check.
-    METHODS no_columns                      FOR TESTING RAISING cx_static_check.
-    METHODS no_flowers                      FOR TESTING RAISING cx_static_check.
-    METHODS garden_full_of_flowers          FOR TESTING RAISING cx_static_check.
-    METHODS flower_surrounded_by_spaces     FOR TESTING RAISING cx_static_check.
-    METHODS space_surrounded_by_flowers     FOR TESTING RAISING cx_static_check.
-    METHODS horizontal_line                 FOR TESTING RAISING cx_static_check.
-    METHODS horizontal_line_flowers_at_ends FOR TESTING RAISING cx_static_check.
-    METHODS vertical_line                   FOR TESTING RAISING cx_static_check.
-    METHODS vertical_line_flowers_at_ends   FOR TESTING RAISING cx_static_check.
-    METHODS cross                           FOR TESTING RAISING cx_static_check.
-    METHODS large_garden                    FOR TESTING RAISING cx_static_check.
+    METHODS no_rows                        FOR TESTING RAISING cx_static_check.
+    METHODS no_columns                     FOR TESTING RAISING cx_static_check.
+    METHODS no_flowers                     FOR TESTING RAISING cx_static_check.
+    METHODS garden_full_of_flowers         FOR TESTING RAISING cx_static_check.
+    METHODS flower_surrounded_by_spaces    FOR TESTING RAISING cx_static_check.
+    METHODS space_surrounded_by_flowers    FOR TESTING RAISING cx_static_check.
+    METHODS horizontal_line                FOR TESTING RAISING cx_static_check.
+    METHODS horizontal_line_flowers_at_end FOR TESTING RAISING cx_static_check.
+    METHODS vertical_line                  FOR TESTING RAISING cx_static_check.
+    METHODS vertical_line_flowers_at_end   FOR TESTING RAISING cx_static_check.
+    METHODS cross                          FOR TESTING RAISING cx_static_check.
+    METHODS large_garden                   FOR TESTING RAISING cx_static_check.
 
 ENDCLASS.
 
@@ -106,7 +106,7 @@ CLASS ltc_test IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD horizontal_line_flowers_at_ends.
+  METHOD horizontal_line_flowers_at_end.
     assert_that(
       input  = VALUE #( ( `*   *` ) )
       output = VALUE #( ( `*1 1*` ) ) ).
@@ -130,7 +130,7 @@ CLASS ltc_test IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD vertical_line_flowers_at_ends.
+  METHOD vertical_line_flowers_at_end.
     assert_that(
       input  = VALUE #(
         ( `*` )
