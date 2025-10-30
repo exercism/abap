@@ -21,6 +21,19 @@
   "exercises": {
     "concept": [
       {
+        "slug": "freelancer-rates",
+        "name": "Freelancer Rates",
+        "uuid": "0aff2fa7-55ea-47e9-af4a-78927d916baf",
+        "concepts": [
+          "numbers",
+          "arithmetic-operators"
+        ],
+        "prerequisites": [
+          "basics"
+        ],
+        "status": "beta"
+      },
+      {
         "slug": "lasagna",
         "name": "Lucian's Luscious Lasagna",
         "uuid": "0bb8f970-fe74-41f2-8ae6-2d771d87b607",
