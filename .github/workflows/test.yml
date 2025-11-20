@@ -28,10 +28,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-      - name: Use Node.js LTS (16.x)
+      - name: Use Node.js LTS (22.x)
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
-          node-version: '16'
+          node-version: '22'
       - run: npm install @abaplint/cli -g
       - run: abaplint abaplint.json
       - run: abaplint abaplint_solutions.json
