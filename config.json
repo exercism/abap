@@ -8,9 +8,6 @@
     "representer": false,
     "analyzer": false
   },
-  "test_runner": {
-    "average_run_time": 9
-  },
   "blurb": "ABAP is a high level programming language created by SAP",
   "version": 3,
   "online_editor": {
@@ -18,13 +15,18 @@
     "indent_size": 2,
     "highlightjs_language": "abap"
   },
+  "test_runner": {
+    "average_run_time": 9
+  },
   "exercises": {
     "concept": [
       {
         "slug": "lasagna",
         "name": "Lucian's Luscious Lasagna",
         "uuid": "0bb8f970-fe74-41f2-8ae6-2d771d87b607",
-        "concepts": ["basics"],
+        "concepts": [
+          "basics"
+        ],
         "prerequisites": [],
         "status": "wip"
       }
@@ -181,7 +183,10 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
-        "topics": ["parsing", "transforming"]
+        "topics": [
+          "parsing",
+          "transforming"
+        ]
       },
       {
         "slug": "raindrops",
@@ -224,12 +229,21 @@
         "difficulty": 2
       },
       {
+        "slug": "flower-field",
+        "name": "Flower Field",
+        "uuid": "6e096ef1-5502-446f-b32c-65c3e4a8166b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "minesweeper",
         "name": "Minesweeper",
         "uuid": "c8f6abc0-41a4-4104-8050-2df35f0d469a",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5
+        "difficulty": 5,
+        "status": "deprecated"
       },
       {
         "slug": "word-count",
@@ -238,7 +252,12 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["loops", "lists", "regular_expressions", "strings"]
+        "topics": [
+          "loops",
+          "lists",
+          "regular_expressions",
+          "strings"
+        ]
       },
       {
         "slug": "beer-song",
@@ -247,7 +266,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 5,
-        "topics": ["conditionals", "loops", "strings"]
+        "topics": [
+          "conditionals",
+          "loops",
+          "strings"
+        ]
       },
       {
         "slug": "darts",
@@ -380,43 +403,43 @@
   ],
   "key_features": [
     {
-      "icon": "evolving",
       "title": "Evolving",
-      "content": "ABAP is a modern and constantly evolving language supported by SAP."
+      "content": "ABAP is a modern and constantly evolving language supported by SAP.",
+      "icon": "evolving"
     },
     {
-      "icon": "fun",
       "title": "Fun",
-      "content": "Always a new or old feature to discover."
+      "content": "Always a new or old feature to discover.",
+      "icon": "fun"
     },
     {
-      "icon": "easy",
       "title": "Easy",
-      "content": "Statements are easily readable and understandable."
+      "content": "Statements are easily readable and understandable.",
+      "icon": "easy"
     },
     {
-      "icon": "productive",
       "title": "Productive",
-      "content": "Easily create data structures and interact with database contents."
+      "content": "Easily create data structures and interact with database contents.",
+      "icon": "productive"
     },
     {
-      "icon": "statically-typed",
       "title": "Typed",
-      "content": "Static types linked to database schemas."
+      "content": "Static types linked to database schemas.",
+      "icon": "statically-typed"
     },
     {
-      "icon": "stable",
       "title": "Reliability",
-      "content": "Stable functionality to run the core of the worlds largest businesses."
+      "content": "Stable functionality to run the core of the worlds largest businesses.",
+      "icon": "stable"
     }
   ],
   "tags": [
+    "execution_mode/compiled",
     "paradigm/object_oriented",
     "paradigm/procedural",
+    "runtime/language_specific",
     "typing/static",
     "typing/strong",
-    "execution_mode/compiled",
-    "runtime/language_specific",
     "used_for/backends",
     "used_for/financial_systems"
   ]

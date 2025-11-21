@@ -11,9 +11,9 @@
 The ABAP track with all exercises is implemented as an abapGit repository. To clone the track to your own system, you first have to install abapGit.
 
 1. Go to [https://github.com/abapGit/abapGit](https://github.com/abapGit/abapGit)
-2. Download the `zabapgit.abap` file 
+2. Download the `zabapgit_standalone.prog.abap` file 
 3. Create program `zabapgit_standalone` in your own system
-4. Upload the source from `zabapgit.abap` to program `zabapgit_standalone`
+4. Upload the source from `zabapgit_standalone.prog.abap` to program `zabapgit_standalone`
 5. Activate the program
 
 ## Installing Exercism ABAP Track
