@@ -33,17 +33,12 @@ CLASS zcl_book_store IMPLEMENTATION.
              book_id  TYPE book_id,
              quantity TYPE i,
            END OF basket_aggr_line.
-    DATA b TYPE REF TO basket_aggr_line.
     DATA basket_aggr TYPE TABLE OF basket_aggr_line
-      WITH NON-UNIQUE SORTED KEY quantity COMPONENTS quantity.
-
-    DATA basket_line TYPE REF TO book_id.
-
-    DATA filtered_basket_aggr LIKE basket_aggr.
+        WITH NON-UNIQUE SORTED KEY quantity COMPONENTS quantity.
 
     TYPES: BEGIN OF discount_grp,
              unique_books TYPE i,
-             discount     TYPE total,
+             discount            TYPE total,
            END OF discount_grp.
     DATA grp TYPE REF TO discount_grp.
     DATA discount_grps TYPE TABLE OF discount_grp.
@@ -60,32 +55,18 @@ CLASS zcl_book_store IMPLEMENTATION.
     DO 5 TIMES.
 
       new_total = 0.
-      basket_aggr = VALUE #( ( book_id = 1 )
-                             ( book_id = 2 )
-                             ( book_id = 3 )
-                             ( book_id = 4 )
-                             ( book_id = 5 ) ).
-
-      LOOP AT basket REFERENCE INTO basket_line.
-        basket_aggr[ book_id = basket_line->* ]-quantity += 1.
-      ENDLOOP.
+      basket_aggr = VALUE #( FOR i = 1 UNTIL i > 5
+                             ( book_id = i
+                               quantity = lines( FILTER #( basket WHERE table_line = i ) ) ) ).
 
       LOOP AT discount_grps REFERENCE INTO grp WHERE unique_books <= max_grp.
-
-        DO.
-          CLEAR filtered_basket_aggr.
-          LOOP AT basket_aggr REFERENCE INTO b WHERE quantity > 0.
-            APPEND b->* TO filtered_basket_aggr.
-          ENDLOOP.
-          IF lines( filtered_basket_aggr ) < grp->unique_books.
-            EXIT.
-          ENDIF.
+        WHILE lines( FILTER #( basket_aggr USING KEY quantity WHERE quantity > 0 ) ) >= grp->unique_books.
           SORT basket_aggr BY quantity DESCENDING.
           DO grp->unique_books TIMES.
             basket_aggr[ sy-index ]-quantity -= 1.
           ENDDO.
           new_total += grp->unique_books * 8 * ( 1 - grp->discount ).
-        ENDDO.
+        ENDWHILE.
       ENDLOOP.
 
       total = nmin( val1 = total val2 = new_total ).
