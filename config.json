@@ -205,6 +205,14 @@
         "difficulty": 2
       },
       {
+        "slug": "eliuds-eggs",
+        "name": "Eliud's Eggs",
+        "uuid": "34a2ee25-abe1-4683-a0fd-40f3e65eab55",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "run-length-encoding",
         "name": "Run Length Encoding",
         "uuid": "18479071-0e8a-4ba6-8a32-fb2ee40cc94c",
