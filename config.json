@@ -183,6 +183,14 @@
         "difficulty": 1
       },
       {
+        "slug": "protein-translation",
+        "name": "Protein Translation",
+        "uuid": "73d301f2-9a3e-4d67-8138-dee878094539",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "atbash-cipher",
         "name": "Atbash Cipher",
         "uuid": "cdb6d3b8-b2a7-42a7-a124-3b25d7ce545c",
