@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "zcl_protein_translation.clas.abap"
+    ],
+    "test": [
+      "zcl_protein_translation.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_protein_translation.clas.abap"
+    ]
+  },
+  "blurb": "Translate RNA sequences into proteins.",
+  "source": "Tyler Long"
+}
