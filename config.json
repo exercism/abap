@@ -18,6 +18,20 @@
   "test_runner": {
     "average_run_time": 9
   },
+  "files": {
+    "solution": [
+      "zcl_%{snake_slug}.clas.abap"
+    ],
+    "test": [
+      "zcl_%{snake_slug}.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_%{snake_slug}.clas.abap"
+    ],
+    "exemplar": [
+      ".meta/zcl_%{snake_slug}.clas.abap"
+    ]
+  },
   "exercises": {
     "concept": [
       {
