@@ -18,6 +18,20 @@
   "test_runner": {
     "average_run_time": 9
   },
+  "files": {
+    "solution": [
+      "zcl_%{snake_slug}.clas.abap"
+    ],
+    "test": [
+      "zcl_%{snake_slug}.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_%{snake_slug}.clas.abap"
+    ],
+    "exemplar": [
+      ".meta/zcl_%{snake_slug}.clas.abap"
+    ]
+  },
   "exercises": {
     "concept": [
       {
@@ -113,9 +127,25 @@
         "difficulty": 1
       },
       {
+        "slug": "resistor-color-duo",
+        "name": "Resistor Color Duo",
+        "uuid": "02daf508-b4d8-47c9-a9c7-f26e7032258c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "leap",
         "name": "Leap",
         "uuid": "ed451561-a84a-4b44-a3c9-9a0d9378667c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "line-up",
+        "name": "Line Up",
+        "uuid": "9ede7530-808e-41f4-a1c1-1f528dc9772e",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
@@ -200,6 +230,14 @@
         "slug": "anagram",
         "name": "Anagram",
         "uuid": "3b824dfa-49fa-4a32-9706-ee2267289e62",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "eliuds-eggs",
+        "name": "Eliud's Eggs",
+        "uuid": "34a2ee25-abe1-4683-a0fd-40f3e65eab55",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
