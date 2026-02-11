@@ -7,7 +7,7 @@
       "zcl_line_up.clas.abap"
     ],
     "test": [
-      "zcl_line_up_test.clas.abap"
+      "zcl_line_up.clas.testclasses.abap"
     ],
     "example": [
       ".meta/zcl_line_up.clas.abap"
