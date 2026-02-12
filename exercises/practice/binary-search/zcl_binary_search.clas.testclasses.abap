@@ -7,12 +7,12 @@ CLASS ltcl_binary_search DEFINITION FINAL FOR TESTING
     DATA cut TYPE REF TO zcl_binary_search.
     METHODS setup.
     METHODS:
-      finds_valid_value FOR TESTING,
-      finds_value_in_middle_of_table FOR TESTING,
-      finds_value_at_start_of_table FOR TESTING,
-      finds_value_at_end_of_table FOR TESTING,
-      finds_value_in_odd_table FOR TESTING,
-      finds_value_in_even_table FOR TESTING,
+      finds_valid_value FOR TESTING RAISING zcx_item_not_found,
+      finds_value_in_middle_of_table FOR TESTING RAISING zcx_item_not_found,
+      finds_value_at_start_of_table FOR TESTING RAISING zcx_item_not_found,
+      finds_value_at_end_of_table FOR TESTING RAISING zcx_item_not_found,
+      finds_value_in_odd_table FOR TESTING RAISING zcx_item_not_found,
+      finds_value_in_even_table FOR TESTING RAISING zcx_item_not_found,
       identifies_value_not_in_table FOR TESTING,
       smaller_than_min_not_found FOR TESTING,
       larger_than_max_not_found FOR TESTING,
