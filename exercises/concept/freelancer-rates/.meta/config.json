@@ -1,19 +1,23 @@
 {
-    "authors": [
-      "marianfoo"
+  "authors": [
+    "marianfoo"
+  ],
+  "contributors": [
+    "mbtools"
+  ],
+  "files": {
+    "solution": [
+      "zcl_freelancer_rates.clas.abap"
     ],
-    "contributors": [
+    "test": [
+      "zcl_freelancer_rates.clas.testclasses.abap"
     ],
-    "files": {
-      "solution": [
-        "zcl_freelancer_rates.clas.abap"
-      ],
-      "test": [
-        "zcl_freelancer_rates.clas.testclasses.abap"
-      ],
-      "exemplar": [
-        ".meta/zcl_freelancer_rates.clas.abap"
-      ]
-    },
-    "blurb": "Learn about numbers whilst helping a freelancer communicate with a project manager about day- and month rates."
-  }
+    "exemplar": [
+      ".meta/zcl_freelancer_rates.clas.abap"
+    ]
+  },
+  "forked_from": [
+    "javascript/freelancer-rates"
+  ],
+  "blurb": "Learn about numbers whilst helping a freelancer communicate with a project manager about day- and month rates."
+}

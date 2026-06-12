@@ -2,83 +2,68 @@
 
 ## Numbers
 
-Many programming languages have specific numeric types to represent different types of numbers, but JavaScript only has two:
+ABAP has several numeric types. In this exercise, you will use two of them:
 
-- `number`: a numeric data type in the double-precision 64-bit floating-point format (IEEE 754).
-  Examples are `-6`, `-2.4`, `0`, `0.1`, `1`, `3.14`, `16.984025`, `25`, `976`, `1024.0` and `500000`.
-- `bigint`: a numeric data type that can represent _integers_ in the arbitrary precision format.
-  Examples are `-12n`, `0n`, `4n`, and `9007199254740991n`.
+- `i` for integer values, such as a number of days.
+- `p` for packed decimal values, such as an hourly rate or discount.
 
-If you require arbitrary precision or work with extremely large numbers, use the `bigint` type.
-Otherwise, the `number` type is likely the better option.
+```abap
+DATA billable_days TYPE i VALUE 22.
+DATA rate_per_hour TYPE p LENGTH 8 DECIMALS 2 VALUE '89.89'.
+```
+
+Packed numbers define their maximum length and number of decimal places.
+Decimal literals are commonly written as text values and converted to the target decimal type by the compiler or with `CONV`.
+
+```abap
+TYPES discount_rate TYPE p LENGTH 8 DECIMALS 6.
+
+DATA discount TYPE discount_rate.
+discount = CONV discount_rate( '0.15' ).
+```
 
 ### Rounding
 
-There is a built-in global object called `Math` that provides various [rounding functions][ref-math-object-rounding]. For example, you can round down (`floor`) or round up (`ceil`) decimal numbers to the nearest whole numbers.
+ABAP provides built-in numeric functions for rounding.
+The `floor` function rounds down to the nearest whole number, and `ceil` rounds up to the nearest whole number.
 
-```javascript
-Math.floor(234.34); // => 234
-Math.ceil(234.34); // => 235
+```abap
+DATA full_months TYPE i.
+full_months = floor( 70 / 22 ).
+
+DATA rounded_cost TYPE i.
+rounded_cost = ceil( '14527.2' ).
 ```
 
 ## Arithmetic Operators
 
-JavaScript provides 6 different operators to perform basic arithmetic operations on numbers.
+ABAP supports arithmetic operators for calculations with numeric values.
 
-- `+`: The addition operator is used to find the sum of numbers.
-- `-`: The subtraction operator is used to find the difference between two numbers
-- `*`: The multiplication operator is used to find the product of two numbers.
-- `/`: The division operator is used to divide two numbers.
-
-```javascript
-2 - 1.5; //=> 0.5
-19 / 2; //=> 9.5
+```abap
+DATA day_rate TYPE p LENGTH 8 DECIMALS 2.
+day_rate = rate_per_hour * 8.
 ```
 
-- `%`: The remainder operator is used to find the remainder of a division performed.
+The basic operators are:
 
-  ```javascript
-  40 % 4; // => 0
-  -11 % 4; // => -3
-  ```
+- `+` for addition.
+- `-` for subtraction.
+- `*` for multiplication.
+- `/` for division.
+- `MOD` for the remainder of an integer division.
 
-- `**`: The exponentiation operator is used to raise a number to a power.
-
-  ```javascript
-  4 ** 3; // => 64
-  4 ** 1 / 2; // => 2
-  ```
-
-### Order of Operations
-
-When using multiple operators in a line, JavaScript follows an order of precedence as shown in [this precedence table][mdn-operator-precedence].
-To simplify it to our context, JavaScript uses the PEDMAS (Parentheses, Exponents, Division/Multiplication, Addition/Subtraction) rule we've learnt in elementary math classes.
-
-<!-- prettier-ignore-start -->
-```javascript
-const result = 3 ** 3 + 9 * 4 / (3 - 1);
-// => 3 ** 3 + 9 * 4/2
-// => 27 + 9 * 4/2
-// => 27 + 18
-// => 45
-```
-<!-- prettier-ignore-end -->
-
-### Shorthand Assignment Operators
-
-Shorthand assignment operators are a shorter way of writing code conducting arithmetic operations on a variable, and assigning the new value to the same variable.
-For example, consider two variables `x` and `y`.
-Then, `x += y` is same as `x = x + y`.
-Often, this is used with a number instead of a variable `y`.
-The 5 other operations can also be conducted in a similar style.
-
-```javascript
-let x = 5;
-x += 25; // x is now 30
-
-let y = 31;
-y %= 3; // y is now 1
+```abap
+DATA remaining_days TYPE i.
+remaining_days = num_days MOD 22.
 ```
 
-[mdn-operator-precedence]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table
-[ref-math-object-rounding]: https://javascript.info/number#rounding
+ABAP evaluates multiplication and division before addition and subtraction.
+Parentheses can be used to make the intended order explicit.
+
+```abap
+DATA discounted_rate TYPE p LENGTH 8 DECIMALS 2.
+discounted_rate = monthly_rate * ( 1 - discount ).
+```
+
+[numeric-types]: https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenbuiltin_types_numeric.htm
+[arithmetic-expressions]: https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenarith_operators.htm

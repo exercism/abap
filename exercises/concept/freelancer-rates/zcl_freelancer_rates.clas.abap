@@ -5,26 +5,29 @@ CLASS zcl_freelancer_rates DEFINITION
 
   PUBLIC SECTION.
 
+    TYPES amount TYPE p LENGTH 16 DECIMALS 6.
+    TYPES discount_rate TYPE p LENGTH 8 DECIMALS 6.
+
     METHODS day_rate
       IMPORTING
-        !rate_per_hour TYPE f
+        !rate_per_hour TYPE amount
       RETURNING
-        VALUE(result)  TYPE f.
+        VALUE(result)  TYPE amount.
 
     METHODS days_in_budget
       IMPORTING
-        !budget        TYPE f
-        !rate_per_hour TYPE f
+        !budget        TYPE amount
+        !rate_per_hour TYPE amount
       RETURNING
         VALUE(result)  TYPE i.
 
     METHODS price_with_monthly_discount
       IMPORTING
-        !rate_per_hour TYPE f
-        !num_days      TYPE f
-        !discount      TYPE f
+        !rate_per_hour TYPE amount
+        !num_days      TYPE i
+        !discount      TYPE discount_rate
       RETURNING
-        VALUE(result)  TYPE f.
+        VALUE(result)  TYPE i.
 
   PROTECTED SECTION.
   PRIVATE SECTION.
@@ -35,17 +38,17 @@ ENDCLASS.
 CLASS zcl_freelancer_rates IMPLEMENTATION.
 
 
-  METHOD days_in_budget.
-* add solution here
+  METHOD day_rate.
+    "Implement solution here
   ENDMETHOD.
 
 
-  METHOD day_rate.
-* add solution here
+  METHOD days_in_budget.
+    "Implement solution here
   ENDMETHOD.
 
 
   METHOD price_with_monthly_discount.
-* add solution here
+    "Implement solution here
   ENDMETHOD.
 ENDCLASS.

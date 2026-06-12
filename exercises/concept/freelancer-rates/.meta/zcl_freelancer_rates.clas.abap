@@ -5,36 +5,39 @@ CLASS zcl_freelancer_rates DEFINITION
 
   PUBLIC SECTION.
 
+    TYPES amount TYPE p LENGTH 16 DECIMALS 6.
+    TYPES discount_rate TYPE p LENGTH 8 DECIMALS 6.
+
     METHODS day_rate
       IMPORTING
-        !rate_per_hour TYPE f
+        !rate_per_hour TYPE amount
       RETURNING
-        VALUE(result)  TYPE f .
+        VALUE(result)  TYPE amount .
     METHODS days_in_budget
       IMPORTING
-        !budget        TYPE f
-        !rate_per_hour TYPE f
+        !budget        TYPE amount
+        !rate_per_hour TYPE amount
       RETURNING
         VALUE(result)  TYPE i .
     METHODS price_with_monthly_discount
       IMPORTING
-        !rate_per_hour TYPE f
-        !num_days      TYPE f
-        !discount      TYPE f
+        !rate_per_hour TYPE amount
+        !num_days      TYPE i
+        !discount      TYPE discount_rate
       RETURNING
-        VALUE(result)  TYPE f .
+        VALUE(result)  TYPE i .
   PROTECTED SECTION.
   PRIVATE SECTION.
+    CONSTANTS hours_per_day TYPE i VALUE 8.
+    CONSTANTS billable_days_per_month TYPE i VALUE 22.
 ENDCLASS.
 
 
 
 CLASS zcl_freelancer_rates IMPLEMENTATION.
 
-
-
   METHOD day_rate.
-    result = round( val  = rate_per_hour * 8 dec = 2 ) .
+    result = rate_per_hour * hours_per_day.
   ENDMETHOD.
 
   METHOD days_in_budget.
@@ -43,13 +46,13 @@ CLASS zcl_freelancer_rates IMPLEMENTATION.
 
 
   METHOD price_with_monthly_discount.
-    DATA(lv_months) = floor( num_days / 22 ).
-    DATA(lv_monthly_rate) = 22 * day_rate( rate_per_hour ).
-    DATA(lv_monthly_discount_rate) = ( 1 - discount ) * lv_monthly_rate.
+    DATA(full_months) = floor( num_days / billable_days_per_month ).
+    DATA(monthly_rate) = billable_days_per_month * day_rate( rate_per_hour ).
+    DATA(discounted_monthly_rate) = ( 1 - discount ) * monthly_rate.
 
-    DATA(lv_extra_days) = num_days MOD 22.
-    DATA(lv_price_extra_days) = lv_extra_days * day_rate( rate_per_hour ).
+    DATA(extra_days) = num_days MOD billable_days_per_month.
+    DATA(extra_days_rate) = extra_days * day_rate( rate_per_hour ).
 
-    result = ceil( lv_months * lv_monthly_discount_rate + lv_price_extra_days ).
+    result = ceil( full_months * discounted_monthly_rate + extra_days_rate ).
   ENDMETHOD.
 ENDCLASS.
