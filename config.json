@@ -8,15 +8,29 @@
     "representer": false,
     "analyzer": false
   },
-  "test_runner": {
-    "average_run_time": 9
-  },
   "blurb": "ABAP is a high level programming language created by SAP",
   "version": 3,
   "online_editor": {
     "indent_style": "space",
     "indent_size": 2,
     "highlightjs_language": "abap"
+  },
+  "test_runner": {
+    "average_run_time": 9
+  },
+  "files": {
+    "solution": [
+      "zcl_%{snake_slug}.clas.abap"
+    ],
+    "test": [
+      "zcl_%{snake_slug}.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_%{snake_slug}.clas.abap"
+    ],
+    "exemplar": [
+      ".meta/zcl_%{snake_slug}.clas.abap"
+    ]
   },
   "exercises": {
     "concept": [
@@ -37,7 +51,9 @@
         "slug": "lasagna",
         "name": "Lucian's Luscious Lasagna",
         "uuid": "0bb8f970-fe74-41f2-8ae6-2d771d87b607",
-        "concepts": ["basics"],
+        "concepts": [
+          "basics"
+        ],
         "prerequisites": [],
         "status": "wip"
       }
@@ -124,9 +140,33 @@
         "difficulty": 1
       },
       {
+        "slug": "resistor-color-duo",
+        "name": "Resistor Color Duo",
+        "uuid": "02daf508-b4d8-47c9-a9c7-f26e7032258c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "resistor-color-trio",
+        "name": "Resistor Color Trio",
+        "uuid": "5d31468c-8e83-4901-8e08-0397f09e0462",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "leap",
         "name": "Leap",
         "uuid": "ed451561-a84a-4b44-a3c9-9a0d9378667c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "line-up",
+        "name": "Line Up",
+        "uuid": "9ede7530-808e-41f4-a1c1-1f528dc9772e",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
@@ -164,6 +204,14 @@
         "difficulty": 1
       },
       {
+        "slug": "protein-translation",
+        "name": "Protein Translation",
+        "uuid": "73d301f2-9a3e-4d67-8138-dee878094539",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "atbash-cipher",
         "name": "Atbash Cipher",
         "uuid": "cdb6d3b8-b2a7-42a7-a124-3b25d7ce545c",
@@ -194,7 +242,10 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
-        "topics": ["parsing", "transforming"]
+        "topics": [
+          "parsing",
+          "transforming"
+        ]
       },
       {
         "slug": "raindrops",
@@ -208,6 +259,14 @@
         "slug": "anagram",
         "name": "Anagram",
         "uuid": "3b824dfa-49fa-4a32-9706-ee2267289e62",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "eliuds-eggs",
+        "name": "Eliud's Eggs",
+        "uuid": "34a2ee25-abe1-4683-a0fd-40f3e65eab55",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
@@ -237,12 +296,21 @@
         "difficulty": 2
       },
       {
+        "slug": "flower-field",
+        "name": "Flower Field",
+        "uuid": "6e096ef1-5502-446f-b32c-65c3e4a8166b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "minesweeper",
         "name": "Minesweeper",
         "uuid": "c8f6abc0-41a4-4104-8050-2df35f0d469a",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5
+        "difficulty": 5,
+        "status": "deprecated"
       },
       {
         "slug": "word-count",
@@ -251,7 +319,12 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["loops", "lists", "regular_expressions", "strings"]
+        "topics": [
+          "loops",
+          "lists",
+          "regular_expressions",
+          "strings"
+        ]
       },
       {
         "slug": "beer-song",
@@ -260,7 +333,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 5,
-        "topics": ["conditionals", "loops", "strings"]
+        "topics": [
+          "conditionals",
+          "loops",
+          "strings"
+        ]
       },
       {
         "slug": "darts",
@@ -393,43 +470,43 @@
   ],
   "key_features": [
     {
-      "icon": "evolving",
       "title": "Evolving",
-      "content": "ABAP is a modern and constantly evolving language supported by SAP."
+      "content": "ABAP is a modern and constantly evolving language supported by SAP.",
+      "icon": "evolving"
     },
     {
-      "icon": "fun",
       "title": "Fun",
-      "content": "Always a new or old feature to discover."
+      "content": "Always a new or old feature to discover.",
+      "icon": "fun"
     },
     {
-      "icon": "easy",
       "title": "Easy",
-      "content": "Statements are easily readable and understandable."
+      "content": "Statements are easily readable and understandable.",
+      "icon": "easy"
     },
     {
-      "icon": "productive",
       "title": "Productive",
-      "content": "Easily create data structures and interact with database contents."
+      "content": "Easily create data structures and interact with database contents.",
+      "icon": "productive"
     },
     {
-      "icon": "statically-typed",
       "title": "Typed",
-      "content": "Static types linked to database schemas."
+      "content": "Static types linked to database schemas.",
+      "icon": "statically-typed"
     },
     {
-      "icon": "stable",
       "title": "Reliability",
-      "content": "Stable functionality to run the core of the worlds largest businesses."
+      "content": "Stable functionality to run the core of the worlds largest businesses.",
+      "icon": "stable"
     }
   ],
   "tags": [
+    "execution_mode/compiled",
     "paradigm/object_oriented",
     "paradigm/procedural",
+    "runtime/language_specific",
     "typing/static",
     "typing/strong",
-    "execution_mode/compiled",
-    "runtime/language_specific",
     "used_for/backends",
     "used_for/financial_systems"
   ]
