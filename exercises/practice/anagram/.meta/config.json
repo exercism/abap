@@ -14,5 +14,6 @@
     ]
   },
   "blurb": "Given a word and a list of possible anagrams, select the correct sublist.",
-  "source_url": "https://github.com/rchatley/extreme_startup"
+  "source_url": "https://github.com/rchatley/extreme_startup",
+  "source": "Inspired by the Extreme Startup game"
 }

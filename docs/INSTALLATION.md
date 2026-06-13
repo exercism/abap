@@ -10,6 +10,6 @@ We encourage to use a current release of the ABAP platform with active support. 
 
 ## What to install?
 
-We recommend using the most recent [ABAP Platform Developer Edition on SAP HANA](https://developers.sap.com/trials-downloads.html?search=abap+platform). It's based on ABAP 7.54. You will need to install the SAP ABAP system (provided as a [docker image](https://hub.docker.com/_/sap-abap-trial)) and SAP GUI either for Windows or for Java depending on your local operating system.
+We recommend using the most recent [ABAP Cloud Developer Trial](https://hub.docker.com/r/sapse/abap-cloud-developer-trial). It's based on ABAP 7.58. You can install the SAP ABAP system as a Docker image or hosted in the SAP Cloud Appliance Library. In addition, you need to install SAP GUI either for Windows or for Java depending on your local operating system. You can download SAP GUI from [here](https://www.sap.com/products/try-sap/trials-downloads.html?search=sap+gui).
 
-For more details, see this [SAP Community](https://blogs.sap.com/2021/02/15/sap-abap-platform-1909-developer-edition-available-soon/) blog.
+For more details, see this [SAP Community](https://community.sap.com/t5/technology-blog-posts-by-sap/abap-cloud-developer-trial-2023-available-now/ba-p/14057183) blog.

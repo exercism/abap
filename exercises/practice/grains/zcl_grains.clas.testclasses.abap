@@ -103,9 +103,11 @@ CLASS ltcl_grains IMPLEMENTATION.
 
   "returns the total number of grains on the board
   METHOD test_total.
+    DATA lv_expected TYPE zcl_grains=>type_result.
+    lv_expected = 18446744073709551615.
     cl_abap_unit_assert=>assert_equals(
       act = cut->total( )
-      exp = 18446744073709551615 ).
+      exp = lv_expected ).
   ENDMETHOD.
 
 

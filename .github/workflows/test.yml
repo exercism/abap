@@ -23,15 +23,15 @@ on:
 
 jobs:
   ci:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
-      - name: Use Node.js LTS (16.x)
-        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+      - name: Use Node.js LTS (22.x)
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
-          node-version: '16'
+          node-version: '22'
       - run: npm install @abaplint/cli -g
       - run: abaplint abaplint.json
       - run: abaplint abaplint_solutions.json
