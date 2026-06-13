@@ -43,6 +43,19 @@
         ],
         "prerequisites": [],
         "status": "wip"
+      },
+      {
+        "slug": "freelancer-rates",
+        "name": "Freelancer Rates",
+        "uuid": "0aff2fa7-55ea-47e9-af4a-78927d916baf",
+        "concepts": [
+          "numbers",
+          "arithmetic-operators"
+        ],
+        "prerequisites": [
+          "basics"
+        ],
+        "status": "wip"
       }
     ],
     "practice": [
@@ -453,6 +466,16 @@
       "uuid": "4a11ac86-a699-43e9-922e-f75681c86fd9",
       "slug": "basics",
       "name": "Basics"
+    },
+    {
+      "uuid": "fb681c0e-2bff-464e-9f4a-66a6ba13cd58",
+      "slug": "numbers",
+      "name": "Numbers"
+    },
+    {
+      "uuid": "3a8b883f-a4ea-4c5c-b2db-1d285acef657",
+      "slug": "arithmetic-operators",
+      "name": "Arithmetic Operators"
     }
   ],
   "key_features": [
