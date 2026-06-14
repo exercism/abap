@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "zcl_binary_search.clas.abap"
+    ],
+    "test": [
+      "zcl_binary_search.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_binary_search.clas.abap"
+    ],
+    "editor": [
+      "zcx_item_not_found.clas.abap"
+    ]
+  },
+  "blurb": "Implement a binary search algorithm.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Binary_search_algorithm"
+}
