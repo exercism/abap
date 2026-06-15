@@ -13,7 +13,7 @@ CLASS zcl_binary_search DEFINITION
       RETURNING
         VALUE(result) TYPE i
       RAISING
-        zcx_item_not_found.
+        CX_SY_ITAB_LINE_NOT_FOUND.
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
@@ -38,6 +38,6 @@ CLASS zcl_binary_search IMPLEMENTATION.
       ENDIF.
     ENDWHILE.
 
-    RAISE EXCEPTION TYPE zcx_item_not_found.
+    RAISE EXCEPTION TYPE CX_SY_ITAB_LINE_NOT_FOUND.
   ENDMETHOD.
 ENDCLASS.

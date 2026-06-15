@@ -11,9 +11,6 @@
     ],
     "example": [
       ".meta/zcl_binary_search.clas.abap"
-    ],
-    "editor": [
-      "zcx_item_not_found.clas.abap"
     ]
   },
   "blurb": "Implement a binary search algorithm.",

@@ -7,12 +7,12 @@ CLASS ltcl_binary_search DEFINITION FINAL FOR TESTING
     DATA cut TYPE REF TO zcl_binary_search.
     METHODS setup.
     METHODS:
-      finds_valid_value FOR TESTING RAISING zcx_item_not_found,
-      finds_value_in_middle_of_table FOR TESTING RAISING zcx_item_not_found,
-      finds_value_at_start_of_table FOR TESTING RAISING zcx_item_not_found,
-      finds_value_at_end_of_table FOR TESTING RAISING zcx_item_not_found,
-      finds_value_in_odd_table FOR TESTING RAISING zcx_item_not_found,
-      finds_value_in_even_table FOR TESTING RAISING zcx_item_not_found,
+      finds_valid_value FOR TESTING RAISING CX_SY_ITAB_LINE_NOT_FOUND,
+      finds_value_in_middle_of_table FOR TESTING RAISING CX_SY_ITAB_LINE_NOT_FOUND,
+      finds_value_at_start_of_table FOR TESTING RAISING CX_SY_ITAB_LINE_NOT_FOUND,
+      finds_value_at_end_of_table FOR TESTING RAISING CX_SY_ITAB_LINE_NOT_FOUND,
+      finds_value_in_odd_table FOR TESTING RAISING CX_SY_ITAB_LINE_NOT_FOUND,
+      finds_value_in_even_table FOR TESTING RAISING CX_SY_ITAB_LINE_NOT_FOUND,
       identifies_value_not_in_table FOR TESTING,
       smaller_than_min_not_found FOR TESTING,
       larger_than_max_not_found FOR TESTING,
@@ -77,8 +77,8 @@ CLASS ltcl_binary_search IMPLEMENTATION.
         cut->binary_search(
           val = 7
           table = table ).
-        cl_abap_unit_assert=>fail( 'Should have raised zcx_item_not_found' ).
-      CATCH zcx_item_not_found.
+        cl_abap_unit_assert=>fail( 'Should have raised CX_SY_ITAB_LINE_NOT_FOUND' ).
+      CATCH CX_SY_ITAB_LINE_NOT_FOUND.
     ENDTRY.
   ENDMETHOD.
 
@@ -88,8 +88,8 @@ CLASS ltcl_binary_search IMPLEMENTATION.
         cut->binary_search(
           val = 0
           table = table ).
-        cl_abap_unit_assert=>fail( 'Should have raised zcx_item_not_found' ).
-      CATCH zcx_item_not_found.
+        cl_abap_unit_assert=>fail( 'Should have raised CX_SY_ITAB_LINE_NOT_FOUND' ).
+      CATCH CX_SY_ITAB_LINE_NOT_FOUND.
     ENDTRY.
   ENDMETHOD.
 
@@ -99,8 +99,8 @@ CLASS ltcl_binary_search IMPLEMENTATION.
         cut->binary_search(
           val = 13
           table = table ).
-        cl_abap_unit_assert=>fail( 'Should have raised zcx_item_not_found' ).
-      CATCH zcx_item_not_found.
+        cl_abap_unit_assert=>fail( 'Should have raised CX_SY_ITAB_LINE_NOT_FOUND' ).
+      CATCH CX_SY_ITAB_LINE_NOT_FOUND.
     ENDTRY.
   ENDMETHOD.
 
@@ -110,8 +110,8 @@ CLASS ltcl_binary_search IMPLEMENTATION.
         cut->binary_search(
           val = 1
           table = table ).
-        cl_abap_unit_assert=>fail( 'Should have raised zcx_item_not_found' ).
-      CATCH zcx_item_not_found.
+        cl_abap_unit_assert=>fail( 'Should have raised CX_SY_ITAB_LINE_NOT_FOUND' ).
+      CATCH CX_SY_ITAB_LINE_NOT_FOUND.
     ENDTRY.
   ENDMETHOD.
 
@@ -121,8 +121,8 @@ CLASS ltcl_binary_search IMPLEMENTATION.
         cut->binary_search(
           val = 0
           table = table ).
-        cl_abap_unit_assert=>fail( 'Should have raised zcx_item_not_found' ).
-      CATCH zcx_item_not_found.
+        cl_abap_unit_assert=>fail( 'Should have raised CX_SY_ITAB_LINE_NOT_FOUND' ).
+      CATCH CX_SY_ITAB_LINE_NOT_FOUND.
     ENDTRY.
   ENDMETHOD.
 
