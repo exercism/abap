@@ -412,6 +412,14 @@
         "difficulty": 1
       },
       {
+        "slug": "isbn-verifier",
+        "name": "ISBN Verifier",
+        "uuid": "941750f4-d641-44b9-a7eb-7be50cd93cee",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "state-of-tic-tac-toe",
         "name": "State of Tic-Tac-Toe",
         "uuid": "47290e3c-885c-4940-bdaf-6aaf1fbfbae2",
@@ -474,7 +482,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
-      }        
+      }
     ]
   },
   "concepts": [
