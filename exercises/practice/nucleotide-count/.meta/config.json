@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "zcl_nucleotide_count.clas.abap"
+    ],
+    "test": [
+      "zcl_nucleotide_count.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_nucleotide_count.clas.abap"
+    ]
+  },
+  "blurb": "Given a DNA string, compute how many times each nucleotide occurs in the string.",
+  "source": "The Calculating DNA Nucleotides_problem at Rosalind",
+  "source_url": "https://rosalind.info/problems/dna/"
+}
