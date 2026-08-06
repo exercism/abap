@@ -46,12 +46,19 @@ CLASS zcl_freelancer_rates IMPLEMENTATION.
 
 
   METHOD price_with_monthly_discount.
-    DATA(full_months) = floor( num_days / billable_days_per_month ).
-    DATA(monthly_rate) = billable_days_per_month * day_rate( rate_per_hour ).
-    DATA(discounted_monthly_rate) = ( 1 - discount ) * monthly_rate.
+    DATA monthly_rate TYPE amount.
+    DATA discounted_monthly_rate TYPE amount.
+    DATA extra_days_rate TYPE amount.
+    DATA float TYPE f.
+    DATA full_months TYPE i.
+
+    float = num_days / billable_days_per_month.
+    full_months = floor( float ).
+    monthly_rate = billable_days_per_month * day_rate( rate_per_hour ).
+    discounted_monthly_rate = ( 1 - discount ) * monthly_rate.
 
     DATA(extra_days) = num_days MOD billable_days_per_month.
-    DATA(extra_days_rate) = extra_days * day_rate( rate_per_hour ).
+    extra_days_rate = extra_days * day_rate( rate_per_hour ).
 
     result = ceil( full_months * discounted_monthly_rate + extra_days_rate ).
   ENDMETHOD.
