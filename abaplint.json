@@ -697,7 +697,7 @@
       "severity": "Error"
     },
     "prefer_inline": {
-      "exclude": [],
+      "exclude": ["grains"],
       "severity": "Error"
     },
     "prefer_is_not": {

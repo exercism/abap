@@ -14,5 +14,6 @@
     ]
   },
   "blurb": "Determine if a number is an Armstrong number.",
-  "source_url": "https://en.wikipedia.org/wiki/Narcissistic_number"
+  "source_url": "https://en.wikipedia.org/wiki/Narcissistic_number",
+  "source": "Wikipedia"
 }

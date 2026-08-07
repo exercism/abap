@@ -27,7 +27,7 @@ CLASS zcl_crypto_square IMPLEMENTATION.
     IF str_len = 0.
       RETURN.
     ENDIF.
-    WHILE ( column * row ) < str_len.
+    WHILE column * row < str_len.
       IF column > row.
         row  += 1.
       ELSE.
@@ -41,7 +41,7 @@ CLASS zcl_crypto_square IMPLEMENTATION.
                     FOR j = 0 UNTIL j = row
                       NEXT txt &&= |{
                         "check offset beyond string length?
-                        COND string( WHEN ( ( j * column ) + i ) >= str_len
+                        COND string( WHEN j * column  + i >= str_len
                                        "add space if , more than one row in square
                                        THEN COND string( WHEN row > 1
                                                            THEN ` `
