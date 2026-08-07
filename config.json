@@ -116,6 +116,14 @@
         "difficulty": 2
       },
       {
+        "slug": "space-age",
+        "name": "Space Age",
+        "uuid": "b5f15f62-cecd-4412-bbbb-e9cd9f80ea52",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "two-fer",
         "name": "Two Fer",
         "uuid": "4606da73-f376-409e-8526-f95bec03643b",
