@@ -228,6 +228,14 @@
         "difficulty": 2
       },
       {
+        "slug": "nucleotide-count",
+        "name": "Nucleotide Count",
+        "uuid": "0bdeda7e-85af-434e-b8c2-faa1d2fe26b5",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "protein-translation",
         "name": "Protein Translation",
         "uuid": "73d301f2-9a3e-4d67-8138-dee878094539",
