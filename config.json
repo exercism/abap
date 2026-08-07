@@ -100,9 +100,25 @@
         "difficulty": 1
       },
       {
+        "slug": "pangram",
+        "name": "Pangram",
+        "uuid": "996a5b40-4123-49ef-9255-7f63c7580dcd",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "scrabble-score",
         "name": "Scrabble Score",
         "uuid": "86e73de5-3f6a-4c65-b0d6-2070d1601bdf",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "space-age",
+        "name": "Space Age",
+        "uuid": "b5f15f62-cecd-4412-bbbb-e9cd9f80ea52",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
