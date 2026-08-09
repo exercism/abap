@@ -23,7 +23,7 @@ CLASS ltcl_nucleotide_count IMPLEMENTATION.
   METHOD test_empty_strand.
     cl_abap_unit_assert=>assert_equals(
       act = cut->nucleotide_counts( '' )
-      exp = VALUE zcl_nucleotide_count=>nucleotide_counts(
+      exp = VALUE zcl_nucleotide_count=>ty_nucleotide_counts(
         ( nucleotide = 'A' count = 0 )
         ( nucleotide = 'C' count = 0 )
         ( nucleotide = 'G' count = 0 )
@@ -33,7 +33,7 @@ CLASS ltcl_nucleotide_count IMPLEMENTATION.
   METHOD test_single_character.
     cl_abap_unit_assert=>assert_equals(
       act = cut->nucleotide_counts( 'G' )
-      exp = VALUE zcl_nucleotide_count=>nucleotide_counts(
+      exp = VALUE zcl_nucleotide_count=>ty_nucleotide_counts(
         ( nucleotide = 'A' count = 0 )
         ( nucleotide = 'C' count = 0 )
         ( nucleotide = 'G' count = 1 )
@@ -43,7 +43,7 @@ CLASS ltcl_nucleotide_count IMPLEMENTATION.
   METHOD test_repeated_nucleotide.
     cl_abap_unit_assert=>assert_equals(
       act = cut->nucleotide_counts( 'GGGGGGG' )
-      exp = VALUE zcl_nucleotide_count=>nucleotide_counts(
+      exp = VALUE zcl_nucleotide_count=>ty_nucleotide_counts(
         ( nucleotide = 'A' count = 0 )
         ( nucleotide = 'C' count = 0 )
         ( nucleotide = 'G' count = 7 )
@@ -53,7 +53,7 @@ CLASS ltcl_nucleotide_count IMPLEMENTATION.
   METHOD test_multiple_nucleotides.
     cl_abap_unit_assert=>assert_equals(
       act = cut->nucleotide_counts( 'AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC' )
-      exp = VALUE zcl_nucleotide_count=>nucleotide_counts(
+      exp = VALUE zcl_nucleotide_count=>ty_nucleotide_counts(
         ( nucleotide = 'A' count = 20 )
         ( nucleotide = 'C' count = 12 )
         ( nucleotide = 'G' count = 17 )
