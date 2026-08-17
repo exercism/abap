@@ -12,9 +12,9 @@ ABAP runs productively in more than 100,000 SAP customer systems, where it enabl
 
 ABAP Platform
 
-* 5,000 productive SAP Business Suite systems
-* 64,000 standalone systems
-* 4.5 million registered ABAP developers
+* 100,000 installed productive SAP systems based on ABAP
+* 64,000 custom ABAP objects per average SAP system
+* 5 million registered ABAP developers; approximately 2 million are actively developing
 
 In short, it's a big market and there's demand for more people who can develop in ABAP.
 
