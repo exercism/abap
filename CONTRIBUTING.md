@@ -22,7 +22,7 @@ There are a few ways to implement new exercises (exercises that don't exist in t
 2. Port an exercism implemented in other tracks (check for example, the [JavaScript Track](https://exercism.org/tracks/javascript/exercises)).
 3. Create a new, track-specific exercise from scratch.
 
-Tip: You can use the [configlet](https://exercism.org/docs/building/configlet/sync#h-using-sync-when-adding-a-new-exercise-to-a-track) to generate the required folders and metadata for a new exercise.
+Tip: You can use the [configlet](https://exercism.org/docs/building/configlet/sync#h-using-sync-when-adding-a-new-exercise-to-a-track) to generate the required folders and metadata for new exercises.
 
 #### Implementing existing exercise
 
