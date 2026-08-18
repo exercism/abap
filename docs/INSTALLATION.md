@@ -6,7 +6,7 @@ Of course, your employer might be running SAP. Please check with your IT departm
 
 ## Which version to choose?
 
-We encourage to use a current release of the ABAP platform with active support. Currently this is **ABAP 7.5 and higher**. Details on current releases and their timelines can be found at [ABAP Development Center](https://developers.sap.com/topics/abap-platform.html).
+We encourage to use a current release of the ABAP platform with active support. Currently this is **ABAP 7.5 and higher**. Details on current releases and their timelines can be found at [SAP Developer Center](hhttps://developers.sap.com/tutorials/mission-get-started-with-abap-development-on-premise).
 
 ## What to install?
 

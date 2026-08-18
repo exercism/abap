@@ -32,6 +32,8 @@ Use this method if your system is connected to the Internet and has access to Gi
 - Package: `$exer`
 - Display Name: `Exercism - ABAP Track`
 
+Note: If the package names is too long, like `$exercism`, you will get an error trying to import the repository. Keep the name short as mentioned above.
+
 ![abapGit Online Repo](https://github.com/exercism/abap/blob/main/docs/clone_02.png?raw=true)
 
 4. Select "Create Online Repository". You should see a list of objects with the status "A":
