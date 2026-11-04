@@ -7,15 +7,15 @@
 
 ## Learning
 
-* SAP Learning Journey: [Get Started with ABAP Programming](https://learning.sap.com/learning-journey/get-started-with-abap-programming-on-sap-btp) (free)
+* SAP Learning Journey: [Aquiring Core ABAP Skills](https://learning.sap.com/learning-journeys/acquiring-core-abap-skills?searchId=6206bac9-1825-4086-8b45-d5eb8fb4d4af&listPosition=1)
+* [ABAP Learning Opportunities](https://learning.sap.com/search?query=abap&access=free)
 
 ## Tutorials
 
-* [ABAP Platform for Developers](https://developers.sap.com/topics/abap-platform.html) (free)
+* [SAP Developer Center](https://developers.sap.com/tutorial-navigator/?topic=ABAP) (free)
 
 ## Training
 
-* Free online classes at [openSAP](https://open.sap.com/courses?q=abap) in particular [Writing Testable Code in ABAP](https://open.sap.com/courses/wtc1) (free)
 * [SAP Learning Journey and Certification](https://training.sap.com/trainingpath/Database+&+Technology-Development-ABAP+Core) (paid)
 * [ABAP Academy](https://abapacademy.com/) (paid)
 

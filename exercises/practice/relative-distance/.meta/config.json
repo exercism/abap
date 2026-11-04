@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "zcl_relative_distance.clas.abap"
+    ],
+    "test": [
+      "zcl_relative_distance.clas.testclasses.abap"
+    ],
+    "example": [
+      ".meta/zcl_relative_distance.clas.abap"
+    ]
+  },
+  "blurb": "Given a family tree, calculate the degree of separation.",
+  "source": "vaeng",
+  "source_url": "https://github.com/exercism/problem-specifications/pull/2537"
+}
