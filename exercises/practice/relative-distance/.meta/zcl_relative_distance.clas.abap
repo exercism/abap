@@ -134,7 +134,7 @@ CLASS zcl_relative_distance IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD has_person.
-    result = line_exists( graph[ person = candidate ] ).
+    result = xsdbool( line_exists( graph[ person = candidate ] ) ).
   ENDMETHOD.
 
   METHOD relatives_of.
