@@ -1,0 +1,17 @@
+METHOD most_common_word.
+  TYPES: BEGIN OF ty_count, word TYPE string, count TYPE i, END OF ty_count.
+  DATA counts TYPE HASHED TABLE OF ty_count WITH UNIQUE KEY word.
+  DATA: entry TYPE ty_count,
+        best  TYPE ty_count.
+
+  SPLIT to_lower( text ) AT space INTO TABLE DATA(words).
+  LOOP AT words INTO DATA(word).
+    entry = VALUE #( word = word count = 1 ).
+    COLLECT entry INTO counts.
+    entry = counts[ word = word ].
+    IF entry-count > best-count.
+      best = entry.
+    ENDIF.
+  ENDLOOP.
+  result = |"{ best-word }" appears { best-count } times|.
+ENDMETHOD.
